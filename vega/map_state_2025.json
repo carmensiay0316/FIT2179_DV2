@@ -1,0 +1,110 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 720,
+  "height": 480,
+
+  "params": [
+    {
+      "name": "zoom_level",
+      "value": 650,
+      "bind": {
+        "input": "range",
+        "min": 450,
+        "max": 1200,
+        "step": 50,
+        "name": "Zoom: "
+      }
+    },
+    {
+      "name": "center_to",
+      "value": [134, -28],
+      "bind": {
+        "input": "select",
+        "options": [
+          [134, -28],
+          [145, -36],
+          [115, -27],
+          [153, -28]
+        ],
+        "labels": [
+          "Australia",
+          "South-east Australia",
+          "Western Australia",
+          "Queensland / East coast"
+        ],
+        "name": "Map centre: "
+      }
+    }
+  ],
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.geojson",
+    "format": {
+      "type": "json",
+      "property": "features"
+    }
+  },
+
+  "projection": {
+    "type": "mercator",
+    "center": {"expr": "center_to"},
+    "scale": {"expr": "zoom_level"}
+  },
+
+  "transform": [
+    {
+      "calculate": "datum.properties.STATE_NAME",
+      "as": "map_state_name"
+    },
+    {
+      "lookup": "map_state_name",
+      "from": {
+        "data": {
+          "url": "data/students_state_2025_map.csv"
+        },
+        "key": "state_name",
+        "fields": ["state_abbr", "enrolments"]
+      }
+    }
+  ],
+
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 1.2
+  },
+
+  "encoding": {
+    "color": {
+      "field": "enrolments",
+      "type": "quantitative",
+      "title": "2025 enrolments",
+      "scale": {
+        "type": "threshold",
+        "domain": [25000, 75000, 150000, 300000],
+        "range": ["#e6f0f7", "#bdd7e7", "#6baed6", "#3182bd", "#08519c"]
+      },
+      "legend": {
+        "format": ","
+      }
+    },
+    "tooltip": [
+      {
+        "field": "map_state_name",
+        "type": "nominal",
+        "title": "State"
+      },
+      {
+        "field": "state_abbr",
+        "type": "nominal",
+        "title": "Abbreviation"
+      },
+      {
+        "field": "enrolments",
+        "type": "quantitative",
+        "title": "2025 enrolments",
+        "format": ","
+      }
+    ]
+  }
+}

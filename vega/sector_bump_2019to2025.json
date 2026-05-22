@@ -1,0 +1,105 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 760,
+  "height": 380,
+
+  "data": {
+    "url": "data/students_sector_year.csv"
+  },
+
+  "transform": [
+    {
+      "window": [
+        {
+          "op": "rank",
+          "as": "rank"
+        }
+      ],
+      "groupby": ["year"],
+      "sort": [
+        {
+          "field": "enrolments",
+          "order": "descending"
+        }
+      ]
+    }
+  ],
+
+  "mark": {
+    "type": "line",
+    "point": {
+      "filled": true,
+      "size": 90
+    },
+    "strokeWidth": 3
+  },
+
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": "Year",
+      "axis": {
+        "labelAngle": 0
+      }
+    },
+
+    "y": {
+      "field": "rank",
+      "type": "quantitative",
+      "title": "Sector rank by enrolments",
+      "scale": {
+        "domain": [5, 1]
+      },
+      "axis": {
+        "values": [1, 2, 3, 4, 5]
+      }
+    },
+
+    "color": {
+      "field": "sector",
+      "type": "nominal",
+      "title": "Education sector",
+      "scale": {
+        "domain": [
+          "Higher Education",
+          "VET",
+          "ELICOS",
+          "Non-award",
+          "Schools"
+        ],
+        "range": [
+          "#2F6DA3",
+          "#6FAF8F",
+          "#E3C66B",
+          "#C97C7C",
+          "#B7D4E8"
+        ]
+      }
+    },
+
+    "tooltip": [
+      {
+        "field": "sector",
+        "type": "nominal",
+        "title": "Sector"
+      },
+      {
+        "field": "year",
+        "type": "ordinal",
+        "title": "Year"
+      },
+      {
+        "field": "rank",
+        "type": "quantitative",
+        "title": "Rank"
+      },
+      {
+        "field": "enrolments",
+        "type": "quantitative",
+        "title": "Enrolments",
+        "format": ","
+      }
+    ]
+  }
+}

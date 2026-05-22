@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Where Do International Students Shape Australia?</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+
+<body>
+  <main>
+    <section class="hero">
+      <h1>Where Do International Students Shape Australia?</h1>
+      <p>
+        International students are concentrated in a few Australian states
+        and come from a small number of major source countries.
+      </p>
+    </section>
+
+    <section class="chart-section">
+      <h2>A few states and countries dominate the enrolment picture</h2>
+      <p>
+        International student enrolments in 2025 were concentrated in both a small
+        number of Australian states and a small number of source countries.
+      </p>
+
+      <div class="chart-grid">
+        <div class="chart-card">
+          <h3>Australian state concentration</h3>
+          <p>
+            New South Wales and Victoria recorded the largest number of international
+            student enrolments in 2025. Together, they accounted for more than two-thirds
+            of all international student enrolments in the dataset.
+          </p>
+          <div id="bar_state_2025"></div>
+        </div>
+
+        <div class="chart-card">
+          <h3>Source country concentration</h3>
+          <p>
+            China and India were the two largest source countries for international
+            student enrolments in 2025. Nepal was also a major source country, followed
+            by the Philippines and Vietnam.
+          </p>
+          <div id="bar_country_2025"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chart-section">
+    <h2>The geography of enrolments is concentrated along Australia’s east coast</h2>
+    <p>
+      The map shows that international student enrolments in 2025 were concentrated
+      in New South Wales and Victoria, with Queensland forming a second tier.
+      Western Australia and South Australia also contributed meaningful enrolments,
+      while smaller jurisdictions such as Tasmania, the Northern Territory and the
+      Australian Capital Territory had much lower totals.
+    </p>
+
+    <div class="chart-card">
+      <div id="map_state_2025"></div>
+    </div>
+    </section>
+
+    <section class="chart-section">
+    <h2>Higher Education and VET dominate the sector pattern</h2>
+    <p>
+      Sector enrolments changed unevenly between 2019 and 2025. Higher Education
+      and VET remained the largest sectors, while ELICOS declined sharply during
+      the pandemic period and did not return to its earlier level by 2025.
+    </p>
+
+    <div class="chart-card">
+      <div id="sector_area_2019_2025"></div>
+    </div>
+    </section>
+
+    <section class="chart-section">
+    <h2>The largest sectors mostly stayed in the same order</h2>
+    <p>
+      The bump chart ranks education sectors by enrolments each year. Higher
+      Education and VET remained the two largest sectors across the period, while
+      ELICOS dropped during the pandemic period and did not regain its earlier
+      position by 2025.
+    </p>
+
+    <div class="chart-card">
+      <div id="sector_bump_2019_2025"></div>
+    </div>
+    </section>
+
+    <section class="chart-section">
+    <h2>Circle size makes the state gap more visible</h2>
+    <p>
+      The proportional symbol map shows the same state-level enrolment pattern in
+      another way. Larger circles appear over New South Wales and Victoria,
+      reinforcing how strongly enrolments are concentrated in the south-east.
+    </p>
+
+    <div class="chart-card map-card">
+      <div id="map_symbol_state_2025"></div>
+    </div>
+    </section>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

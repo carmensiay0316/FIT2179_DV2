@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 760,
+  "height": 420,
+
+  "data": {
+    "url": "data/students_sector_year.csv"
+  },
+
+  "mark": {
+    "type": "area",
+    "tooltip": true
+  },
+
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": "Year",
+      "axis": {
+        "labelAngle": 0
+      }
+    },
+
+    "y": {
+      "field": "enrolments",
+      "type": "quantitative",
+      "title": "International student enrolments",
+      "axis": {
+        "format": "~s",
+        "tickCount": 6
+      },
+      "stack": "zero"
+    },
+
+    "color": {
+    "field": "sector",
+    "type": "nominal",
+    "title": "Education sector",
+    "scale": {
+        "domain": [
+        "VET",
+        "Higher Education",
+        "ELICOS",
+        "Non-award",
+        "Schools"
+        ],
+        "range": [
+        "#2F6DA3",
+        "#6FAF8F",
+        "#E3C66B",
+        "#C97C7C",
+        "#B7D4E8"
+        ]
+    }
+    },
+
+    "tooltip": [
+      {
+        "field": "sector",
+        "type": "nominal",
+        "title": "Sector"
+      },
+      {
+        "field": "year",
+        "type": "ordinal",
+        "title": "Year"
+      },
+      {
+        "field": "enrolments",
+        "type": "quantitative",
+        "title": "Enrolments",
+        "format": ","
+      }
+    ]
+  }
+}
