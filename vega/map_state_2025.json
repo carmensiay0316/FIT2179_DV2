@@ -1,16 +1,16 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 720,
-  "height": 480,
+  "width": 520,
+  "height": 420,
 
   "params": [
     {
       "name": "zoom_level",
-      "value": 650,
+      "value": 520,
       "bind": {
         "input": "range",
-        "min": 450,
-        "max": 1200,
+        "min": 380,
+        "max": 900,
         "step": 50,
         "name": "Zoom: "
       }
