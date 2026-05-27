@@ -21,3 +21,6 @@ vegaEmbed("#state_tile_2025", "vega/state_tile_2025.json", { actions: false })
 
 vegaEmbed("#source_region_waffle_2025", "vega/source_region_waffle_2025.json", { actions: false })
   .catch(console.error);
+
+vegaEmbed("#sector_donut_2025", "vega/sector_donut_2025.json", { actions: false })
+  .catch(console.error);
