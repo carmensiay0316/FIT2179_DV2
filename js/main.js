@@ -15,3 +15,6 @@ vegaEmbed("#sector_bump_2019_2025", "vega/sector_bump_2019to2025.json", { action
 
 vegaEmbed("#map_symbol_state_2025", "vega/symbol_map_state_2025.json", { actions: false })
   .catch(console.error);
+
+vegaEmbed("#state_tile_2025", "vega/state_tile_2025.json", { actions: false })
+  .catch(console.error);

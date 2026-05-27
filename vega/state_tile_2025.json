@@ -1,0 +1,126 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 760,
+  "height": 420,
+
+  "data": {
+    "url": "data/students_state_tile_2025.csv"
+  },
+
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "cornerRadius": 8,
+        "stroke": "white",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "ordinal",
+          "axis": null
+        },
+        "y": {
+          "field": "y",
+          "type": "ordinal",
+          "axis": null,
+          "sort": ["1", "2", "3", "4"]
+        },
+        "color": {
+          "field": "enrolments",
+          "type": "quantitative",
+          "title": "2025 enrolments",
+          "scale": {
+            "type": "threshold",
+            "domain": [25000, 75000, 150000, 300000],
+            "range": [
+              "#e6f0f7",
+              "#bdd7e7",
+              "#6baed6",
+              "#3182bd",
+              "#08519c"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "format": ","
+          }
+        },
+        "tooltip": [
+          {
+            "field": "state_name",
+            "type": "nominal",
+            "title": "State"
+          },
+          {
+            "field": "enrolments",
+            "type": "quantitative",
+            "title": "2025 enrolments",
+            "format": ","
+          },
+          {
+            "field": "share",
+            "type": "quantitative",
+            "title": "Share of total",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 24,
+        "fontWeight": "bold",
+        "color": "#111111",
+        "dy": -14
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "y",
+          "type": "ordinal",
+          "sort": ["1", "2", "3", "4"]
+        },
+        "text": {
+          "field": "state",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 13,
+        "color": "#111111",
+        "dy": 14
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "y",
+          "type": "ordinal",
+          "sort": ["1", "2", "3", "4"]
+        },
+        "text": {
+          "field": "enrolment_label",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}
