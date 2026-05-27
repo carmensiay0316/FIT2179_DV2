@@ -18,3 +18,6 @@ vegaEmbed("#map_symbol_state_2025", "vega/symbol_map_state_2025.json", { actions
 
 vegaEmbed("#state_tile_2025", "vega/state_tile_2025.json", { actions: false })
   .catch(console.error);
+
+vegaEmbed("#source_region_waffle_2025", "vega/source_region_waffle_2025.json", { actions: false })
+  .catch(console.error);

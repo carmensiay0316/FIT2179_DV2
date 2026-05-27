@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 620,
+  "height": 420,
+
+  "data": {
+    "url": "data/source_region_waffle_2025.csv"
+  },
+
+  "mark": {
+    "type": "rect",
+    "cornerRadius": 3,
+    "stroke": "white",
+    "strokeWidth": 1.5
+  },
+
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "ordinal",
+      "axis": null
+    },
+    "y": {
+      "field": "y",
+      "type": "ordinal",
+      "axis": null
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "title": "Source region",
+      "scale": {
+        "domain": [
+          "East Asia",
+          "South Asia",
+          "Southeast Asia",
+          "South America",
+          "Africa"
+        ],
+        "range": [
+          "#2F6DA3",
+          "#6FAF8F",
+          "#E3C66B",
+          "#C97C7C",
+          "#8E7DBE"
+        ]
+      },
+      "legend": {
+        "orient": "bottom",
+        "direction": "horizontal",
+        "columns": 3
+      }
+    },
+    "tooltip": [
+      {
+        "field": "region",
+        "type": "nominal",
+        "title": "Region"
+      },
+      {
+        "field": "enrolment_label",
+        "type": "nominal",
+        "title": "Top-20 enrolments"
+      },
+      {
+        "field": "share_label",
+        "type": "nominal",
+        "title": "Share of top-20"
+      }
+    ]
+  },
+
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}
