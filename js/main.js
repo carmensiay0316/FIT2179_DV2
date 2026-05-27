@@ -24,3 +24,6 @@ vegaEmbed("#source_region_waffle_2025", "vega/source_region_waffle_2025.json", {
 
 vegaEmbed("#sector_donut_2025", "vega/sector_donut_2025.json", { actions: false })
   .catch(console.error);
+
+vegaEmbed("#migration_diverging_flow", "vega/migration_diverging_flow.json", { actions: false })
+  .catch(console.error);

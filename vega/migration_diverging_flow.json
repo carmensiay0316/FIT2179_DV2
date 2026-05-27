@@ -1,0 +1,103 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 820,
+  "height": 460,
+
+  "data": {
+    "url": "data/abs_student_migration_flow.csv"
+  },
+
+  "transform": [
+    {
+      "filter": "datum.state_abbr == 'AUS'"
+    }
+  ],
+
+  "layer": [
+    {
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": "Financial year",
+          "axis": {
+            "labelAngle": -45
+          }
+        },
+        "y": {
+          "field": "plot_value",
+          "type": "quantitative",
+          "title": "Overseas migrant movements",
+          "axis": {
+            "format": "~s"
+          }
+        },
+        "color": {
+          "field": "visa_group",
+          "type": "nominal",
+          "title": "Student visa category",
+          "scale": {
+            "domain": [
+              "Student - higher education",
+              "Student - VET",
+              "Student - other"
+            ],
+            "range": [
+              "#2F6DA3",
+              "#6FAF8F",
+              "#E3C66B"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "ordinal",
+            "title": "Year"
+          },
+          {
+            "field": "direction",
+            "type": "nominal",
+            "title": "Direction"
+          },
+          {
+            "field": "visa_group",
+            "type": "nominal",
+            "title": "Visa category"
+          },
+          {
+            "field": "migration_count",
+            "type": "quantitative",
+            "title": "Migration movements",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#333333",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "y": {
+          "datum": 0
+        }
+      }
+    }
+  ],
+
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}
