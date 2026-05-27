@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Where Do International Students Shape Australia?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mapping the Geography of International Student Enrolments in Australia</title>
 
   <link rel="stylesheet" href="css/style.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/vega@6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
 
 <body>
   <main>
+
     <section class="hero">
-      <h1>Mapping the Influence of International Students Across Australia</h1>
+      <h1>Mapping the Geography of International Student Enrolments in Australia</h1>
       <p>
-        International students are concentrated in a few Australian states
-        and come from a small number of major source countries.
+        This visualisation explores how international student enrolments are distributed
+        across Australian states, source countries and education sectors. It shows that
+        enrolments are concentrated in a few major states, rely heavily on several source
+        countries, and are mainly driven by Higher Education and VET.
       </p>
     </section>
 
     <section class="chart-section">
-      <h2>A few states and countries dominate the enrolment picture</h2>
+      <h2>Enrolment concentration across states and source countries</h2>
       <p>
-        International student enrolments in 2025 were concentrated in both a small
-        number of Australian states and a small number of source countries.
+        The first section introduces the main concentration pattern. International student
+        enrolments in 2025 were concentrated in both a small number of Australian states
+        and a small number of source countries.
       </p>
 
       <div class="chart-grid">
@@ -52,64 +59,67 @@
     </section>
 
     <section class="chart-section">
-    <h2>The geography of enrolments is concentrated along Australia’s east coast</h2>
-    <p>
-      The map shows that international student enrolments in 2025 were concentrated
-      in New South Wales and Victoria, with Queensland forming a second tier.
-      Western Australia and South Australia also contributed meaningful enrolments,
-      while smaller jurisdictions such as Tasmania, the Northern Territory and the
-      Australian Capital Territory had much lower totals.
-    </p>
+      <h2>The spatial footprint of international student enrolments</h2>
+      <p>
+        The maps translate the state ranking into geography. The choropleth map shows
+        where enrolments are concentrated, while the proportional symbol map makes the
+        size gap between states more visible.
+      </p>
 
-    <div class="chart-card">
-      <div id="map_state_2025"></div>
-    </div>
+      <div class="chart-grid">
+        <div class="chart-card map-card">
+          <h3>Choropleth map of state enrolments</h3>
+          <p>
+            The choropleth map highlights the east-coast concentration, especially in
+            New South Wales and Victoria, with Queensland forming a second tier.
+          </p>
+          <div id="map_state_2025"></div>
+        </div>
+
+        <div class="chart-card map-card">
+          <h3>Proportional symbol map of state enrolments</h3>
+          <p>
+            The proportional symbol map uses circle size to emphasise the magnitude of
+            enrolment differences between states. Larger circles over New South Wales
+            and Victoria show how strongly enrolments are concentrated in the south-east.
+          </p>
+          <div id="map_symbol_state_2025"></div>
+        </div>
+      </div>
     </section>
 
     <section class="chart-section">
-    <h2>Circle size makes the state gap more visible</h2>
-    <p>
-      The proportional symbol map shows the same state-level enrolment pattern in
-      another way. Larger circles appear over New South Wales and Victoria,
-      reinforcing how strongly enrolments are concentrated in the south-east.
-    </p>
+      <h2>Sector composition and ranking changes from 2019 to 2025</h2>
+      <p>
+        The sector charts show how international student enrolments changed over time.
+        Higher Education and VET remained the two largest sectors, while ELICOS was
+        more disrupted during the pandemic period.
+      </p>
 
-    <div class="chart-card map-card">
-      <div id="map_symbol_state_2025"></div>
-    </div>
+      <div class="chart-grid">
+        <div class="chart-card">
+          <h3>Sector enrolment composition over time</h3>
+          <p>
+            The stacked area chart shows the enrolment volume of each education sector
+            from 2019 to 2025. Higher Education and VET dominate the overall pattern.
+          </p>
+          <div id="sector_area_2019_2025"></div>
+        </div>
+
+        <div class="chart-card">
+          <h3>Sector ranking over time</h3>
+          <p>
+            The bump chart ranks education sectors by enrolments each year. It shows
+            that the largest sectors mostly stayed in the same order across the period.
+          </p>
+          <div id="sector_bump_2019_2025"></div>
+        </div>
+      </div>
     </section>
-
-    <section class="chart-section">
-    <h2>Higher Education and VET dominate the sector pattern</h2>
-    <p>
-      Sector enrolments changed unevenly between 2019 and 2025. Higher Education
-      and VET remained the largest sectors, while ELICOS declined sharply during
-      the pandemic period and did not return to its earlier level by 2025.
-    </p>
-
-    <div class="chart-card">
-      <div id="sector_area_2019_2025"></div>
-    </div>
-    </section>
-
-    <section class="chart-section">
-    <h2>The largest sectors mostly stayed in the same order</h2>
-    <p>
-      The bump chart ranks education sectors by enrolments each year. Higher
-      Education and VET remained the two largest sectors across the period, while
-      ELICOS dropped during the pandemic period and did not regain its earlier
-      position by 2025.
-    </p>
-
-    <div class="chart-card">
-      <div id="sector_bump_2019_2025"></div>
-    </div>
-    </section>
-
-    
 
   </main>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
