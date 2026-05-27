@@ -1,0 +1,195 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "width": 700,
+  "height": 300,
+
+  "title": {
+    "text": "Education export income by sector and financial year",
+    "subtitle": "Values are shown in A$ billion. Darker cells indicate higher export income.",
+    "anchor": "start",
+    "fontSize": 15,
+    "subtitleFontSize": 11,
+    "subtitleColor": "#555"
+  },
+
+  "data": {
+    "url": "data/sector_export_income.csv"
+  },
+
+  "transform": [
+    {
+      "fold": [
+        "2019-20",
+        "2020-21",
+        "2021-22",
+        "2022-23",
+        "2023-24",
+        "2024-25"
+      ],
+      "as": ["financial_year", "income_million"]
+    },
+    {
+      "calculate": "toNumber(datum.income_million)",
+      "as": "income_million_num"
+    },
+    {
+      "calculate": "datum.income_million_num / 1000",
+      "as": "income_billion"
+    },
+    {
+      "calculate": "format(datum.income_billion, '.1f')",
+      "as": "income_label"
+    }
+  ],
+
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "financial_year",
+          "type": "ordinal",
+          "title": "Financial year",
+          "sort": [
+            "2019-20",
+            "2020-21",
+            "2021-22",
+            "2022-23",
+            "2023-24",
+            "2024-25"
+          ],
+          "axis": {
+            "labelAngle": 0,
+            "labelFontSize": 11,
+            "titleFontSize": 12
+          }
+        },
+
+        "y": {
+          "field": "sector",
+          "type": "nominal",
+          "title": null,
+          "sort": [
+            "Higher Education",
+            "VET",
+            "ELICOS",
+            "Schools",
+            "Non-award",
+            "New Zealand",
+            "AusAID/Defence"
+          ],
+          "axis": {
+            "labelFontSize": 11
+          }
+        },
+
+        "color": {
+          "field": "income_billion",
+          "type": "quantitative",
+          "title": "Export income, A$ billion",
+          "scale": {
+            "scheme": "blues",
+            "type": "sqrt"
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "gradientLength": 300,
+            "titleAnchor": "middle",
+            "titleFontSize": 11,
+            "labelFontSize": 10
+          }
+        },
+
+        "tooltip": [
+          {
+            "field": "sector",
+            "type": "nominal",
+            "title": "Sector"
+          },
+          {
+            "field": "financial_year",
+            "type": "ordinal",
+            "title": "Financial year"
+          },
+          {
+            "field": "income_million_num",
+            "type": "quantitative",
+            "title": "Export income, A$ million",
+            "format": ","
+          },
+          {
+            "field": "income_billion",
+            "type": "quantitative",
+            "title": "Export income, A$ billion",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": {
+          "field": "financial_year",
+          "type": "ordinal",
+          "sort": [
+            "2019-20",
+            "2020-21",
+            "2021-22",
+            "2022-23",
+            "2023-24",
+            "2024-25"
+          ]
+        },
+
+        "y": {
+          "field": "sector",
+          "type": "nominal",
+          "sort": [
+            "Higher Education",
+            "VET",
+            "ELICOS",
+            "Schools",
+            "Non-award",
+            "New Zealand",
+            "AusAID/Defence"
+          ]
+        },
+
+        "text": {
+          "field": "income_label",
+          "type": "nominal"
+        },
+
+        "color": {
+          "condition": {
+            "test": "datum.income_billion > 8",
+            "value": "white"
+          },
+          "value": "#111827"
+        }
+      }
+    }
+  ],
+
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Arial",
+    "axis": {
+      "grid": false
+    }
+  }
+}

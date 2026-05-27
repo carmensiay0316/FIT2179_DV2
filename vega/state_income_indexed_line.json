@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "width": 760,
+  "height": 430,
+
+  "title": {
+    "text": "How did education export income recover across states?",
+    "subtitle": "Indexed education export income, where 2019–20 = 100.",
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#555"
+  },
+
+  "data": {
+    "url": "data/education_export_income.csv"
+  },
+
+  "transform": [
+    {
+      "fold": [
+        "2019-20",
+        "2020-21",
+        "2021-22",
+        "2022-23",
+        "2023-24",
+        "2024-25"
+      ],
+      "as": ["financial_year", "income_million"]
+    },
+    {
+      "calculate": "datum.income_million / datum['2019-20'] * 100",
+      "as": "income_index"
+    },
+    {
+      "calculate": "datum.income_million / 1000",
+      "as": "income_billion"
+    }
+  ],
+
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "strokeDash": [4, 4],
+        "color": "#777"
+      },
+      "encoding": {
+        "y": {
+          "datum": 100
+        }
+      }
+    },
+
+    {
+      "mark": {
+        "type": "line",
+        "point": true,
+        "strokeWidth": 2.5
+      },
+
+      "encoding": {
+        "x": {
+          "field": "financial_year",
+          "type": "ordinal",
+          "title": "Financial year",
+          "sort": [
+            "2019-20",
+            "2020-21",
+            "2021-22",
+            "2022-23",
+            "2023-24",
+            "2024-25"
+          ],
+          "axis": {
+            "labelAngle": 0
+          }
+        },
+
+        "y": {
+          "field": "income_index",
+          "type": "quantitative",
+          "title": "Index, 2019–20 = 100"
+        },
+
+        "color": {
+          "field": "State",
+          "type": "nominal",
+          "title": "State"
+        },
+
+        "tooltip": [
+          {
+            "field": "State",
+            "type": "nominal",
+            "title": "State"
+          },
+          {
+            "field": "financial_year",
+            "type": "ordinal",
+            "title": "Financial year"
+          },
+          {
+            "field": "income_million",
+            "type": "quantitative",
+            "title": "Export income, A$ million",
+            "format": ","
+          },
+          {
+            "field": "income_billion",
+            "type": "quantitative",
+            "title": "Export income, A$ billion",
+            "format": ".1f"
+          },
+          {
+            "field": "income_index",
+            "type": "quantitative",
+            "title": "Index, 2019–20 = 100",
+            "format": ".1f"
+          }
+        ]
+      }
+    }
+  ],
+
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Arial",
+    "axis": {
+      "grid": true,
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    }
+  }
+}

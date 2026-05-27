@@ -16,13 +16,15 @@ vegaEmbed("#sector_bump_2019_2025", "vega/sector_bump_2019to2025.json", { action
 vegaEmbed("#map_symbol_state_2025", "vega/symbol_map_state_2025.json", { actions: false })
   .catch(console.error);
 
-vegaEmbed("#state_tile_2025", "vega/state_tile_2025.json", { actions: false })
-  .catch(console.error);
-
 vegaEmbed("#source_region_waffle_2025", "vega/source_region_waffle_2025.json", { actions: false })
   .catch(console.error);
 
-vegaEmbed("#sector_donut_2025", "vega/sector_donut_2025.json", { actions: false })
+vegaEmbed("#state_income_indexed_line", "vega/state_income_indexed_line.json", {
+  actions: false})
+  .catch(console.error);
+
+vegaEmbed("#sector_income_heatmap", "vega/sector_income_heatmap.json", {
+  actions: false})
   .catch(console.error);
 
 vegaEmbed("#migration_diverging_flow", "vega/migration_diverging_flow.json", { actions: false })

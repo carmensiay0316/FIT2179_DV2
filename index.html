@@ -118,26 +118,6 @@
     </section>
 
     <section class="chart-section">
-    <h2>A simplified state map makes smaller jurisdictions easier to compare</h2>
-    <p>
-      The tile map gives each state and territory equal visual space. This makes
-      smaller jurisdictions such as the ACT and Tasmania easier to compare with
-      larger states, while still showing the strong concentration in New South
-      Wales and Victoria.
-    </p>
-
-    <div class="chart-card">
-      <h3>Australia state tile map</h3>
-      <p>
-        Each tile represents one Australian state or territory. Colour shows the
-        number of international student enrolments in 2025.
-      </p>
-
-      <div id="state_tile_2025"></div>
-    </div>
-    </section>
-
-    <section class="chart-section">
     <h2>Regional source markets reveal broader enrolment dependence</h2>
     <p>
     Grouping the top source countries into broader regions shows that
@@ -160,23 +140,56 @@
     </section>
 
     <section class="chart-section">
-    <h2>Higher Education and VET make up most sector enrolments in 2025</h2>
+    <h2>Export income recovery by state</h2>
     <p>
-      The donut chart shows the sector composition of international student
-      enrolments in 2025. Higher Education and VET account for most enrolments,
-      while ELICOS, Non-award and Schools form smaller parts of the sector mix.
+      Enrolment counts show where international students study, but education
+      export income shows the economic value of international education. This view
+      compares how each state's export income changed relative to its 2019–20 level.
     </p>
 
     <div class="chart-card">
-      <h3>Education sector composition in 2025</h3>
+      <h3>Indexed education export income across Australian states</h3>
       <p>
-        Each slice represents one education sector. Slice size shows the number
-        of international student enrolments in 2025.
+        The index is set to 100 in 2019–20 for each state. Values above 100 mean
+        that export income has recovered beyond the 2019–20 level, while values
+        below 100 indicate that export income remained lower than the baseline.
+        Hover over the lines to view each state's exact export income and recovery index.
       </p>
 
-      <div id="sector_donut_2025"></div>
+      <div id="state_income_indexed_line"></div>
     </div>
     </section>
+
+    <section class="chart-section">
+    <h2>Export income differs strongly across education sectors</h2>
+    <p>
+      Student enrolments show the size of international education, but export
+      income shows its economic value. This view compares how much income each
+      education sector contributed across financial years.
+    </p>
+
+    <div class="chart-card">
+      <h3>Education export income by sector and financial year</h3>
+      <p>
+        Darker cells indicate higher export income. The heatmap makes it easier
+        to compare both sector differences and the pandemic-related decline across
+        years.
+      </p>
+
+      <div id="sector_income_heatmap"></div>
+
+      <p class="chart-note">
+        Higher Education generated the largest export income across all years.
+        Most sectors declined during the pandemic-affected years before recovering
+        after 2022–23.
+      </p>
+
+      <p class="source-note">
+        Source: Australian Government Department of Education, Education export income, financial year.
+      </p>
+    </div>
+    </section>
+
 
     <section class="chart-section">
     <h2>Student enrolments sit within broader migration flows</h2>
