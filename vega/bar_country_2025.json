@@ -1,89 +1,656 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 340,
-  "height": 320,
-  "data": {
-    "url": "data/students_country_2025_top20.csv"
-  },
-  "encoding": {
-    "y": {
-      "field": "country",
-      "type": "nominal",
-      "sort": {
-        "field": "enrolments",
-        "op": "sum",
-        "order": "descending"
-      },
-      "title": null,
-      "axis": {
-        "labelFontSize": 12,
-        "labelLimit": 180
-      }
-    },
-    "x": {
-      "field": "enrolments",
-      "type": "quantitative",
-      "title": "International student enrolments in 2025",
-      "scale": {
-        "domain": [0, 250000]
-      },
-      "axis": {
-        "values": [0, 50000, 100000, 150000, 200000, 250000],
-        "labelExpr": "format(datum.value, ',')",
-        "labelFontSize": 11,
-        "titleFontSize": 12
-      }
-    },
-    "tooltip": [
-      {
-        "field": "country",
-        "type": "nominal",
-        "title": "Source country"
-      },
-      {
-        "field": "enrolments",
-        "type": "quantitative",
-        "title": "Enrolments",
-        "format": ","
-      }
-    ]
-  },
-  "layer": [
+  "vconcat": [
     {
-      "mark": {
-        "type": "rule",
-        "strokeWidth": 2
+      "width": 760,
+      "height": 360,
+      "title": {
+        "text": "Geographic location of the top 20 source countries",
+        "anchor": "start",
+        "fontSize": 15
       },
-      "encoding": {
-        "x": {
-          "datum": 0
+      "projection": {
+        "type": "equalEarth"
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "https://vega.github.io/vega-datasets/data/world-110m.json",
+            "format": {
+              "type": "topojson",
+              "feature": "countries"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": "#eeeeee",
+            "stroke": "white",
+            "strokeWidth": 0.4
+          }
         },
-        "x2": {
-          "field": "enrolments"
+        {
+          "data": {
+            "url": "data/students_country_top20_geo.csv",
+            "format": {
+              "type": "csv",
+              "parse": {
+                "longitude": "number",
+                "latitude": "number",
+                "enrolments": "number"
+              }
+            }
+          },
+          "transform": [
+            {
+              "calculate": "isValid(datum.nationality) ? datum.nationality : datum.country",
+              "as": "country_name"
+            }
+          ],
+          "params": [
+            {
+              "name": "country_pick_map",
+              "select": {
+                "type": "point",
+                "fields": ["country_name"],
+                "on": "click",
+                "clear": false,
+                "toggle": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "stroke": "white",
+            "strokeWidth": 1,
+            "cursor": "pointer",
+            "tooltip": true
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "size": {
+              "field": "enrolments",
+              "type": "quantitative",
+              "scale": {
+                "domain": [0, 340000],
+                "range": [80, 3200]
+              },
+              "legend": null
+            },
+            "color": {
+              "condition": {
+                "param": "country_pick_map",
+                "empty": false,
+                "value": "#E76F51"
+              },
+              "value": "#AFC2D5",
+              "legend": null
+            },
+            "opacity": {
+              "condition": {
+                "param": "country_pick_map",
+                "empty": false,
+                "value": 1
+              },
+              "value": 0.75
+            },
+            "tooltip": [
+              {
+                "field": "country_name",
+                "type": "nominal",
+                "title": "Source country"
+              },
+              {
+                "field": "region",
+                "type": "nominal",
+                "title": "Source region"
+              },
+              {
+                "field": "enrolments",
+                "type": "quantitative",
+                "title": "2025 enrolments",
+                "format": ",.0f"
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "url": "data/students_country_top20_geo.csv",
+            "format": {
+              "type": "csv",
+              "parse": {
+                "longitude": "number",
+                "latitude": "number",
+                "enrolments": "number"
+              }
+            }
+          },
+          "transform": [
+            {
+              "calculate": "isValid(datum.nationality) ? datum.nationality : datum.country",
+              "as": "country_name"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "dx": 7,
+            "dy": -7,
+            "fontSize": 9
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "country_name",
+              "type": "nominal"
+            },
+            "color": {
+              "condition": {
+                "param": "country_pick_map",
+                "empty": false,
+                "value": "#C44536"
+              },
+              "value": "#4A4A4A"
+            },
+            "opacity": {
+              "condition": {
+                "param": "country_pick_map",
+                "empty": false,
+                "value": 1
+              },
+              "value": 0.75
+            }
+          }
         }
-      }
+      ]
     },
     {
-      "mark": {
-        "type": "circle",
-        "size": 160
-      }
-    },
-    {
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "baseline": "middle",
-        "dx": 8,
-        "fontSize": 12
+      "width": 760,
+      "height": 95,
+      "data": {
+        "values": [
+          {
+            "x_pos": 240,
+            "enrolments": 50000,
+            "label": "50,000"
+          },
+          {
+            "x_pos": 370,
+            "enrolments": 100000,
+            "label": "100,000"
+          },
+          {
+            "x_pos": 510,
+            "enrolments": 150000,
+            "label": "150,000"
+          },
+          {
+            "x_pos": 650,
+            "enrolments": 200000,
+            "label": "200,000"
+          }
+        ]
       },
-      "encoding": {
-        "text": {
-          "field": "enrolments",
-          "type": "quantitative",
-          "format": ","
+      "layer": [
+        {
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "color": "#222"
+          },
+          "encoding": {
+            "x": {
+              "value": 430
+            },
+            "y": {
+              "value": 14
+            },
+            "text": {
+              "value": "Country total enrolments"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "circle",
+            "fill": "#AFC2D5",
+            "stroke": "white",
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "x": {
+              "field": "x_pos",
+              "type": "quantitative",
+              "scale": {
+                "domain": [0, 760]
+              },
+              "axis": null
+            },
+            "y": {
+              "value": 42
+            },
+            "size": {
+              "field": "enrolments",
+              "type": "quantitative",
+              "scale": {
+                "domain": [0, 340000],
+                "range": [80, 3200]
+              },
+              "legend": null
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "top",
+            "dy": 22,
+            "fontSize": 11,
+            "color": "#333"
+          },
+          "encoding": {
+            "x": {
+              "field": "x_pos",
+              "type": "quantitative",
+              "scale": {
+                "domain": [0, 760]
+              },
+              "axis": null
+            },
+            "y": {
+              "value": 42
+            },
+            "text": {
+              "field": "label",
+              "type": "nominal"
+            }
+          }
         }
-      }
+      ]
+    },
+    {
+      "width": 760,
+      "height": 320,
+      "title": {
+        "text": "Top 20 source countries by international student enrolments",
+        "anchor": "start",
+        "fontSize": 15
+      },
+      "data": {
+        "url": "data/students_country_top20_geo.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "enrolments": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "calculate": "isValid(datum.nationality) ? datum.nationality : datum.country",
+          "as": "country_name"
+        }
+      ],
+      "encoding": {
+        "y": {
+          "field": "country_name",
+          "type": "nominal",
+          "sort": {
+            "field": "enrolments",
+            "op": "sum",
+            "order": "descending"
+          },
+          "title": null,
+          "axis": {
+            "labelLimit": 180
+          }
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "bar",
+            "size": 3
+          },
+          "encoding": {
+            "x": {
+              "field": "enrolments",
+              "type": "quantitative",
+              "title": "International student enrolments in 2025",
+              "scale": {
+                "domain": [0, 340000]
+              },
+              "axis": {
+                "format": ",.0f"
+              }
+            },
+            "color": {
+              "condition": {
+                "param": "country_pick_map",
+                "empty": false,
+                "value": "#E76F51"
+              },
+              "value": "#A7B6C2",
+              "legend": null
+            },
+            "opacity": {
+              "condition": {
+                "param": "country_pick_map",
+                "empty": false,
+                "value": 1
+              },
+              "value": 0.65
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "circle",
+            "size": 95,
+            "tooltip": true
+          },
+          "encoding": {
+            "x": {
+              "field": "enrolments",
+              "type": "quantitative",
+              "title": "International student enrolments in 2025",
+              "scale": {
+                "domain": [0, 340000]
+              },
+              "axis": {
+                "format": ",.0f"
+              }
+            },
+            "color": {
+              "condition": {
+                "param": "country_pick_map",
+                "empty": false,
+                "value": "#E76F51"
+              },
+              "value": "#AFC2D5",
+              "legend": null
+            },
+            "opacity": {
+              "condition": {
+                "param": "country_pick_map",
+                "empty": false,
+                "value": 1
+              },
+              "value": 0.65
+            },
+            "tooltip": [
+              {
+                "field": "country_name",
+                "type": "nominal",
+                "title": "Source country"
+              },
+              {
+                "field": "region",
+                "type": "nominal",
+                "title": "Source region"
+              },
+              {
+                "field": "enrolments",
+                "type": "quantitative",
+                "title": "2025 enrolments",
+                "format": ",.0f"
+              }
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "dx": 8,
+            "fontSize": 11,
+            "color": "#333"
+          },
+          "encoding": {
+            "x": {
+              "field": "enrolments",
+              "type": "quantitative",
+              "scale": {
+                "domain": [0, 340000]
+              }
+            },
+            "text": {
+              "field": "enrolments",
+              "type": "quantitative",
+              "format": ",.0f"
+            },
+            "opacity": {
+              "condition": {
+                "param": "country_pick_map",
+                "empty": false,
+                "value": 1
+              },
+              "value": 0.65
+            }
+          }
+        },
+        {
+          "data": {
+            "url": "data/students_country_top20_geo.csv",
+            "format": {
+              "type": "csv",
+              "parse": {
+                "enrolments": "number"
+              }
+            }
+          },
+          "transform": [
+            {
+              "calculate": "isValid(datum.nationality) ? datum.nationality : datum.country",
+              "as": "country_name"
+            },
+            {
+              "filter": {
+                "param": "country_pick_map",
+                "empty": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "rect",
+            "fill": "#FFF7ED",
+            "stroke": "#E76F51",
+            "strokeWidth": 1,
+            "cornerRadius": 6,
+            "opacity": 0.95
+          },
+          "encoding": {
+            "x": {
+              "value": 545
+            },
+            "x2": {
+              "value": 755
+            },
+            "y": {
+              "value": 32
+            },
+            "y2": {
+              "value": 128
+            }
+          }
+        },
+        {
+          "data": {
+            "url": "data/students_country_top20_geo.csv",
+            "format": {
+              "type": "csv",
+              "parse": {
+                "enrolments": "number"
+              }
+            }
+          },
+          "transform": [
+            {
+              "calculate": "isValid(datum.nationality) ? datum.nationality : datum.country",
+              "as": "country_name"
+            },
+            {
+              "filter": {
+                "param": "country_pick_map",
+                "empty": false
+              }
+            },
+            {
+              "calculate": "'Source country: ' + datum.country_name",
+              "as": "country_label"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 11,
+            "fontWeight": "bold",
+            "color": "#C44536",
+            "limit": 190
+          },
+          "encoding": {
+            "x": {
+              "value": 560
+            },
+            "y": {
+              "value": 46
+            },
+            "text": {
+              "field": "country_label",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "url": "data/students_country_top20_geo.csv",
+            "format": {
+              "type": "csv",
+              "parse": {
+                "enrolments": "number"
+              }
+            }
+          },
+          "transform": [
+            {
+              "calculate": "isValid(datum.nationality) ? datum.nationality : datum.country",
+              "as": "country_name"
+            },
+            {
+              "filter": {
+                "param": "country_pick_map",
+                "empty": false
+              }
+            },
+            {
+              "calculate": "'Source region: ' + datum.region",
+              "as": "region_label"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 11,
+            "color": "#333",
+            "limit": 190
+          },
+          "encoding": {
+            "x": {
+              "value": 560
+            },
+            "y": {
+              "value": 72
+            },
+            "text": {
+              "field": "region_label",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "url": "data/students_country_top20_geo.csv",
+            "format": {
+              "type": "csv",
+              "parse": {
+                "enrolments": "number"
+              }
+            }
+          },
+          "transform": [
+            {
+              "calculate": "isValid(datum.nationality) ? datum.nationality : datum.country",
+              "as": "country_name"
+            },
+            {
+              "filter": {
+                "param": "country_pick_map",
+                "empty": false
+              }
+            },
+            {
+              "calculate": "'2025 enrolments: ' + format(datum.enrolments, ',.0f')",
+              "as": "enrolment_label"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 11,
+            "color": "#333",
+            "limit": 190
+          },
+          "encoding": {
+            "x": {
+              "value": 560
+            },
+            "y": {
+              "value": 96
+            },
+            "text": {
+              "field": "enrolment_label",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
     }
-  ]
+  ],
+  "spacing": 18,
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "background": "white",
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    }
+  }
 }
