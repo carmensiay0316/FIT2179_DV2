@@ -1,0 +1,161 @@
+state_code,state_name,region,nationality,year,enrolments,state_total,rank_in_state,share_of_state
+ACT,Australian Capital Territory,North-East Asia,China,2025,8487,21714,1,0.3908538270240398
+ACT,Australian Capital Territory,Southern and Central Asia,India,2025,3649,21714,2,0.16804826379294466
+ACT,Australian Capital Territory,Southern and Central Asia,Nepal,2025,2168,21714,3,0.09984341899235516
+ACT,Australian Capital Territory,Southern and Central Asia,Bhutan,2025,1347,21714,4,0.06203371096988118
+ACT,Australian Capital Territory,South-East Asia,Philippines,2025,654,21714,5,0.030118817352859907
+ACT,Australian Capital Territory,South-East Asia,Vietnam,2025,599,21714,6,0.027585889288016946
+ACT,Australian Capital Territory,Southern and Central Asia,Pakistan,2025,514,21714,7,0.023671364096896012
+ACT,Australian Capital Territory,South-East Asia,Indonesia,2025,454,21714,8,0.020908169844340057
+ACT,Australian Capital Territory,Southern and Central Asia,Bangladesh,2025,386,21714,9,0.017776549691443308
+ACT,Australian Capital Territory,North-East Asia,"Korea, Republic of (South)",2025,255,21714,10,0.011743575573362808
+ACT,Australian Capital Territory,South-East Asia,Malaysia,2025,240,21714,11,0.011052777010223818
+ACT,Australian Capital Territory,North-East Asia,Hong Kong SAR,2025,206,21714,12,0.009486966933775444
+ACT,Australian Capital Territory,North-East Asia,Taiwan,2025,206,21714,13,0.009486966933775444
+ACT,Australian Capital Territory,Southern and Central Asia,Sri Lanka,2025,193,21714,14,0.008888274845721654
+ACT,Australian Capital Territory,North-East Asia,Japan,2025,166,21714,15,0.007644837432071475
+ACT,Australian Capital Territory,North-West Europe,United Kingdom,2025,137,21714,16,0.006309293543336096
+ACT,Australian Capital Territory,South-East Asia,Thailand,2025,135,21714,17,0.006217187068250898
+ACT,Australian Capital Territory,Americas,Colombia,2025,132,21714,18,0.0060790273556231
+ACT,Australian Capital Territory,South-East Asia,Singapore,2025,106,21714,19,0.00488164317951552
+ACT,Australian Capital Territory,Americas,United States of America,2025,92,21714,20,0.004236897853919131
+NSW,New South Wales,North-East Asia,China,2025,106094,403139,1,0.26316977518920276
+NSW,New South Wales,Southern and Central Asia,Nepal,2025,55279,403139,2,0.1371214395034963
+NSW,New South Wales,Southern and Central Asia,India,2025,44632,403139,3,0.11071119390582404
+NSW,New South Wales,South-East Asia,Philippines,2025,16420,403139,4,0.04073036843371641
+NSW,New South Wales,South-East Asia,Indonesia,2025,16361,403139,5,0.04058401692716408
+NSW,New South Wales,Southern and Central Asia,Bangladesh,2025,15762,403139,6,0.03909817705555652
+NSW,New South Wales,South-East Asia,Vietnam,2025,15624,403139,7,0.03875586336226463
+NSW,New South Wales,South-East Asia,Thailand,2025,13600,403139,8,0.03373526252731688
+NSW,New South Wales,Americas,Brazil,2025,13028,403139,9,0.03231639707396208
+NSW,New South Wales,Southern and Central Asia,Pakistan,2025,12549,403139,10,0.031128221283477905
+NSW,New South Wales,Americas,Colombia,2025,12281,403139,11,0.030463438168969015
+NSW,New South Wales,North-East Asia,"Korea, Republic of (South)",2025,8025,403139,12,0.019906285425126322
+NSW,New South Wales,North-East Asia,Mongolia,2025,6513,403139,13,0.01615571800297168
+NSW,New South Wales,South-East Asia,Malaysia,2025,4653,403139,14,0.011541924745559224
+NSW,New South Wales,North-East Asia,Taiwan,2025,4504,403139,15,0.011172325178164355
+NSW,New South Wales,North-East Asia,Hong Kong SAR,2025,4118,403139,16,0.010214839050550803
+NSW,New South Wales,Americas,United States of America,2025,3955,403139,17,0.009810512007024872
+NSW,New South Wales,North-East Asia,Japan,2025,3660,403139,18,0.009078754474263219
+NSW,New South Wales,Oceania and Antarctica,Fiji,2025,3355,403139,19,0.00832219160140795
+NSW,New South Wales,Sub-Saharan Africa,Kenya,2025,2972,403139,20,0.007372147075822483
+NT,Northern Territory,Southern and Central Asia,Nepal,2025,1557,5967,1,0.2609351432880845
+NT,Northern Territory,Southern and Central Asia,India,2025,1177,5967,2,0.19725155019272667
+NT,Northern Territory,Southern and Central Asia,Bangladesh,2025,682,5967,3,0.114295290765879
+NT,Northern Territory,South-East Asia,Philippines,2025,553,5967,4,0.09267638679403385
+NT,Northern Territory,South-East Asia,Vietnam,2025,402,5967,5,0.06737053795877325
+NT,Northern Territory,North-East Asia,China,2025,316,5967,6,0.05295793531087649
+NT,Northern Territory,Southern and Central Asia,Pakistan,2025,284,5967,7,0.04759510641863583
+NT,Northern Territory,South-East Asia,Indonesia,2025,155,5967,8,0.02597620244679068
+NT,Northern Territory,Southern and Central Asia,Sri Lanka,2025,133,5967,9,0.02228925758337523
+NT,Northern Territory,Sub-Saharan Africa,Kenya,2025,75,5967,10,0.01256913021618904
+NT,Northern Territory,Americas,Colombia,2025,69,5967,11,0.011563599798893917
+NT,Northern Territory,South-East Asia,Thailand,2025,48,5967,12,0.008044243338360985
+NT,Northern Territory,Southern and Central Asia,Bhutan,2025,39,5967,13,0.006535947712418301
+NT,Northern Territory,Sub-Saharan Africa,Nigeria,2025,38,5967,14,0.00636835930953578
+NT,Northern Territory,Americas,Brazil,2025,34,5967,15,0.005698005698005698
+NT,Northern Territory,North-East Asia,Taiwan,2025,31,5967,16,0.005195240489358137
+NT,Northern Territory,North-West Europe,United Kingdom,2025,28,5967,17,0.004692475280710575
+NT,Northern Territory,Oceania and Antarctica,Fiji,2025,26,5967,18,0.004357298474945534
+NT,Northern Territory,Sub-Saharan Africa,Zimbabwe,2025,24,5967,19,0.004022121669180492
+NT,Northern Territory,South-East Asia,Cambodia,2025,19,5967,20,0.00318417965476789
+QLD,Queensland,North-East Asia,China,2025,24937,148589,1,0.16782534373338537
+QLD,Queensland,Southern and Central Asia,India,2025,22199,148589,2,0.14939867688725275
+QLD,Queensland,Americas,Brazil,2025,10772,148589,3,0.07249527219376939
+QLD,Queensland,South-East Asia,Philippines,2025,9538,148589,4,0.0641904851637739
+QLD,Queensland,Americas,Colombia,2025,8648,148589,5,0.0582008089427885
+QLD,Queensland,Southern and Central Asia,Nepal,2025,5716,148589,6,0.0384685272799467
+QLD,Queensland,North-East Asia,Japan,2025,4647,148589,7,0.031274185841482206
+QLD,Queensland,North-East Asia,Taiwan,2025,4450,148589,8,0.029948381104927015
+QLD,Queensland,North-East Asia,"Korea, Republic of (South)",2025,4446,148589,9,0.029921461211798988
+QLD,Queensland,South-East Asia,Thailand,2025,3803,148589,10,0.025594088391469087
+QLD,Queensland,South-East Asia,Vietnam,2025,3486,148589,11,0.023460686861073162
+QLD,Queensland,Southern and Eastern Europe,Spain,2025,2513,148589,12,0.016912422857681256
+QLD,Queensland,North-East Asia,Hong Kong SAR,2025,2484,148589,13,0.01671725363250308
+QLD,Queensland,Americas,United States of America,2025,2016,148589,14,0.013567626136524237
+QLD,Queensland,Americas,Chile,2025,2000,148589,15,0.013459946564012141
+QLD,Queensland,Southern and Central Asia,Bhutan,2025,1986,148589,16,0.013365726938064057
+QLD,Queensland,South-East Asia,Indonesia,2025,1982,148589,17,0.013338807044936032
+QLD,Queensland,Southern and Central Asia,Pakistan,2025,1844,148589,18,0.012410070732019194
+QLD,Queensland,Southern and Central Asia,Sri Lanka,2025,1773,148589,19,0.011932242628996764
+QLD,Queensland,Americas,Ecuador,2025,1647,148589,20,0.011084265995463999
+SA,South Australia,Southern and Central Asia,India,2025,15844,57327,1,0.2763793674882691
+SA,South Australia,North-East Asia,China,2025,10630,57327,2,0.1854274600101174
+SA,South Australia,Southern and Central Asia,Nepal,2025,4229,57327,3,0.07376977689395922
+SA,South Australia,South-East Asia,Vietnam,2025,3699,57327,4,0.06452456957454603
+SA,South Australia,South-East Asia,Philippines,2025,2246,57327,5,0.03917874648943779
+SA,South Australia,Americas,Colombia,2025,2114,57327,6,0.03687616655328205
+SA,South Australia,Southern and Central Asia,Bangladesh,2025,1869,57327,7,0.03260243864147784
+SA,South Australia,Southern and Central Asia,Sri Lanka,2025,1557,57327,8,0.02715997697420064
+SA,South Australia,North-East Asia,Hong Kong SAR,2025,1463,57327,9,0.025520260959059432
+SA,South Australia,Sub-Saharan Africa,Kenya,2025,1368,57327,10,0.023863101156523105
+SA,South Australia,Americas,Brazil,2025,1366,57327,11,0.023828213581732864
+SA,South Australia,Southern and Central Asia,Pakistan,2025,1096,57327,12,0.019118390985050675
+SA,South Australia,South-East Asia,Malaysia,2025,762,57327,13,0.013292165995080853
+SA,South Australia,North-East Asia,Japan,2025,737,57327,14,0.01285607131020287
+SA,South Australia,North-East Asia,Taiwan,2025,736,57327,15,0.012838627522807752
+SA,South Australia,South-East Asia,Thailand,2025,709,57327,16,0.012367645263139533
+SA,South Australia,South-East Asia,Indonesia,2025,639,57327,17,0.011146580145481188
+SA,South Australia,North-East Asia,"Korea, Republic of (South)",2025,564,57327,18,0.009838296090847245
+SA,South Australia,South-East Asia,Singapore,2025,536,57327,19,0.009349870043783907
+SA,South Australia,South-East Asia,Cambodia,2025,372,57327,20,0.006489088910984353
+TAS,Tasmania,Southern and Central Asia,Nepal,2025,1733,9427,1,0.18383366924790495
+TAS,Tasmania,Southern and Central Asia,India,2025,1457,9427,2,0.15455606237403205
+TAS,Tasmania,North-East Asia,China,2025,912,9427,3,0.09674339662671051
+TAS,Tasmania,Southern and Central Asia,Pakistan,2025,769,9427,4,0.08157420176089955
+TAS,Tasmania,Southern and Central Asia,Bangladesh,2025,716,9427,5,0.07595205261482975
+TAS,Tasmania,South-East Asia,Vietnam,2025,386,9427,6,0.040946218309112124
+TAS,Tasmania,Southern and Central Asia,Sri Lanka,2025,372,9427,7,0.0394611223082635
+TAS,Tasmania,South-East Asia,Philippines,2025,339,9427,8,0.03596053887769174
+TAS,Tasmania,Americas,Colombia,2025,313,9427,9,0.03320250344754429
+TAS,Tasmania,North-East Asia,Taiwan,2025,190,9427,10,0.020154874297231357
+TAS,Tasmania,North-East Asia,Hong Kong SAR,2025,161,9427,11,0.0170786040097592
+TAS,Tasmania,Americas,Brazil,2025,160,9427,12,0.016972525723984302
+TAS,Tasmania,South-East Asia,Malaysia,2025,138,9427,13,0.01463880343693646
+TAS,Tasmania,Sub-Saharan Africa,Kenya,2025,122,9427,14,0.01294155086453803
+TAS,Tasmania,South-East Asia,Indonesia,2025,106,9427,15,0.011244298292139599
+TAS,Tasmania,South-East Asia,Thailand,2025,98,9427,16,0.010395672005940384
+TAS,Tasmania,Sub-Saharan Africa,Nigeria,2025,96,9427,17,0.01018351543439058
+TAS,Tasmania,North-East Asia,"Korea, Republic of (South)",2025,92,9427,18,0.009759202291290972
+TAS,Tasmania,Americas,Chile,2025,91,9427,19,0.009653124005516071
+TAS,Tasmania,North-East Asia,Japan,2025,89,9427,20,0.009440967433966267
+VIC,Victoria,Southern and Central Asia,India,2025,78367,322347,1,0.2431137873161531
+VIC,Victoria,North-East Asia,China,2025,67069,322347,2,0.20806460119064238
+VIC,Victoria,South-East Asia,Vietnam,2025,18325,322347,3,0.056848675495661506
+VIC,Victoria,Southern and Central Asia,Sri Lanka,2025,17319,322347,4,0.05372781505644538
+VIC,Victoria,Southern and Central Asia,Nepal,2025,14071,322347,5,0.04365171693857861
+VIC,Victoria,Americas,Colombia,2025,13438,322347,6,0.041687994614499284
+VIC,Victoria,South-East Asia,Philippines,2025,12717,322347,7,0.039451274558162476
+VIC,Victoria,South-East Asia,Thailand,2025,9846,322347,8,0.030544723543262386
+VIC,Victoria,South-East Asia,Indonesia,2025,9576,322347,9,0.029707116864745135
+VIC,Victoria,Southern and Central Asia,Pakistan,2025,9295,322347,10,0.0288353854696957
+VIC,Victoria,South-East Asia,Malaysia,2025,8653,322347,11,0.02684374292299913
+VIC,Victoria,Southern and Central Asia,Bangladesh,2025,7744,322347,12,0.02402380043865772
+VIC,Victoria,North-East Asia,Taiwan,2025,4134,322347,13,0.01282468892218634
+VIC,Victoria,South-East Asia,Cambodia,2025,3560,322347,14,0.011043999168597815
+VIC,Victoria,North-East Asia,Hong Kong SAR,2025,3540,322347,15,0.01098195422944839
+VIC,Victoria,North-East Asia,Japan,2025,3463,322347,16,0.0107430812137231
+VIC,Victoria,Sub-Saharan Africa,Kenya,2025,3158,322347,17,0.009796895891694354
+VIC,Victoria,North-East Asia,"Korea, Republic of (South)",2025,3012,322347,18,0.009343967835903544
+VIC,Victoria,North Africa and the Middle East,Turkiye,2025,2789,322347,19,0.008652166764387445
+VIC,Victoria,Americas,Brazil,2025,2607,322347,20,0.00808755781812767
+WA,Western Australia,Southern and Central Asia,India,2025,15044,89530,1,0.16803306154361666
+WA,Western Australia,Southern and Central Asia,Bhutan,2025,11264,89530,2,0.12581257678990282
+WA,Western Australia,North-East Asia,China,2025,9015,89530,3,0.1006925053054842
+WA,Western Australia,Southern and Central Asia,Pakistan,2025,5450,89530,4,0.06087345024014297
+WA,Western Australia,South-East Asia,Philippines,2025,5199,89530,5,0.05806992069697308
+WA,Western Australia,Southern and Central Asia,Nepal,2025,4777,89530,6,0.05335641684351614
+WA,Western Australia,Southern and Central Asia,Bangladesh,2025,3731,89530,7,0.0416731821735731
+WA,Western Australia,Americas,Colombia,2025,2872,89530,8,0.032078632860493686
+WA,Western Australia,South-East Asia,Vietnam,2025,2835,89530,9,0.031665363565285376
+WA,Western Australia,Sub-Saharan Africa,Kenya,2025,2535,89530,10,0.028314531441974756
+WA,Western Australia,Southern and Central Asia,Sri Lanka,2025,2310,89530,11,0.02580140734949179
+WA,Western Australia,South-East Asia,Indonesia,2025,2306,89530,12,0.025756729587847648
+WA,Western Australia,Americas,Brazil,2025,2295,89530,13,0.02563386574332626
+WA,Western Australia,South-East Asia,Malaysia,2025,1712,89530,14,0.019122081983692616
+WA,Western Australia,North-East Asia,Japan,2025,1409,89530,15,0.015737741539148888
+WA,Western Australia,South-East Asia,Singapore,2025,1264,89530,16,0.014118172679548754
+WA,Western Australia,North-East Asia,Hong Kong SAR,2025,1239,89530,17,0.01383893666927287
+WA,Western Australia,Sub-Saharan Africa,Mauritius,2025,1042,89530,18,0.011638556908298894
+WA,Western Australia,North-East Asia,Taiwan,2025,1009,89530,19,0.011269965374734726
+WA,Western Australia,North-East Asia,"Korea, Republic of (South)",2025,833,89530,20,0.009304143862392493

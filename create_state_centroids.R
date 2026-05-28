@@ -17,8 +17,8 @@ state_locations <- tribble(
   "ACT", "Australian Capital Territory", 149.1, -35.3
 )
 
-students_state_centroids_2025 <- students_state_2025 %>%
-  left_join(state_locations, by = "state") %>%
+students_state_centroids_2025 <- students_state_2025 |
+  left_join(state_locations, by = "state") |
   select(state, state_name, longitude, latitude, enrolments)
 
 write_csv(

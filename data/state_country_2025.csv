@@ -1,0 +1,1106 @@
+state_code,state_name,region,nationality,year,enrolments,state_total,rank_in_state,share_of_state
+ACT,Australian Capital Territory,North-East Asia,China,2025,8487,21714,1,0.3908538270240398
+ACT,Australian Capital Territory,Southern and Central Asia,India,2025,3649,21714,2,0.16804826379294466
+ACT,Australian Capital Territory,Southern and Central Asia,Nepal,2025,2168,21714,3,0.09984341899235516
+ACT,Australian Capital Territory,Southern and Central Asia,Bhutan,2025,1347,21714,4,0.06203371096988118
+ACT,Australian Capital Territory,South-East Asia,Philippines,2025,654,21714,5,0.030118817352859907
+ACT,Australian Capital Territory,South-East Asia,Vietnam,2025,599,21714,6,0.027585889288016946
+ACT,Australian Capital Territory,Southern and Central Asia,Pakistan,2025,514,21714,7,0.023671364096896012
+ACT,Australian Capital Territory,South-East Asia,Indonesia,2025,454,21714,8,0.020908169844340057
+ACT,Australian Capital Territory,Southern and Central Asia,Bangladesh,2025,386,21714,9,0.017776549691443308
+ACT,Australian Capital Territory,North-East Asia,"Korea, Republic of (South)",2025,255,21714,10,0.011743575573362808
+ACT,Australian Capital Territory,South-East Asia,Malaysia,2025,240,21714,11,0.011052777010223818
+ACT,Australian Capital Territory,North-East Asia,Hong Kong SAR,2025,206,21714,12,0.009486966933775444
+ACT,Australian Capital Territory,North-East Asia,Taiwan,2025,206,21714,13,0.009486966933775444
+ACT,Australian Capital Territory,Southern and Central Asia,Sri Lanka,2025,193,21714,14,0.008888274845721654
+ACT,Australian Capital Territory,North-East Asia,Japan,2025,166,21714,15,0.007644837432071475
+ACT,Australian Capital Territory,North-West Europe,United Kingdom,2025,137,21714,16,0.006309293543336096
+ACT,Australian Capital Territory,South-East Asia,Thailand,2025,135,21714,17,0.006217187068250898
+ACT,Australian Capital Territory,Americas,Colombia,2025,132,21714,18,0.0060790273556231
+ACT,Australian Capital Territory,South-East Asia,Singapore,2025,106,21714,19,0.00488164317951552
+ACT,Australian Capital Territory,Americas,United States of America,2025,92,21714,20,0.004236897853919131
+ACT,Australian Capital Territory,North-East Asia,Mongolia,2025,86,21714,21,0.003960578428663535
+ACT,Australian Capital Territory,North Africa and the Middle East,Iran,2025,84,21714,22,0.0038684719535783366
+ACT,Australian Capital Territory,Americas,Brazil,2025,83,21714,23,0.0038224187160357374
+ACT,Australian Capital Territory,North Africa and the Middle East,Saudi Arabia,2025,79,21714,24,0.00363820576586534
+ACT,Australian Capital Territory,Oceania and Antarctica,Fiji,2025,77,21714,25,0.0035460992907801418
+ACT,Australian Capital Territory,Sub-Saharan Africa,Kenya,2025,64,21714,26,0.0029474072027263517
+ACT,Australian Capital Territory,South-East Asia,Cambodia,2025,61,21714,27,0.0028092474900985537
+ACT,Australian Capital Territory,Southern and Eastern Europe,Italy,2025,60,21714,28,0.0027631942525559545
+ACT,Australian Capital Territory,North-West Europe,France,2025,53,21714,29,0.00244082158975776
+ACT,Australian Capital Territory,North-West Europe,Germany,2025,52,21714,30,0.002394768352215161
+ACT,Australian Capital Territory,Sub-Saharan Africa,Nigeria,2025,47,21714,31,0.0021645021645021645
+ACT,Australian Capital Territory,Americas,Chile,2025,44,21714,32,0.002026342451874367
+ACT,Australian Capital Territory,Americas,Canada,2025,42,21714,33,0.0019342359767891683
+ACT,Australian Capital Territory,North Africa and the Middle East,Egypt,2025,35,21714,34,0.0016118633139909735
+ACT,Australian Capital Territory,South-East Asia,Laos,2025,35,21714,35,0.0016118633139909735
+ACT,Australian Capital Territory,Americas,Mexico,2025,32,21714,36,0.0014737036013631759
+ACT,Australian Capital Territory,Americas,Peru,2025,32,21714,37,0.0014737036013631759
+ACT,Australian Capital Territory,Sub-Saharan Africa,Zimbabwe,2025,31,21714,38,0.0014276503638205767
+ACT,Australian Capital Territory,North-West Europe,Netherlands,2025,29,21714,39,0.001335543888735378
+ACT,Australian Capital Territory,Sub-Saharan Africa,Ethiopia,2025,28,21714,40,0.0012894906511927789
+ACT,Australian Capital Territory,South-East Asia,Myanmar,2025,26,21714,41,0.0011973841761075805
+ACT,Australian Capital Territory,Southern and Eastern Europe,Spain,2025,26,21714,42,0.0011973841761075805
+ACT,Australian Capital Territory,Oceania and Antarctica,Papua New Guinea,2025,25,21714,43,0.001151330938564981
+ACT,Australian Capital Territory,North Africa and the Middle East,United Arab Emirates,2025,25,21714,44,0.001151330938564981
+ACT,Australian Capital Territory,North-West Europe,Ireland,2025,23,21714,45,0.0010592244634797827
+ACT,Australian Capital Territory,North Africa and the Middle East,Kuwait,2025,23,21714,46,0.0010592244634797827
+ACT,Australian Capital Territory,Sub-Saharan Africa,Mauritius,2025,23,21714,47,0.0010592244634797827
+ACT,Australian Capital Territory,Southern and Eastern Europe,Russian Federation,2025,22,21714,48,0.0010131712259371835
+ACT,Australian Capital Territory,North-West Europe,Sweden,2025,22,21714,49,0.0010131712259371835
+ACT,Australian Capital Territory,North Africa and the Middle East,Jordan,2025,18,21714,50,8.289582757667864e-4
+ACT,Australian Capital Territory,Sub-Saharan Africa,South Africa,2025,17,21714,51,7.829050382241871e-4
+ACT,Australian Capital Territory,Sub-Saharan Africa,Ghana,2025,16,21714,52,7.368518006815879e-4
+ACT,Australian Capital Territory,North-West Europe,Denmark,2025,15,21714,53,6.907985631389886e-4
+ACT,Australian Capital Territory,Americas,Argentina,2025,14,21714,54,6.447453255963894e-4
+ACT,Australian Capital Territory,Americas,Ecuador,2025,13,21714,55,5.986920880537902e-4
+ACT,Australian Capital Territory,North-West Europe,Switzerland,2025,13,21714,56,5.986920880537902e-4
+ACT,Australian Capital Territory,Southern and Eastern Europe,Poland,2025,11,21714,57,5.065856129685917e-4
+ACT,Australian Capital Territory,Sub-Saharan Africa,Uganda,2025,11,21714,58,5.065856129685917e-4
+ACT,Australian Capital Territory,Southern and Eastern Europe,North Macedonia,2025,10,21714,59,4.605323754259925e-4
+ACT,Australian Capital Territory,North-West Europe,Finland,2025,9,21714,60,4.144791378833932e-4
+ACT,Australian Capital Territory,North Africa and the Middle East,Turkiye,2025,9,21714,61,4.144791378833932e-4
+ACT,Australian Capital Territory,North-East Asia,Macau,2025,8,21714,62,3.6842590034079397e-4
+ACT,Australian Capital Territory,North Africa and the Middle East,Israel,2025,7,21714,63,3.223726627981947e-4
+ACT,Australian Capital Territory,Southern and Eastern Europe,Portugal,2025,7,21714,64,3.223726627981947e-4
+ACT,Australian Capital Territory,Oceania and Antarctica,Solomon Islands,2025,7,21714,65,3.223726627981947e-4
+ACT,Australian Capital Territory,North-West Europe,Austria,2025,6,21714,66,2.7631942525559546e-4
+ACT,Australian Capital Territory,North-West Europe,Belgium,2025,6,21714,67,2.7631942525559546e-4
+ACT,Australian Capital Territory,Southern and Eastern Europe,Estonia,2025,6,21714,68,2.7631942525559546e-4
+ACT,Australian Capital Territory,North Africa and the Middle East,Yemen,2025,6,21714,69,2.7631942525559546e-4
+ACT,Australian Capital Territory,Southern and Central Asia,Kazakhstan,2025,5,21714,70,2.3026618771299624e-4
+ACT,Australian Capital Territory,North Africa and the Middle East,Sudan,2025,5,21714,71,2.3026618771299624e-4
+ACT,Australian Capital Territory,Sub-Saharan Africa,Botswana,2025,4,21714,72,1.8421295017039698e-4
+ACT,Australian Capital Territory,South-East Asia,Brunei Darussalam,2025,4,21714,73,1.8421295017039698e-4
+ACT,Australian Capital Territory,Southern and Eastern Europe,Czech Republic,2025,4,21714,74,1.8421295017039698e-4
+ACT,Australian Capital Territory,North Africa and the Middle East,Iraq,2025,4,21714,75,1.8421295017039698e-4
+ACT,Australian Capital Territory,Southern and Central Asia,Maldives,2025,4,21714,76,1.8421295017039698e-4
+ACT,Australian Capital Territory,North-West Europe,Norway,2025,4,21714,77,1.8421295017039698e-4
+ACT,Australian Capital Territory,Southern and Eastern Europe,Romania,2025,4,21714,78,1.8421295017039698e-4
+ACT,Australian Capital Territory,South-East Asia,Timor-Leste,2025,4,21714,79,1.8421295017039698e-4
+ACT,Australian Capital Territory,Oceania and Antarctica,Tonga,2025,4,21714,80,1.8421295017039698e-4
+ACT,Australian Capital Territory,Southern and Central Asia,Uzbekistan,2025,4,21714,81,1.8421295017039698e-4
+ACT,Australian Capital Territory,Sub-Saharan Africa,Zambia,2025,4,21714,82,1.8421295017039698e-4
+ACT,Australian Capital Territory,Americas,Bolivia,2025,3,21714,83,1.3815971262779773e-4
+ACT,Australian Capital Territory,Southern and Eastern Europe,Hungary,2025,3,21714,84,1.3815971262779773e-4
+ACT,Australian Capital Territory,Oceania and Antarctica,Kiribati,2025,3,21714,85,1.3815971262779773e-4
+ACT,Australian Capital Territory,Southern and Central Asia,Afghanistan,2025,2,21714,86,9.210647508519849e-5
+ACT,Australian Capital Territory,North Africa and the Middle East,Algeria,2025,2,21714,87,9.210647508519849e-5
+ACT,Australian Capital Territory,North Africa and the Middle East,Bahrain,2025,2,21714,88,9.210647508519849e-5
+ACT,Australian Capital Territory,Americas,Costa Rica,2025,2,21714,89,9.210647508519849e-5
+ACT,Australian Capital Territory,North Africa and the Middle East,Gaza Strip and West Bank,2025,2,21714,90,9.210647508519849e-5
+ACT,Australian Capital Territory,Southern and Eastern Europe,Serbia,2025,2,21714,91,9.210647508519849e-5
+ACT,Australian Capital Territory,Southern and Eastern Europe,Slovakia,2025,2,21714,92,9.210647508519849e-5
+ACT,Australian Capital Territory,North Africa and the Middle East,Syria,2025,2,21714,93,9.210647508519849e-5
+ACT,Australian Capital Territory,Americas,Uruguay,2025,2,21714,94,9.210647508519849e-5
+ACT,Australian Capital Territory,Oceania and Antarctica,Vanuatu,2025,2,21714,95,9.210647508519849e-5
+ACT,Australian Capital Territory,Americas,Venezuela,2025,2,21714,96,9.210647508519849e-5
+ACT,Australian Capital Territory,Americas,Antigua and Barbuda,2025,1,21714,97,4.6053237542599246e-5
+ACT,Australian Capital Territory,Southern and Central Asia,Azerbaijan,2025,1,21714,98,4.6053237542599246e-5
+ACT,Australian Capital Territory,Americas,Bahamas,2025,1,21714,99,4.6053237542599246e-5
+ACT,Australian Capital Territory,Sub-Saharan Africa,Cameroon,2025,1,21714,100,4.6053237542599246e-5
+ACT,Australian Capital Territory,Southern and Eastern Europe,Cyprus,2025,1,21714,101,4.6053237542599246e-5
+ACT,Australian Capital Territory,Americas,El Salvador,2025,1,21714,102,4.6053237542599246e-5
+ACT,Australian Capital Territory,Southern and Eastern Europe,Greece,2025,1,21714,103,4.6053237542599246e-5
+ACT,Australian Capital Territory,Southern and Central Asia,Kyrgyzstan,2025,1,21714,104,4.6053237542599246e-5
+ACT,Australian Capital Territory,Southern and Eastern Europe,Latvia,2025,1,21714,105,4.6053237542599246e-5
+ACT,Australian Capital Territory,North Africa and the Middle East,Lebanon,2025,1,21714,106,4.6053237542599246e-5
+ACT,Australian Capital Territory,North Africa and the Middle East,Libya,2025,1,21714,107,4.6053237542599246e-5
+ACT,Australian Capital Territory,Southern and Eastern Europe,Malta,2025,1,21714,108,4.6053237542599246e-5
+ACT,Australian Capital Territory,Oceania and Antarctica,Marshall Islands,2025,1,21714,109,4.6053237542599246e-5
+ACT,Australian Capital Territory,North-West Europe,Monaco,2025,1,21714,110,4.6053237542599246e-5
+ACT,Australian Capital Territory,North Africa and the Middle East,Morocco,2025,1,21714,111,4.6053237542599246e-5
+ACT,Australian Capital Territory,Sub-Saharan Africa,Mozambique,2025,1,21714,112,4.6053237542599246e-5
+ACT,Australian Capital Territory,Oceania and Antarctica,Nauru,2025,1,21714,113,4.6053237542599246e-5
+ACT,Australian Capital Territory,Unknown,Other,2025,1,21714,114,4.6053237542599246e-5
+ACT,Australian Capital Territory,Americas,Paraguay,2025,1,21714,115,4.6053237542599246e-5
+ACT,Australian Capital Territory,Sub-Saharan Africa,Rwanda,2025,1,21714,116,4.6053237542599246e-5
+ACT,Australian Capital Territory,Oceania and Antarctica,Samoa,2025,1,21714,117,4.6053237542599246e-5
+ACT,Australian Capital Territory,Sub-Saharan Africa,Sierra Leone,2025,1,21714,118,4.6053237542599246e-5
+ACT,Australian Capital Territory,Southern and Eastern Europe,Slovenia,2025,1,21714,119,4.6053237542599246e-5
+ACT,Australian Capital Territory,North Africa and the Middle East,South Sudan,2025,1,21714,120,4.6053237542599246e-5
+ACT,Australian Capital Territory,Southern and Eastern Europe,Ukraine,2025,1,21714,121,4.6053237542599246e-5
+NSW,New South Wales,North-East Asia,China,2025,106094,403139,1,0.26316977518920276
+NSW,New South Wales,Southern and Central Asia,Nepal,2025,55279,403139,2,0.1371214395034963
+NSW,New South Wales,Southern and Central Asia,India,2025,44632,403139,3,0.11071119390582404
+NSW,New South Wales,South-East Asia,Philippines,2025,16420,403139,4,0.04073036843371641
+NSW,New South Wales,South-East Asia,Indonesia,2025,16361,403139,5,0.04058401692716408
+NSW,New South Wales,Southern and Central Asia,Bangladesh,2025,15762,403139,6,0.03909817705555652
+NSW,New South Wales,South-East Asia,Vietnam,2025,15624,403139,7,0.03875586336226463
+NSW,New South Wales,South-East Asia,Thailand,2025,13600,403139,8,0.03373526252731688
+NSW,New South Wales,Americas,Brazil,2025,13028,403139,9,0.03231639707396208
+NSW,New South Wales,Southern and Central Asia,Pakistan,2025,12549,403139,10,0.031128221283477905
+NSW,New South Wales,Americas,Colombia,2025,12281,403139,11,0.030463438168969015
+NSW,New South Wales,North-East Asia,"Korea, Republic of (South)",2025,8025,403139,12,0.019906285425126322
+NSW,New South Wales,North-East Asia,Mongolia,2025,6513,403139,13,0.01615571800297168
+NSW,New South Wales,South-East Asia,Malaysia,2025,4653,403139,14,0.011541924745559224
+NSW,New South Wales,North-East Asia,Taiwan,2025,4504,403139,15,0.011172325178164355
+NSW,New South Wales,North-East Asia,Hong Kong SAR,2025,4118,403139,16,0.010214839050550803
+NSW,New South Wales,Americas,United States of America,2025,3955,403139,17,0.009810512007024872
+NSW,New South Wales,North-East Asia,Japan,2025,3660,403139,18,0.009078754474263219
+NSW,New South Wales,Oceania and Antarctica,Fiji,2025,3355,403139,19,0.00832219160140795
+NSW,New South Wales,Sub-Saharan Africa,Kenya,2025,2972,403139,20,0.007372147075822483
+NSW,New South Wales,North Africa and the Middle East,Turkiye,2025,2365,403139,21,0.005866462932140031
+NSW,New South Wales,Americas,Chile,2025,2345,403139,22,0.005816852251952801
+NSW,New South Wales,Southern and Central Asia,Sri Lanka,2025,1970,403139,23,0.004886651998442224
+NSW,New South Wales,Southern and Eastern Europe,Spain,2025,1931,403139,24,0.004789911172077125
+NSW,New South Wales,Americas,Mexico,2025,1836,403139,25,0.004554260441187779
+NSW,New South Wales,South-East Asia,Singapore,2025,1777,403139,26,0.004407908934635448
+NSW,New South Wales,North-West Europe,France,2025,1706,403139,27,0.00423179101997078
+NSW,New South Wales,Americas,Argentina,2025,1678,403139,28,0.004162336067708656
+NSW,New South Wales,North-West Europe,United Kingdom,2025,1531,403139,29,0.0037976975683325104
+NSW,New South Wales,Southern and Eastern Europe,Italy,2025,1515,403139,30,0.0037580090241827262
+NSW,New South Wales,North-West Europe,Germany,2025,1498,403139,31,0.00371583994602358
+NSW,New South Wales,North Africa and the Middle East,Saudi Arabia,2025,1439,403139,32,0.0035694884394712493
+NSW,New South Wales,Americas,Peru,2025,1419,403139,33,0.0035198777592840187
+NSW,New South Wales,North Africa and the Middle East,Iran,2025,1190,403139,34,0.002951835471140227
+NSW,New South Wales,Americas,Ecuador,2025,1032,403139,35,0.0025599110976611047
+NSW,New South Wales,South-East Asia,Laos,2025,1007,403139,36,0.002497897747427066
+NSW,New South Wales,South-East Asia,Cambodia,2025,998,403139,37,0.0024755729413428124
+NSW,New South Wales,Americas,Canada,2025,995,403139,38,0.0024681313393147275
+NSW,New South Wales,Sub-Saharan Africa,Nigeria,2025,842,403139,39,0.0020886096358824126
+NSW,New South Wales,Southern and Eastern Europe,Russian Federation,2025,546,403139,40,0.0013543715691113982
+NSW,New South Wales,North-West Europe,Ireland,2025,490,403139,41,0.0012154616645871524
+NSW,New South Wales,North Africa and the Middle East,Egypt,2025,480,403139,42,0.0011906563244935369
+NSW,New South Wales,South-East Asia,Myanmar,2025,465,403139,43,0.001153448314353114
+NSW,New South Wales,North Africa and the Middle East,United Arab Emirates,2025,426,403139,44,0.001056707487988014
+NSW,New South Wales,North-West Europe,Sweden,2025,405,403139,45,0.0010046162737914219
+NSW,New South Wales,North-West Europe,Norway,2025,402,403139,46,9.971746717633372e-4
+NSW,New South Wales,Sub-Saharan Africa,Zimbabwe,2025,383,403139,47,9.500445255854681e-4
+NSW,New South Wales,Southern and Eastern Europe,Poland,2025,350,403139,48,8.681869032765374e-4
+NSW,New South Wales,North-West Europe,Switzerland,2025,341,403139,49,8.458620971922836e-4
+NSW,New South Wales,North Africa and the Middle East,Jordan,2025,316,403139,50,7.838487469582452e-4
+NSW,New South Wales,North-West Europe,Netherlands,2025,302,403139,51,7.491212708271836e-4
+NSW,New South Wales,North Africa and the Middle East,Lebanon,2025,298,403139,52,7.391991347897375e-4
+NSW,New South Wales,Sub-Saharan Africa,South Africa,2025,272,403139,53,6.747052505463376e-4
+NSW,New South Wales,North-West Europe,Denmark,2025,268,403139,54,6.647831145088915e-4
+NSW,New South Wales,Southern and Central Asia,Uzbekistan,2025,262,403139,55,6.498999104527222e-4
+NSW,New South Wales,Southern and Central Asia,Bhutan,2025,239,403139,56,5.928476282374069e-4
+NSW,New South Wales,Southern and Eastern Europe,Czech Republic,2025,239,403139,57,5.928476282374069e-4
+NSW,New South Wales,North-East Asia,Macau,2025,213,403139,58,5.28353743994007e-4
+NSW,New South Wales,Southern and Eastern Europe,Lithuania,2025,210,403139,59,5.209121419659224e-4
+NSW,New South Wales,Southern and Eastern Europe,Portugal,2025,203,403139,60,5.035484039003917e-4
+NSW,New South Wales,Sub-Saharan Africa,Mauritius,2025,195,403139,61,4.837041318254994e-4
+NSW,New South Wales,North-West Europe,Belgium,2025,178,403139,62,4.4153505366635327e-4
+NSW,New South Wales,Sub-Saharan Africa,Ghana,2025,176,403139,63,4.3657398564763024e-4
+NSW,New South Wales,Oceania and Antarctica,Papua New Guinea,2025,171,403139,64,4.2417131560082254e-4
+NSW,New South Wales,North Africa and the Middle East,Kuwait,2025,164,403139,65,4.068075775352918e-4
+NSW,New South Wales,Southern and Eastern Europe,Slovakia,2025,152,403139,66,3.7704116942295337e-4
+NSW,New South Wales,Americas,Paraguay,2025,131,403139,67,3.249499552263611e-4
+NSW,New South Wales,Sub-Saharan Africa,Ethiopia,2025,129,403139,68,3.199888872076381e-4
+NSW,New South Wales,Southern and Central Asia,Kazakhstan,2025,107,403139,69,2.654171390016843e-4
+NSW,New South Wales,North-West Europe,Austria,2025,103,403139,70,2.5549500296423813e-4
+NSW,New South Wales,Sub-Saharan Africa,Uganda,2025,96,403139,71,2.381312648987074e-4
+NSW,New South Wales,Southern and Eastern Europe,North Macedonia,2025,87,403139,72,2.1580645881445358e-4
+NSW,New South Wales,Americas,Bolivia,2025,84,403139,73,2.0836485678636896e-4
+NSW,New South Wales,North-West Europe,Finland,2025,84,403139,74,2.0836485678636896e-4
+NSW,New South Wales,Americas,Uruguay,2025,79,403139,75,1.959621867395613e-4
+NSW,New South Wales,North Africa and the Middle East,Israel,2025,76,403139,76,1.8852058471147668e-4
+NSW,New South Wales,Oceania and Antarctica,Tonga,2025,74,403139,77,1.8355951669275363e-4
+NSW,New South Wales,Southern and Eastern Europe,Greece,2025,70,403139,78,1.7363738065530746e-4
+NSW,New South Wales,Americas,Guatemala,2025,69,403139,79,1.7115684664594595e-4
+NSW,New South Wales,Americas,Venezuela,2025,65,403139,80,1.6123471060849979e-4
+NSW,New South Wales,Southern and Eastern Europe,Ukraine,2025,64,403139,81,1.5875417659913827e-4
+NSW,New South Wales,North Africa and the Middle East,Oman,2025,59,403139,82,1.463515065523306e-4
+NSW,New South Wales,Southern and Eastern Europe,Hungary,2025,58,403139,83,1.4387097254296905e-4
+NSW,New South Wales,South-East Asia,Brunei Darussalam,2025,54,403139,84,1.3394883650552292e-4
+NSW,New South Wales,Sub-Saharan Africa,Botswana,2025,51,403139,85,1.265072344774383e-4
+NSW,New South Wales,Southern and Eastern Europe,Estonia,2025,49,403139,86,1.2154616645871524e-4
+NSW,New South Wales,Southern and Central Asia,Maldives,2025,48,403139,87,1.190656324493537e-4
+NSW,New South Wales,Southern and Eastern Europe,Romania,2025,47,403139,88,1.1658509843999216e-4
+NSW,New South Wales,Oceania and Antarctica,Solomon Islands,2025,43,403139,89,1.0666296240254602e-4
+NSW,New South Wales,North Africa and the Middle East,Morocco,2025,40,403139,90,9.922136037446141e-5
+NSW,New South Wales,Southern and Central Asia,Kyrgyzstan,2025,36,403139,91,8.929922433701527e-5
+NSW,New South Wales,Southern and Eastern Europe,Bulgaria,2025,31,403139,92,7.68965542902076e-5
+NSW,New South Wales,Americas,Costa Rica,2025,29,403139,93,7.193548627148453e-5
+NSW,New South Wales,Sub-Saharan Africa,Zambia,2025,29,403139,94,7.193548627148453e-5
+NSW,New South Wales,Southern and Central Asia,Azerbaijan,2025,28,403139,95,6.945495226212299e-5
+NSW,New South Wales,North Africa and the Middle East,Algeria,2025,26,403139,96,6.449388424339992e-5
+NSW,New South Wales,North Africa and the Middle East,Iraq,2025,25,403139,97,6.201335023403839e-5
+NSW,New South Wales,Sub-Saharan Africa,Rwanda,2025,25,403139,98,6.201335023403839e-5
+NSW,New South Wales,Southern and Eastern Europe,Serbia,2025,25,403139,99,6.201335023403839e-5
+NSW,New South Wales,Southern and Eastern Europe,Latvia,2025,20,403139,100,4.9610680187230705e-5
+NSW,New South Wales,North Africa and the Middle East,Syria,2025,20,403139,101,4.9610680187230705e-5
+NSW,New South Wales,Sub-Saharan Africa,Mozambique,2025,19,403139,102,4.713014617786917e-5
+NSW,New South Wales,Oceania and Antarctica,Vanuatu,2025,19,403139,103,4.713014617786917e-5
+NSW,New South Wales,South-East Asia,Timor-Leste,2025,18,403139,104,4.4649612168507636e-5
+NSW,New South Wales,Americas,Panama,2025,17,403139,105,4.21690781591461e-5
+NSW,New South Wales,Americas,El Salvador,2025,16,403139,106,3.968854414978457e-5
+NSW,New South Wales,North Africa and the Middle East,Sudan,2025,16,403139,107,3.968854414978457e-5
+NSW,New South Wales,Southern and Central Asia,Afghanistan,2025,15,403139,108,3.720801014042303e-5
+NSW,New South Wales,Southern and Eastern Europe,Bosnia and Herzegovina,2025,15,403139,109,3.720801014042303e-5
+NSW,New South Wales,North Africa and the Middle East,Tunisia,2025,15,403139,110,3.720801014042303e-5
+NSW,New South Wales,Southern and Central Asia,Armenia,2025,14,403139,111,3.472747613106149e-5
+NSW,New South Wales,Americas,Dominican Republic,2025,14,403139,112,3.472747613106149e-5
+NSW,New South Wales,North Africa and the Middle East,Gaza Strip and West Bank,2025,14,403139,113,3.472747613106149e-5
+NSW,New South Wales,North Africa and the Middle East,Yemen,2025,14,403139,114,3.472747613106149e-5
+NSW,New South Wales,Southern and Eastern Europe,Croatia,2025,13,403139,115,3.224694212169996e-5
+NSW,New South Wales,Southern and Eastern Europe,Slovenia,2025,13,403139,116,3.224694212169996e-5
+NSW,New South Wales,Sub-Saharan Africa,Tanzania,2025,13,403139,117,3.224694212169996e-5
+NSW,New South Wales,Southern and Eastern Europe,Belarus,2025,12,403139,118,2.9766408112338424e-5
+NSW,New South Wales,North-West Europe,Luxembourg,2025,12,403139,119,2.9766408112338424e-5
+NSW,New South Wales,Sub-Saharan Africa,Sierra Leone,2025,12,403139,120,2.9766408112338424e-5
+NSW,New South Wales,Sub-Saharan Africa,Malawi,2025,11,403139,121,2.728587410297689e-5
+NSW,New South Wales,Southern and Eastern Europe,Cyprus,2025,10,403139,122,2.4805340093615352e-5
+NSW,New South Wales,Americas,Honduras,2025,10,403139,123,2.4805340093615352e-5
+NSW,New South Wales,Southern and Eastern Europe,Albania,2025,9,403139,124,2.2324806084253818e-5
+NSW,New South Wales,Oceania and Antarctica,Samoa,2025,8,403139,125,1.9844272074892284e-5
+NSW,New South Wales,North-West Europe,Iceland,2025,7,403139,126,1.7363738065530746e-5
+NSW,New South Wales,Unknown,Other,2025,7,403139,127,1.7363738065530746e-5
+NSW,New South Wales,Americas,Trinidad and Tobago,2025,7,403139,128,1.7363738065530746e-5
+NSW,New South Wales,Southern and Central Asia,Georgia,2025,6,403139,129,1.4883204056169212e-5
+NSW,New South Wales,Americas,Dominica,2025,5,403139,130,1.2402670046807676e-5
+NSW,New South Wales,Oceania and Antarctica,Kiribati,2025,5,403139,131,1.2402670046807676e-5
+NSW,New South Wales,Sub-Saharan Africa,Madagascar,2025,5,403139,132,1.2402670046807676e-5
+NSW,New South Wales,Sub-Saharan Africa,Namibia,2025,5,403139,133,1.2402670046807676e-5
+NSW,New South Wales,Southern and Central Asia,Tajikistan,2025,5,403139,134,1.2402670046807676e-5
+NSW,New South Wales,Americas,Bahamas,2025,4,403139,135,9.922136037446142e-6
+NSW,New South Wales,Americas,Cuba,2025,4,403139,136,9.922136037446142e-6
+NSW,New South Wales,Sub-Saharan Africa,Eritrea,2025,4,403139,137,9.922136037446142e-6
+NSW,New South Wales,Americas,Jamaica,2025,4,403139,138,9.922136037446142e-6
+NSW,New South Wales,Sub-Saharan Africa,Liberia,2025,4,403139,139,9.922136037446142e-6
+NSW,New South Wales,Southern and Eastern Europe,Malta,2025,4,403139,140,9.922136037446142e-6
+NSW,New South Wales,Americas,Belize,2025,3,403139,141,7.441602028084606e-6
+NSW,New South Wales,Sub-Saharan Africa,"Congo, Democratic Republic of",2025,3,403139,142,7.441602028084606e-6
+NSW,New South Wales,North-East Asia,"Korea, Democratic People's Republic of (North)",2025,3,403139,143,7.441602028084606e-6
+NSW,New South Wales,North-West Europe,Liechtenstein,2025,3,403139,144,7.441602028084606e-6
+NSW,New South Wales,Southern and Eastern Europe,Moldova,2025,3,403139,145,7.441602028084606e-6
+NSW,New South Wales,North Africa and the Middle East,Qatar,2025,3,403139,146,7.441602028084606e-6
+NSW,New South Wales,Americas,St Kitts and Nevis,2025,3,403139,147,7.441602028084606e-6
+NSW,New South Wales,Oceania and Antarctica,Tuvalu,2025,3,403139,148,7.441602028084606e-6
+NSW,New South Wales,Sub-Saharan Africa,Burundi,2025,2,403139,149,4.961068018723071e-6
+NSW,New South Wales,Sub-Saharan Africa,Cameroon,2025,2,403139,150,4.961068018723071e-6
+NSW,New South Wales,Sub-Saharan Africa,Chad,2025,2,403139,151,4.961068018723071e-6
+NSW,New South Wales,Sub-Saharan Africa,Equatorial Guinea,2025,2,403139,152,4.961068018723071e-6
+NSW,New South Wales,Sub-Saharan Africa,Gambia,2025,2,403139,153,4.961068018723071e-6
+NSW,New South Wales,Americas,Guyana,2025,2,403139,154,4.961068018723071e-6
+NSW,New South Wales,Sub-Saharan Africa,Lesotho,2025,2,403139,155,4.961068018723071e-6
+NSW,New South Wales,Sub-Saharan Africa,Mali,2025,2,403139,156,4.961068018723071e-6
+NSW,New South Wales,Oceania and Antarctica,Marshall Islands,2025,2,403139,157,4.961068018723071e-6
+NSW,New South Wales,Americas,Nicaragua,2025,2,403139,158,4.961068018723071e-6
+NSW,New South Wales,Sub-Saharan Africa,Niger,2025,2,403139,159,4.961068018723071e-6
+NSW,New South Wales,North Africa and the Middle East,South Sudan,2025,2,403139,160,4.961068018723071e-6
+NSW,New South Wales,Americas,St Lucia,2025,2,403139,161,4.961068018723071e-6
+NSW,New South Wales,Sub-Saharan Africa,Swaziland,2025,2,403139,162,4.961068018723071e-6
+NSW,New South Wales,Southern and Eastern Europe,Andorra,2025,1,403139,163,2.4805340093615355e-6
+NSW,New South Wales,North Africa and the Middle East,Bahrain,2025,1,403139,164,2.4805340093615355e-6
+NSW,New South Wales,Americas,Barbados,2025,1,403139,165,2.4805340093615355e-6
+NSW,New South Wales,Sub-Saharan Africa,Burkina Faso,2025,1,403139,166,2.4805340093615355e-6
+NSW,New South Wales,Oceania and Antarctica,Cook Islands,2025,1,403139,167,2.4805340093615355e-6
+NSW,New South Wales,Sub-Saharan Africa,Cote d'Ivoire,2025,1,403139,168,2.4805340093615355e-6
+NSW,New South Wales,Sub-Saharan Africa,Djibouti,2025,1,403139,169,2.4805340093615355e-6
+NSW,New South Wales,Americas,Grenada,2025,1,403139,170,2.4805340093615355e-6
+NSW,New South Wales,Sub-Saharan Africa,Guinea-Bissau,2025,1,403139,171,2.4805340093615355e-6
+NSW,New South Wales,Americas,Haiti,2025,1,403139,172,2.4805340093615355e-6
+NSW,New South Wales,Southern and Eastern Europe,Kosovo,2025,1,403139,173,2.4805340093615355e-6
+NSW,New South Wales,North Africa and the Middle East,Libya,2025,1,403139,174,2.4805340093615355e-6
+NSW,New South Wales,Oceania and Antarctica,"Micronesia, Federated States of",2025,1,403139,175,2.4805340093615355e-6
+NSW,New South Wales,Oceania and Antarctica,Nauru,2025,1,403139,176,2.4805340093615355e-6
+NSW,New South Wales,Sub-Saharan Africa,Seychelles,2025,1,403139,177,2.4805340093615355e-6
+NSW,New South Wales,Unknown,United Kingdom (Other),2025,1,403139,178,2.4805340093615355e-6
+NT,Northern Territory,Southern and Central Asia,Nepal,2025,1557,5967,1,0.2609351432880845
+NT,Northern Territory,Southern and Central Asia,India,2025,1177,5967,2,0.19725155019272667
+NT,Northern Territory,Southern and Central Asia,Bangladesh,2025,682,5967,3,0.114295290765879
+NT,Northern Territory,South-East Asia,Philippines,2025,553,5967,4,0.09267638679403385
+NT,Northern Territory,South-East Asia,Vietnam,2025,402,5967,5,0.06737053795877325
+NT,Northern Territory,North-East Asia,China,2025,316,5967,6,0.05295793531087649
+NT,Northern Territory,Southern and Central Asia,Pakistan,2025,284,5967,7,0.04759510641863583
+NT,Northern Territory,South-East Asia,Indonesia,2025,155,5967,8,0.02597620244679068
+NT,Northern Territory,Southern and Central Asia,Sri Lanka,2025,133,5967,9,0.02228925758337523
+NT,Northern Territory,Sub-Saharan Africa,Kenya,2025,75,5967,10,0.01256913021618904
+NT,Northern Territory,Americas,Colombia,2025,69,5967,11,0.011563599798893917
+NT,Northern Territory,South-East Asia,Thailand,2025,48,5967,12,0.008044243338360985
+NT,Northern Territory,Southern and Central Asia,Bhutan,2025,39,5967,13,0.006535947712418301
+NT,Northern Territory,Sub-Saharan Africa,Nigeria,2025,38,5967,14,0.00636835930953578
+NT,Northern Territory,Americas,Brazil,2025,34,5967,15,0.005698005698005698
+NT,Northern Territory,North-East Asia,Taiwan,2025,31,5967,16,0.005195240489358137
+NT,Northern Territory,North-West Europe,United Kingdom,2025,28,5967,17,0.004692475280710575
+NT,Northern Territory,Oceania and Antarctica,Fiji,2025,26,5967,18,0.004357298474945534
+NT,Northern Territory,Sub-Saharan Africa,Zimbabwe,2025,24,5967,19,0.004022121669180492
+NT,Northern Territory,South-East Asia,Cambodia,2025,19,5967,20,0.00318417965476789
+NT,Northern Territory,South-East Asia,Timor-Leste,2025,19,5967,21,0.00318417965476789
+NT,Northern Territory,North-West Europe,Germany,2025,17,5967,22,0.002849002849002849
+NT,Northern Territory,Americas,Peru,2025,17,5967,23,0.002849002849002849
+NT,Northern Territory,North-East Asia,Hong Kong SAR,2025,15,5967,24,0.002513826043237808
+NT,Northern Territory,South-East Asia,Malaysia,2025,13,5967,25,0.002178649237472767
+NT,Northern Territory,Americas,Chile,2025,12,5967,26,0.002011060834590246
+NT,Northern Territory,Americas,United States of America,2025,12,5967,27,0.002011060834590246
+NT,Northern Territory,Sub-Saharan Africa,Ethiopia,2025,11,5967,28,0.0018434724317077259
+NT,Northern Territory,Americas,Argentina,2025,10,5967,29,0.0016758840288252053
+NT,Northern Territory,Southern and Eastern Europe,Italy,2025,10,5967,30,0.0016758840288252053
+NT,Northern Territory,Sub-Saharan Africa,South Africa,2025,10,5967,31,0.0016758840288252053
+NT,Northern Territory,North-West Europe,France,2025,8,5967,32,0.0013407072230601643
+NT,Northern Territory,North-East Asia,Japan,2025,8,5967,33,0.0013407072230601643
+NT,Northern Territory,North Africa and the Middle East,Iran,2025,7,5967,34,0.0011731188201776438
+NT,Northern Territory,Oceania and Antarctica,Papua New Guinea,2025,7,5967,35,0.0011731188201776438
+NT,Northern Territory,Sub-Saharan Africa,Ghana,2025,6,5967,36,0.001005530417295123
+NT,Northern Territory,Americas,Mexico,2025,6,5967,37,0.001005530417295123
+NT,Northern Territory,Southern and Eastern Europe,Spain,2025,6,5967,38,0.001005530417295123
+NT,Northern Territory,Americas,Ecuador,2025,5,5967,39,8.379420144126027e-4
+NT,Northern Territory,Americas,Canada,2025,4,5967,40,6.703536115300822e-4
+NT,Northern Territory,North Africa and the Middle East,Lebanon,2025,4,5967,41,6.703536115300822e-4
+NT,Northern Territory,Sub-Saharan Africa,Mauritius,2025,4,5967,42,6.703536115300822e-4
+NT,Northern Territory,North-West Europe,Sweden,2025,4,5967,43,6.703536115300822e-4
+NT,Northern Territory,North-West Europe,Belgium,2025,3,5967,44,5.027652086475615e-4
+NT,Northern Territory,North-West Europe,Ireland,2025,3,5967,45,5.027652086475615e-4
+NT,Northern Territory,South-East Asia,Laos,2025,3,5967,46,5.027652086475615e-4
+NT,Northern Territory,South-East Asia,Myanmar,2025,3,5967,47,5.027652086475615e-4
+NT,Northern Territory,Southern and Eastern Europe,Portugal,2025,3,5967,48,5.027652086475615e-4
+NT,Northern Territory,South-East Asia,Singapore,2025,3,5967,49,5.027652086475615e-4
+NT,Northern Territory,Oceania and Antarctica,Tonga,2025,3,5967,50,5.027652086475615e-4
+NT,Northern Territory,North Africa and the Middle East,Turkiye,2025,3,5967,51,5.027652086475615e-4
+NT,Northern Territory,Sub-Saharan Africa,Uganda,2025,3,5967,52,5.027652086475615e-4
+NT,Northern Territory,Sub-Saharan Africa,Botswana,2025,2,5967,53,3.351768057650411e-4
+NT,Northern Territory,Americas,Costa Rica,2025,2,5967,54,3.351768057650411e-4
+NT,Northern Territory,Southern and Eastern Europe,Czech Republic,2025,2,5967,55,3.351768057650411e-4
+NT,Northern Territory,Southern and Eastern Europe,Greece,2025,2,5967,56,3.351768057650411e-4
+NT,Northern Territory,Southern and Central Asia,Kazakhstan,2025,2,5967,57,3.351768057650411e-4
+NT,Northern Territory,North-East Asia,"Korea, Republic of (South)",2025,2,5967,58,3.351768057650411e-4
+NT,Northern Territory,North-East Asia,Mongolia,2025,2,5967,59,3.351768057650411e-4
+NT,Northern Territory,Southern and Eastern Europe,Poland,2025,2,5967,60,3.351768057650411e-4
+NT,Northern Territory,Southern and Eastern Europe,Russian Federation,2025,2,5967,61,3.351768057650411e-4
+NT,Northern Territory,Southern and Eastern Europe,Slovakia,2025,2,5967,62,3.351768057650411e-4
+NT,Northern Territory,Sub-Saharan Africa,Tanzania,2025,2,5967,63,3.351768057650411e-4
+NT,Northern Territory,Americas,Uruguay,2025,2,5967,64,3.351768057650411e-4
+NT,Northern Territory,North-West Europe,Austria,2025,1,5967,65,1.6758840288252054e-4
+NT,Northern Territory,North Africa and the Middle East,Egypt,2025,1,5967,66,1.6758840288252054e-4
+NT,Northern Territory,Southern and Eastern Europe,Estonia,2025,1,5967,67,1.6758840288252054e-4
+NT,Northern Territory,North-West Europe,Finland,2025,1,5967,68,1.6758840288252054e-4
+NT,Northern Territory,Southern and Eastern Europe,Latvia,2025,1,5967,69,1.6758840288252054e-4
+NT,Northern Territory,Southern and Eastern Europe,Malta,2025,1,5967,70,1.6758840288252054e-4
+NT,Northern Territory,Southern and Eastern Europe,Romania,2025,1,5967,71,1.6758840288252054e-4
+NT,Northern Territory,Oceania and Antarctica,Solomon Islands,2025,1,5967,72,1.6758840288252054e-4
+NT,Northern Territory,Americas,St Kitts and Nevis,2025,1,5967,73,1.6758840288252054e-4
+NT,Northern Territory,Southern and Central Asia,Uzbekistan,2025,1,5967,74,1.6758840288252054e-4
+NT,Northern Territory,Sub-Saharan Africa,Zambia,2025,1,5967,75,1.6758840288252054e-4
+QLD,Queensland,North-East Asia,China,2025,24937,148589,1,0.16782534373338537
+QLD,Queensland,Southern and Central Asia,India,2025,22199,148589,2,0.14939867688725275
+QLD,Queensland,Americas,Brazil,2025,10772,148589,3,0.07249527219376939
+QLD,Queensland,South-East Asia,Philippines,2025,9538,148589,4,0.0641904851637739
+QLD,Queensland,Americas,Colombia,2025,8648,148589,5,0.0582008089427885
+QLD,Queensland,Southern and Central Asia,Nepal,2025,5716,148589,6,0.0384685272799467
+QLD,Queensland,North-East Asia,Japan,2025,4647,148589,7,0.031274185841482206
+QLD,Queensland,North-East Asia,Taiwan,2025,4450,148589,8,0.029948381104927015
+QLD,Queensland,North-East Asia,"Korea, Republic of (South)",2025,4446,148589,9,0.029921461211798988
+QLD,Queensland,South-East Asia,Thailand,2025,3803,148589,10,0.025594088391469087
+QLD,Queensland,South-East Asia,Vietnam,2025,3486,148589,11,0.023460686861073162
+QLD,Queensland,Southern and Eastern Europe,Spain,2025,2513,148589,12,0.016912422857681256
+QLD,Queensland,North-East Asia,Hong Kong SAR,2025,2484,148589,13,0.01671725363250308
+QLD,Queensland,Americas,United States of America,2025,2016,148589,14,0.013567626136524237
+QLD,Queensland,Americas,Chile,2025,2000,148589,15,0.013459946564012141
+QLD,Queensland,Southern and Central Asia,Bhutan,2025,1986,148589,16,0.013365726938064057
+QLD,Queensland,South-East Asia,Indonesia,2025,1982,148589,17,0.013338807044936032
+QLD,Queensland,Southern and Central Asia,Pakistan,2025,1844,148589,18,0.012410070732019194
+QLD,Queensland,Southern and Central Asia,Sri Lanka,2025,1773,148589,19,0.011932242628996764
+QLD,Queensland,Americas,Ecuador,2025,1647,148589,20,0.011084265995463999
+QLD,Queensland,Southern and Central Asia,Bangladesh,2025,1635,148589,21,0.011003506316079926
+QLD,Queensland,South-East Asia,Malaysia,2025,1627,148589,22,0.010949666529823876
+QLD,Queensland,Oceania and Antarctica,Papua New Guinea,2025,1613,148589,23,0.010855446903875791
+QLD,Queensland,Sub-Saharan Africa,Kenya,2025,1603,148589,24,0.010788147171055732
+QLD,Queensland,Americas,Canada,2025,1583,148589,25,0.010653547705415609
+QLD,Queensland,North-West Europe,Germany,2025,1564,148589,26,0.010525678213057494
+QLD,Queensland,North-West Europe,Norway,2025,1296,148589,27,0.008722045373479868
+QLD,Queensland,Americas,Argentina,2025,1232,148589,28,0.008291327083431478
+QLD,Queensland,Oceania and Antarctica,Fiji,2025,1225,148589,29,0.008244217270457436
+QLD,Queensland,Americas,Mexico,2025,1111,148589,30,0.007477000316308744
+QLD,Queensland,South-East Asia,Singapore,2025,1090,148589,31,0.007335670877386616
+QLD,Queensland,Southern and Eastern Europe,Italy,2025,1032,148589,32,0.006945332427030265
+QLD,Queensland,North-West Europe,France,2025,1022,148589,33,0.006878032694210204
+QLD,Queensland,North-West Europe,United Kingdom,2025,829,148589,34,0.005579147850783032
+QLD,Queensland,North Africa and the Middle East,Turkiye,2025,797,148589,35,0.005363788705758838
+QLD,Queensland,North-East Asia,Mongolia,2025,743,148589,36,0.0050003701485305104
+QLD,Queensland,Americas,Peru,2025,702,148589,37,0.004724441243968262
+QLD,Queensland,North Africa and the Middle East,Iran,2025,561,148589,38,0.0037755150112054056
+QLD,Queensland,North Africa and the Middle East,Saudi Arabia,2025,492,148589,39,0.003311146854746987
+QLD,Queensland,Sub-Saharan Africa,Nigeria,2025,438,148589,40,0.0029477282975186587
+QLD,Queensland,Sub-Saharan Africa,Zimbabwe,2025,416,148589,41,0.002799668885314525
+QLD,Queensland,Sub-Saharan Africa,South Africa,2025,347,148589,42,0.0023353007288561063
+QLD,Queensland,North-West Europe,Switzerland,2025,294,148589,43,0.0019786121449097845
+QLD,Queensland,Southern and Eastern Europe,Lithuania,2025,259,148589,44,0.0017430630800395722
+QLD,Queensland,North-West Europe,Sweden,2025,236,148589,45,0.0015882736945534326
+QLD,Queensland,Southern and Eastern Europe,Russian Federation,2025,175,148589,46,0.0011777453243510623
+QLD,Queensland,North-West Europe,Denmark,2025,173,148589,47,0.0011642853777870503
+QLD,Queensland,North-West Europe,Netherlands,2025,167,148589,48,0.0011239055380950138
+QLD,Queensland,North-West Europe,Belgium,2025,162,148589,49,0.0010902556716849835
+QLD,Queensland,Southern and Eastern Europe,Portugal,2025,158,148589,50,0.001063335778556959
+QLD,Queensland,South-East Asia,Cambodia,2025,149,148589,51,0.0010027660190189045
+QLD,Queensland,Southern and Eastern Europe,Czech Republic,2025,147,148589,52,9.893060724548923e-4
+QLD,Queensland,Southern and Central Asia,Uzbekistan,2025,127,148589,53,8.54706606814771e-4
+QLD,Queensland,Oceania and Antarctica,Nauru,2025,126,148589,54,8.479766335327648e-4
+QLD,Queensland,North-West Europe,Ireland,2025,120,148589,55,8.075967938407284e-4
+QLD,Queensland,Southern and Eastern Europe,Poland,2025,115,148589,56,7.739469274306981e-4
+QLD,Queensland,Oceania and Antarctica,Solomon Islands,2025,100,148589,57,6.72997328200607e-4
+QLD,Queensland,North Africa and the Middle East,United Arab Emirates,2025,99,148589,58,6.662673549186009e-4
+QLD,Queensland,North-East Asia,Macau,2025,95,148589,59,6.393474617905767e-4
+QLD,Queensland,Sub-Saharan Africa,Uganda,2025,94,148589,60,6.326174885085706e-4
+QLD,Queensland,South-East Asia,Laos,2025,93,148589,61,6.258875152265645e-4
+QLD,Queensland,Americas,Uruguay,2025,87,148589,62,5.855076755345281e-4
+QLD,Queensland,North-West Europe,Austria,2025,79,148589,63,5.316678892784795e-4
+QLD,Queensland,North Africa and the Middle East,Egypt,2025,70,148589,64,4.7109812974042493e-4
+QLD,Queensland,North Africa and the Middle East,Israel,2025,70,148589,65,4.7109812974042493e-4
+QLD,Queensland,Sub-Saharan Africa,Mauritius,2025,70,148589,66,4.7109812974042493e-4
+QLD,Queensland,South-East Asia,Myanmar,2025,70,148589,67,4.7109812974042493e-4
+QLD,Queensland,Sub-Saharan Africa,Ghana,2025,69,148589,68,4.6436815645841886e-4
+QLD,Queensland,Southern and Eastern Europe,Estonia,2025,66,148589,69,4.4417823661240067e-4
+QLD,Queensland,Sub-Saharan Africa,Ethiopia,2025,65,148589,70,4.374482633303946e-4
+QLD,Queensland,Southern and Eastern Europe,Slovakia,2025,65,148589,71,4.374482633303946e-4
+QLD,Queensland,Southern and Eastern Europe,Hungary,2025,64,148589,72,4.307182900483885e-4
+QLD,Queensland,North-West Europe,Finland,2025,54,148589,73,3.634185572283278e-4
+QLD,Queensland,North Africa and the Middle East,Jordan,2025,51,148589,74,3.432286373823096e-4
+QLD,Queensland,North Africa and the Middle East,Kuwait,2025,48,148589,75,3.230387175362914e-4
+QLD,Queensland,Americas,Venezuela,2025,45,148589,76,3.028487976902732e-4
+QLD,Queensland,Americas,Guatemala,2025,42,148589,77,2.8265887784425495e-4
+QLD,Queensland,North Africa and the Middle East,Morocco,2025,42,148589,78,2.8265887784425495e-4
+QLD,Queensland,Americas,Bolivia,2025,38,148589,79,2.557389847162307e-4
+QLD,Queensland,South-East Asia,Brunei Darussalam,2025,37,148589,80,2.490090114342246e-4
+QLD,Queensland,Sub-Saharan Africa,Botswana,2025,33,148589,81,2.2208911830620033e-4
+QLD,Queensland,Americas,El Salvador,2025,31,148589,82,2.0862917174218818e-4
+QLD,Queensland,Americas,Paraguay,2025,29,148589,83,1.9516922517817605e-4
+QLD,Queensland,Southern and Central Asia,Maldives,2025,26,148589,84,1.7497930533215782e-4
+QLD,Queensland,Southern and Eastern Europe,Romania,2025,23,148589,85,1.5478938548613963e-4
+QLD,Queensland,Oceania and Antarctica,Tonga,2025,23,148589,86,1.5478938548613963e-4
+QLD,Queensland,Southern and Central Asia,Kazakhstan,2025,21,148589,87,1.4132943892212747e-4
+QLD,Queensland,Southern and Eastern Europe,Latvia,2025,21,148589,88,1.4132943892212747e-4
+QLD,Queensland,Americas,Costa Rica,2025,18,148589,89,1.2113951907610926e-4
+QLD,Queensland,North Africa and the Middle East,Iraq,2025,18,148589,90,1.2113951907610926e-4
+QLD,Queensland,Oceania and Antarctica,Samoa,2025,18,148589,91,1.2113951907610926e-4
+QLD,Queensland,Southern and Eastern Europe,Greece,2025,17,148589,92,1.144095457941032e-4
+QLD,Queensland,Southern and Eastern Europe,Serbia,2025,17,148589,93,1.144095457941032e-4
+QLD,Queensland,North Africa and the Middle East,Oman,2025,16,148589,94,1.0767957251209712e-4
+QLD,Queensland,Americas,Panama,2025,16,148589,95,1.0767957251209712e-4
+QLD,Queensland,Sub-Saharan Africa,Rwanda,2025,16,148589,96,1.0767957251209712e-4
+QLD,Queensland,North-West Europe,Luxembourg,2025,15,148589,97,1.0094959923009106e-4
+QLD,Queensland,Southern and Eastern Europe,Slovenia,2025,14,148589,98,9.421962594808499e-5
+QLD,Queensland,Sub-Saharan Africa,Tanzania,2025,14,148589,99,9.421962594808499e-5
+QLD,Queensland,Sub-Saharan Africa,Zambia,2025,14,148589,100,9.421962594808499e-5
+QLD,Queensland,Southern and Eastern Europe,Bulgaria,2025,13,148589,101,8.748965266607891e-5
+QLD,Queensland,Oceania and Antarctica,Kiribati,2025,13,148589,102,8.748965266607891e-5
+QLD,Queensland,North Africa and the Middle East,Lebanon,2025,13,148589,103,8.748965266607891e-5
+QLD,Queensland,Southern and Central Asia,Azerbaijan,2025,12,148589,104,8.075967938407285e-5
+QLD,Queensland,Sub-Saharan Africa,Malawi,2025,12,148589,105,8.075967938407285e-5
+QLD,Queensland,Oceania and Antarctica,Vanuatu,2025,12,148589,106,8.075967938407285e-5
+QLD,Queensland,Sub-Saharan Africa,Cameroon,2025,11,148589,107,7.402970610206677e-5
+QLD,Queensland,Southern and Eastern Europe,Ukraine,2025,11,148589,108,7.402970610206677e-5
+QLD,Queensland,Americas,Honduras,2025,10,148589,109,6.72997328200607e-5
+QLD,Queensland,North-West Europe,Iceland,2025,10,148589,110,6.72997328200607e-5
+QLD,Queensland,Southern and Eastern Europe,Belarus,2025,9,148589,111,6.056975953805463e-5
+QLD,Queensland,Americas,Dominican Republic,2025,9,148589,112,6.056975953805463e-5
+QLD,Queensland,Sub-Saharan Africa,Namibia,2025,9,148589,113,6.056975953805463e-5
+QLD,Queensland,Southern and Eastern Europe,North Macedonia,2025,9,148589,114,6.056975953805463e-5
+QLD,Queensland,South-East Asia,Timor-Leste,2025,9,148589,115,6.056975953805463e-5
+QLD,Queensland,North Africa and the Middle East,Bahrain,2025,8,148589,116,5.383978625604856e-5
+QLD,Queensland,Sub-Saharan Africa,Burundi,2025,8,148589,117,5.383978625604856e-5
+QLD,Queensland,Unknown,Other,2025,8,148589,118,5.383978625604856e-5
+QLD,Queensland,Sub-Saharan Africa,Seychelles,2025,8,148589,119,5.383978625604856e-5
+QLD,Queensland,Americas,Trinidad and Tobago,2025,7,148589,120,4.7109812974042495e-5
+QLD,Queensland,North Africa and the Middle East,Yemen,2025,7,148589,121,4.7109812974042495e-5
+QLD,Queensland,Southern and Central Asia,Afghanistan,2025,6,148589,122,4.0379839692036424e-5
+QLD,Queensland,Southern and Central Asia,Georgia,2025,6,148589,123,4.0379839692036424e-5
+QLD,Queensland,Southern and Eastern Europe,Kosovo,2025,6,148589,124,4.0379839692036424e-5
+QLD,Queensland,Sub-Saharan Africa,Mozambique,2025,6,148589,125,4.0379839692036424e-5
+QLD,Queensland,Americas,Nicaragua,2025,6,148589,126,4.0379839692036424e-5
+QLD,Queensland,Southern and Eastern Europe,Albania,2025,5,148589,127,3.364986641003035e-5
+QLD,Queensland,North Africa and the Middle East,Gaza Strip and West Bank,2025,5,148589,128,3.364986641003035e-5
+QLD,Queensland,Americas,Jamaica,2025,5,148589,129,3.364986641003035e-5
+QLD,Queensland,Southern and Central Asia,Kyrgyzstan,2025,5,148589,130,3.364986641003035e-5
+QLD,Queensland,North Africa and the Middle East,Algeria,2025,4,148589,131,2.691989312802428e-5
+QLD,Queensland,Sub-Saharan Africa,"Congo, Democratic Republic of",2025,4,148589,132,2.691989312802428e-5
+QLD,Queensland,Southern and Eastern Europe,Cyprus,2025,4,148589,133,2.691989312802428e-5
+QLD,Queensland,Southern and Eastern Europe,Malta,2025,4,148589,134,2.691989312802428e-5
+QLD,Queensland,Sub-Saharan Africa,Madagascar,2025,3,148589,135,2.0189919846018212e-5
+QLD,Queensland,North Africa and the Middle East,Sudan,2025,3,148589,136,2.0189919846018212e-5
+QLD,Queensland,Sub-Saharan Africa,Swaziland,2025,3,148589,137,2.0189919846018212e-5
+QLD,Queensland,Southern and Central Asia,Armenia,2025,2,148589,138,1.345994656401214e-5
+QLD,Queensland,Americas,Bahamas,2025,2,148589,139,1.345994656401214e-5
+QLD,Queensland,Americas,Dominica,2025,2,148589,140,1.345994656401214e-5
+QLD,Queensland,Sub-Saharan Africa,Eritrea,2025,2,148589,141,1.345994656401214e-5
+QLD,Queensland,Sub-Saharan Africa,Lesotho,2025,2,148589,142,1.345994656401214e-5
+QLD,Queensland,Sub-Saharan Africa,Liberia,2025,2,148589,143,1.345994656401214e-5
+QLD,Queensland,Sub-Saharan Africa,Sierra Leone,2025,2,148589,144,1.345994656401214e-5
+QLD,Queensland,North Africa and the Middle East,Syria,2025,2,148589,145,1.345994656401214e-5
+QLD,Queensland,North Africa and the Middle East,Tunisia,2025,2,148589,146,1.345994656401214e-5
+QLD,Queensland,Southern and Central Asia,Turkmenistan,2025,2,148589,147,1.345994656401214e-5
+QLD,Queensland,Oceania and Antarctica,Tuvalu,2025,2,148589,148,1.345994656401214e-5
+QLD,Queensland,Southern and Eastern Europe,Andorra,2025,1,148589,149,6.72997328200607e-6
+QLD,Queensland,Sub-Saharan Africa,Angola,2025,1,148589,150,6.72997328200607e-6
+QLD,Queensland,Southern and Eastern Europe,Bosnia and Herzegovina,2025,1,148589,151,6.72997328200607e-6
+QLD,Queensland,Sub-Saharan Africa,British Indian Ocean Territory,2025,1,148589,152,6.72997328200607e-6
+QLD,Queensland,Sub-Saharan Africa,Cote d'Ivoire,2025,1,148589,153,6.72997328200607e-6
+QLD,Queensland,Southern and Eastern Europe,Croatia,2025,1,148589,154,6.72997328200607e-6
+QLD,Queensland,Americas,Cuba,2025,1,148589,155,6.72997328200607e-6
+QLD,Queensland,Americas,Grenada,2025,1,148589,156,6.72997328200607e-6
+QLD,Queensland,Sub-Saharan Africa,Guinea,2025,1,148589,157,6.72997328200607e-6
+QLD,Queensland,Americas,Guyana,2025,1,148589,158,6.72997328200607e-6
+QLD,Queensland,North-West Europe,Liechtenstein,2025,1,148589,159,6.72997328200607e-6
+QLD,Queensland,Oceania and Antarctica,Marshall Islands,2025,1,148589,160,6.72997328200607e-6
+QLD,Queensland,Oceania and Antarctica,"Micronesia, Federated States of",2025,1,148589,161,6.72997328200607e-6
+QLD,Queensland,Southern and Eastern Europe,Moldova,2025,1,148589,162,6.72997328200607e-6
+QLD,Queensland,Americas,St Kitts and Nevis,2025,1,148589,163,6.72997328200607e-6
+QLD,Queensland,Americas,St Lucia,2025,1,148589,164,6.72997328200607e-6
+QLD,Queensland,Unknown,United Kingdom (Other),2025,1,148589,165,6.72997328200607e-6
+QLD,Queensland,Americas,"Virgin Islands, British",2025,1,148589,166,6.72997328200607e-6
+SA,South Australia,Southern and Central Asia,India,2025,15844,57327,1,0.2763793674882691
+SA,South Australia,North-East Asia,China,2025,10630,57327,2,0.1854274600101174
+SA,South Australia,Southern and Central Asia,Nepal,2025,4229,57327,3,0.07376977689395922
+SA,South Australia,South-East Asia,Vietnam,2025,3699,57327,4,0.06452456957454603
+SA,South Australia,South-East Asia,Philippines,2025,2246,57327,5,0.03917874648943779
+SA,South Australia,Americas,Colombia,2025,2114,57327,6,0.03687616655328205
+SA,South Australia,Southern and Central Asia,Bangladesh,2025,1869,57327,7,0.03260243864147784
+SA,South Australia,Southern and Central Asia,Sri Lanka,2025,1557,57327,8,0.02715997697420064
+SA,South Australia,North-East Asia,Hong Kong SAR,2025,1463,57327,9,0.025520260959059432
+SA,South Australia,Sub-Saharan Africa,Kenya,2025,1368,57327,10,0.023863101156523105
+SA,South Australia,Americas,Brazil,2025,1366,57327,11,0.023828213581732864
+SA,South Australia,Southern and Central Asia,Pakistan,2025,1096,57327,12,0.019118390985050675
+SA,South Australia,South-East Asia,Malaysia,2025,762,57327,13,0.013292165995080853
+SA,South Australia,North-East Asia,Japan,2025,737,57327,14,0.01285607131020287
+SA,South Australia,North-East Asia,Taiwan,2025,736,57327,15,0.012838627522807752
+SA,South Australia,South-East Asia,Thailand,2025,709,57327,16,0.012367645263139533
+SA,South Australia,South-East Asia,Indonesia,2025,639,57327,17,0.011146580145481188
+SA,South Australia,North-East Asia,"Korea, Republic of (South)",2025,564,57327,18,0.009838296090847245
+SA,South Australia,South-East Asia,Singapore,2025,536,57327,19,0.009349870043783907
+SA,South Australia,South-East Asia,Cambodia,2025,372,57327,20,0.006489088910984353
+SA,South Australia,Sub-Saharan Africa,Nigeria,2025,310,57327,21,0.005407574092486961
+SA,South Australia,North-West Europe,Germany,2025,293,57327,22,0.005111029706769934
+SA,South Australia,North Africa and the Middle East,Saudi Arabia,2025,252,57327,23,0.004395834423570046
+SA,South Australia,Americas,Canada,2025,248,57327,24,0.004326059273989569
+SA,South Australia,Southern and Eastern Europe,Italy,2025,229,57327,25,0.003994627313482303
+SA,South Australia,Americas,Chile,2025,226,57327,26,0.003942295951296946
+SA,South Australia,North Africa and the Middle East,Iran,2025,216,57327,27,0.0037678580773457533
+SA,South Australia,Americas,Peru,2025,202,57327,28,0.003523645053814084
+SA,South Australia,North-West Europe,United Kingdom,2025,200,57327,29,0.0034887574790238456
+SA,South Australia,Americas,Argentina,2025,190,57327,30,0.0033143196050726535
+SA,South Australia,Americas,Ecuador,2025,188,57327,31,0.003279432030282415
+SA,South Australia,Americas,United States of America,2025,161,57327,32,0.002808449770614196
+SA,South Australia,Southern and Central Asia,Bhutan,2025,155,57327,33,0.0027037870462434804
+SA,South Australia,Americas,Mexico,2025,154,57327,34,0.002686343258848361
+SA,South Australia,North-West Europe,France,2025,131,57327,35,0.002285136148760619
+SA,South Australia,North Africa and the Middle East,Kuwait,2025,103,57327,36,0.0017967101016972806
+SA,South Australia,North Africa and the Middle East,United Arab Emirates,2025,99,57327,37,0.0017269349521168036
+SA,South Australia,Oceania and Antarctica,Fiji,2025,97,57327,38,0.001692047377326565
+SA,South Australia,Southern and Eastern Europe,Spain,2025,69,57327,39,0.0012036213302632267
+SA,South Australia,Sub-Saharan Africa,Ethiopia,2025,66,57327,40,0.0011512899680778692
+SA,South Australia,Sub-Saharan Africa,Zimbabwe,2025,65,57327,41,0.0011338461806827498
+SA,South Australia,Southern and Eastern Europe,Russian Federation,2025,64,57327,42,0.0011164023932876306
+SA,South Australia,Oceania and Antarctica,Papua New Guinea,2025,63,57327,43,0.0010989586058925114
+SA,South Australia,North Africa and the Middle East,Turkiye,2025,59,57327,44,0.0010291834563120345
+SA,South Australia,North-East Asia,Mongolia,2025,47,57327,45,8.198580075706038e-4
+SA,South Australia,North Africa and the Middle East,Egypt,2025,40,57327,46,6.977514958047691e-4
+SA,South Australia,Sub-Saharan Africa,Mauritius,2025,40,57327,47,6.977514958047691e-4
+SA,South Australia,Southern and Eastern Europe,Portugal,2025,39,57327,48,6.8030770840965e-4
+SA,South Australia,North-East Asia,Macau,2025,38,57327,49,6.628639210145307e-4
+SA,South Australia,Sub-Saharan Africa,South Africa,2025,38,57327,50,6.628639210145307e-4
+SA,South Australia,North-West Europe,Norway,2025,36,57327,51,6.279763462242922e-4
+SA,South Australia,Sub-Saharan Africa,Ghana,2025,35,57327,52,6.10532558829173e-4
+SA,South Australia,South-East Asia,Laos,2025,32,57327,53,5.582011966438153e-4
+SA,South Australia,Americas,Venezuela,2025,30,57327,54,5.233136218535768e-4
+SA,South Australia,South-East Asia,Myanmar,2025,29,57327,55,5.058698344584577e-4
+SA,South Australia,North-West Europe,Sweden,2025,28,57327,56,4.884260470633384e-4
+SA,South Australia,North-West Europe,Belgium,2025,25,57327,57,4.360946848779807e-4
+SA,South Australia,North-West Europe,Denmark,2025,25,57327,58,4.360946848779807e-4
+SA,South Australia,North-West Europe,Ireland,2025,20,57327,59,3.4887574790238456e-4
+SA,South Australia,North-West Europe,Netherlands,2025,20,57327,60,3.4887574790238456e-4
+SA,South Australia,Southern and Central Asia,Kazakhstan,2025,19,57327,61,3.3143196050726534e-4
+SA,South Australia,North Africa and the Middle East,Lebanon,2025,18,57327,62,3.139881731121461e-4
+SA,South Australia,Southern and Eastern Europe,Poland,2025,18,57327,63,3.139881731121461e-4
+SA,South Australia,North-West Europe,Switzerland,2025,18,57327,64,3.139881731121461e-4
+SA,South Australia,Southern and Eastern Europe,Greece,2025,16,57327,65,2.7910059832190765e-4
+SA,South Australia,Southern and Eastern Europe,Hungary,2025,14,57327,66,2.442130235316692e-4
+SA,South Australia,North Africa and the Middle East,Morocco,2025,14,57327,67,2.442130235316692e-4
+SA,South Australia,Sub-Saharan Africa,Tanzania,2025,14,57327,68,2.442130235316692e-4
+SA,South Australia,Sub-Saharan Africa,Uganda,2025,14,57327,69,2.442130235316692e-4
+SA,South Australia,Southern and Central Asia,Uzbekistan,2025,14,57327,70,2.442130235316692e-4
+SA,South Australia,Sub-Saharan Africa,Zambia,2025,14,57327,71,2.442130235316692e-4
+SA,South Australia,Americas,Uruguay,2025,12,57327,72,2.0932544874143074e-4
+SA,South Australia,North-West Europe,Austria,2025,11,57327,73,1.918816613463115e-4
+SA,South Australia,South-East Asia,Brunei Darussalam,2025,11,57327,74,1.918816613463115e-4
+SA,South Australia,North Africa and the Middle East,Oman,2025,11,57327,75,1.918816613463115e-4
+SA,South Australia,Oceania and Antarctica,Solomon Islands,2025,11,57327,76,1.918816613463115e-4
+SA,South Australia,Southern and Eastern Europe,Czech Republic,2025,10,57327,77,1.7443787395119228e-4
+SA,South Australia,North Africa and the Middle East,Jordan,2025,10,57327,78,1.7443787395119228e-4
+SA,South Australia,Southern and Central Asia,Maldives,2025,10,57327,79,1.7443787395119228e-4
+SA,South Australia,Southern and Eastern Europe,Albania,2025,8,57327,80,1.3955029916095383e-4
+SA,South Australia,Americas,Costa Rica,2025,8,57327,81,1.3955029916095383e-4
+SA,South Australia,Americas,Panama,2025,8,57327,82,1.3955029916095383e-4
+SA,South Australia,Sub-Saharan Africa,"Congo, Democratic Republic of",2025,7,57327,83,1.221065117658346e-4
+SA,South Australia,Sub-Saharan Africa,Malawi,2025,7,57327,84,1.221065117658346e-4
+SA,South Australia,Southern and Eastern Europe,Ukraine,2025,7,57327,85,1.221065117658346e-4
+SA,South Australia,Americas,Bolivia,2025,6,57327,86,1.0466272437071537e-4
+SA,South Australia,Southern and Eastern Europe,Slovakia,2025,6,57327,87,1.0466272437071537e-4
+SA,South Australia,Americas,El Salvador,2025,5,57327,88,8.721893697559614e-5
+SA,South Australia,Southern and Eastern Europe,Serbia,2025,5,57327,89,8.721893697559614e-5
+SA,South Australia,Oceania and Antarctica,Tonga,2025,5,57327,90,8.721893697559614e-5
+SA,South Australia,Southern and Central Asia,Armenia,2025,4,57327,91,6.977514958047691e-5
+SA,South Australia,Sub-Saharan Africa,Botswana,2025,4,57327,92,6.977514958047691e-5
+SA,South Australia,North-West Europe,Finland,2025,4,57327,93,6.977514958047691e-5
+SA,South Australia,North Africa and the Middle East,Iraq,2025,4,57327,94,6.977514958047691e-5
+SA,South Australia,North Africa and the Middle East,Israel,2025,4,57327,95,6.977514958047691e-5
+SA,South Australia,Americas,Paraguay,2025,4,57327,96,6.977514958047691e-5
+SA,South Australia,Southern and Eastern Europe,Romania,2025,4,57327,97,6.977514958047691e-5
+SA,South Australia,Sub-Saharan Africa,Sierra Leone,2025,4,57327,98,6.977514958047691e-5
+SA,South Australia,Southern and Central Asia,Afghanistan,2025,3,57327,99,5.2331362185357685e-5
+SA,South Australia,Sub-Saharan Africa,Burundi,2025,3,57327,100,5.2331362185357685e-5
+SA,South Australia,Southern and Eastern Europe,Lithuania,2025,3,57327,101,5.2331362185357685e-5
+SA,South Australia,Sub-Saharan Africa,Namibia,2025,3,57327,102,5.2331362185357685e-5
+SA,South Australia,Americas,Nicaragua,2025,3,57327,103,5.2331362185357685e-5
+SA,South Australia,Unknown,Other,2025,3,57327,104,5.2331362185357685e-5
+SA,South Australia,Americas,Suriname,2025,3,57327,105,5.2331362185357685e-5
+SA,South Australia,South-East Asia,Timor-Leste,2025,3,57327,106,5.2331362185357685e-5
+SA,South Australia,North Africa and the Middle East,Tunisia,2025,3,57327,107,5.2331362185357685e-5
+SA,South Australia,Southern and Eastern Europe,Cyprus,2025,2,57327,108,3.4887574790238456e-5
+SA,South Australia,Southern and Eastern Europe,Estonia,2025,2,57327,109,3.4887574790238456e-5
+SA,South Australia,North Africa and the Middle East,Gaza Strip and West Bank,2025,2,57327,110,3.4887574790238456e-5
+SA,South Australia,Americas,Guatemala,2025,2,57327,111,3.4887574790238456e-5
+SA,South Australia,Sub-Saharan Africa,Lesotho,2025,2,57327,112,3.4887574790238456e-5
+SA,South Australia,Sub-Saharan Africa,Mozambique,2025,2,57327,113,3.4887574790238456e-5
+SA,South Australia,Sub-Saharan Africa,Rwanda,2025,2,57327,114,3.4887574790238456e-5
+SA,South Australia,Sub-Saharan Africa,Swaziland,2025,2,57327,115,3.4887574790238456e-5
+SA,South Australia,North Africa and the Middle East,Syria,2025,2,57327,116,3.4887574790238456e-5
+SA,South Australia,Southern and Eastern Europe,Andorra,2025,1,57327,117,1.7443787395119228e-5
+SA,South Australia,Southern and Eastern Europe,Bosnia and Herzegovina,2025,1,57327,118,1.7443787395119228e-5
+SA,South Australia,Southern and Eastern Europe,Bulgaria,2025,1,57327,119,1.7443787395119228e-5
+SA,South Australia,Sub-Saharan Africa,Cameroon,2025,1,57327,120,1.7443787395119228e-5
+SA,South Australia,Southern and Eastern Europe,Croatia,2025,1,57327,121,1.7443787395119228e-5
+SA,South Australia,Americas,Dominica,2025,1,57327,122,1.7443787395119228e-5
+SA,South Australia,Southern and Central Asia,Georgia,2025,1,57327,123,1.7443787395119228e-5
+SA,South Australia,North-West Europe,Iceland,2025,1,57327,124,1.7443787395119228e-5
+SA,South Australia,Southern and Central Asia,Kyrgyzstan,2025,1,57327,125,1.7443787395119228e-5
+SA,South Australia,Southern and Eastern Europe,Latvia,2025,1,57327,126,1.7443787395119228e-5
+SA,South Australia,Sub-Saharan Africa,Liberia,2025,1,57327,127,1.7443787395119228e-5
+SA,South Australia,North-West Europe,Luxembourg,2025,1,57327,128,1.7443787395119228e-5
+SA,South Australia,Southern and Eastern Europe,North Macedonia,2025,1,57327,129,1.7443787395119228e-5
+SA,South Australia,North Africa and the Middle East,Qatar,2025,1,57327,130,1.7443787395119228e-5
+SA,South Australia,Southern and Eastern Europe,San Marino,2025,1,57327,131,1.7443787395119228e-5
+SA,South Australia,Sub-Saharan Africa,Seychelles,2025,1,57327,132,1.7443787395119228e-5
+SA,South Australia,Americas,St Kitts and Nevis,2025,1,57327,133,1.7443787395119228e-5
+SA,South Australia,Americas,St Lucia,2025,1,57327,134,1.7443787395119228e-5
+SA,South Australia,North Africa and the Middle East,Sudan,2025,1,57327,135,1.7443787395119228e-5
+SA,South Australia,Oceania and Antarctica,Vanuatu,2025,1,57327,136,1.7443787395119228e-5
+SA,South Australia,North Africa and the Middle East,Yemen,2025,1,57327,137,1.7443787395119228e-5
+TAS,Tasmania,Southern and Central Asia,Nepal,2025,1733,9427,1,0.18383366924790495
+TAS,Tasmania,Southern and Central Asia,India,2025,1457,9427,2,0.15455606237403205
+TAS,Tasmania,North-East Asia,China,2025,912,9427,3,0.09674339662671051
+TAS,Tasmania,Southern and Central Asia,Pakistan,2025,769,9427,4,0.08157420176089955
+TAS,Tasmania,Southern and Central Asia,Bangladesh,2025,716,9427,5,0.07595205261482975
+TAS,Tasmania,South-East Asia,Vietnam,2025,386,9427,6,0.040946218309112124
+TAS,Tasmania,Southern and Central Asia,Sri Lanka,2025,372,9427,7,0.0394611223082635
+TAS,Tasmania,South-East Asia,Philippines,2025,339,9427,8,0.03596053887769174
+TAS,Tasmania,Americas,Colombia,2025,313,9427,9,0.03320250344754429
+TAS,Tasmania,North-East Asia,Taiwan,2025,190,9427,10,0.020154874297231357
+TAS,Tasmania,North-East Asia,Hong Kong SAR,2025,161,9427,11,0.0170786040097592
+TAS,Tasmania,Americas,Brazil,2025,160,9427,12,0.016972525723984302
+TAS,Tasmania,South-East Asia,Malaysia,2025,138,9427,13,0.01463880343693646
+TAS,Tasmania,Sub-Saharan Africa,Kenya,2025,122,9427,14,0.01294155086453803
+TAS,Tasmania,South-East Asia,Indonesia,2025,106,9427,15,0.011244298292139599
+TAS,Tasmania,South-East Asia,Thailand,2025,98,9427,16,0.010395672005940384
+TAS,Tasmania,Sub-Saharan Africa,Nigeria,2025,96,9427,17,0.01018351543439058
+TAS,Tasmania,North-East Asia,"Korea, Republic of (South)",2025,92,9427,18,0.009759202291290972
+TAS,Tasmania,Americas,Chile,2025,91,9427,19,0.009653124005516071
+TAS,Tasmania,North-East Asia,Japan,2025,89,9427,20,0.009440967433966267
+TAS,Tasmania,North Africa and the Middle East,Saudi Arabia,2025,85,9427,21,0.00901665429086666
+TAS,Tasmania,Southern and Eastern Europe,Italy,2025,78,9427,22,0.008274106290442347
+TAS,Tasmania,South-East Asia,Singapore,2025,77,9427,23,0.008168028004667444
+TAS,Tasmania,Oceania and Antarctica,Fiji,2025,75,9427,24,0.00795587143311764
+TAS,Tasmania,North-West Europe,United Kingdom,2025,64,9427,25,0.00678901028959372
+TAS,Tasmania,Americas,United States of America,2025,59,9427,26,0.006258618860719211
+TAS,Tasmania,North-West Europe,Germany,2025,57,9427,27,0.006046462289169407
+TAS,Tasmania,Americas,Argentina,2025,53,9427,28,0.005622149146069799
+TAS,Tasmania,Americas,Canada,2025,34,9427,29,0.003606661716346664
+TAS,Tasmania,North-West Europe,France,2025,34,9427,30,0.003606661716346664
+TAS,Tasmania,Americas,Peru,2025,34,9427,31,0.003606661716346664
+TAS,Tasmania,North Africa and the Middle East,Iran,2025,33,9427,32,0.003500583430571762
+TAS,Tasmania,Americas,Ecuador,2025,29,9427,33,0.0030762702874721545
+TAS,Tasmania,Sub-Saharan Africa,Ghana,2025,25,9427,34,0.002651957144372547
+TAS,Tasmania,Southern and Central Asia,Bhutan,2025,22,9427,35,0.002333722287047841
+TAS,Tasmania,Americas,Mexico,2025,22,9427,36,0.002333722287047841
+TAS,Tasmania,Sub-Saharan Africa,Ethiopia,2025,21,9427,37,0.0022276440012729396
+TAS,Tasmania,North-West Europe,Netherlands,2025,18,9427,38,0.0019094091439482337
+TAS,Tasmania,North-West Europe,Norway,2025,15,9427,39,0.0015911742866235282
+TAS,Tasmania,South-East Asia,Cambodia,2025,14,9427,40,0.0014850960008486263
+TAS,Tasmania,North-West Europe,Denmark,2025,14,9427,41,0.0014850960008486263
+TAS,Tasmania,Sub-Saharan Africa,South Africa,2025,13,9427,42,0.0013790177150737244
+TAS,Tasmania,North-West Europe,Switzerland,2025,13,9427,43,0.0013790177150737244
+TAS,Tasmania,Oceania and Antarctica,Papua New Guinea,2025,12,9427,44,0.0012729394292988225
+TAS,Tasmania,Sub-Saharan Africa,Zimbabwe,2025,12,9427,45,0.0012729394292988225
+TAS,Tasmania,Sub-Saharan Africa,Mauritius,2025,10,9427,46,0.0010607828577490189
+TAS,Tasmania,Southern and Eastern Europe,Spain,2025,10,9427,47,0.0010607828577490189
+TAS,Tasmania,North-West Europe,Sweden,2025,9,9427,48,9.547045719741168e-4
+TAS,Tasmania,North-East Asia,Mongolia,2025,7,9427,49,7.425480004243131e-4
+TAS,Tasmania,Southern and Eastern Europe,Russian Federation,2025,7,9427,50,7.425480004243131e-4
+TAS,Tasmania,North Africa and the Middle East,Egypt,2025,6,9427,51,6.364697146494112e-4
+TAS,Tasmania,North Africa and the Middle East,Jordan,2025,6,9427,52,6.364697146494112e-4
+TAS,Tasmania,South-East Asia,Myanmar,2025,6,9427,53,6.364697146494112e-4
+TAS,Tasmania,Southern and Eastern Europe,Poland,2025,6,9427,54,6.364697146494112e-4
+TAS,Tasmania,North-West Europe,Belgium,2025,5,9427,55,5.303914288745094e-4
+TAS,Tasmania,North-West Europe,Finland,2025,5,9427,56,5.303914288745094e-4
+TAS,Tasmania,North-West Europe,Ireland,2025,5,9427,57,5.303914288745094e-4
+TAS,Tasmania,Sub-Saharan Africa,Uganda,2025,5,9427,58,5.303914288745094e-4
+TAS,Tasmania,Southern and Eastern Europe,Cyprus,2025,4,9427,59,4.243131430996075e-4
+TAS,Tasmania,Americas,El Salvador,2025,4,9427,60,4.243131430996075e-4
+TAS,Tasmania,North Africa and the Middle East,Lebanon,2025,4,9427,61,4.243131430996075e-4
+TAS,Tasmania,North Africa and the Middle East,Turkiye,2025,4,9427,62,4.243131430996075e-4
+TAS,Tasmania,Americas,Uruguay,2025,4,9427,63,4.243131430996075e-4
+TAS,Tasmania,Sub-Saharan Africa,Cameroon,2025,3,9427,64,3.182348573247056e-4
+TAS,Tasmania,Southern and Eastern Europe,Estonia,2025,3,9427,65,3.182348573247056e-4
+TAS,Tasmania,Americas,Guatemala,2025,3,9427,66,3.182348573247056e-4
+TAS,Tasmania,South-East Asia,Laos,2025,3,9427,67,3.182348573247056e-4
+TAS,Tasmania,Americas,Venezuela,2025,3,9427,68,3.182348573247056e-4
+TAS,Tasmania,Southern and Eastern Europe,Albania,2025,2,9427,69,2.1215657154980376e-4
+TAS,Tasmania,Southern and Central Asia,Azerbaijan,2025,2,9427,70,2.1215657154980376e-4
+TAS,Tasmania,Sub-Saharan Africa,Benin,2025,2,9427,71,2.1215657154980376e-4
+TAS,Tasmania,Southern and Eastern Europe,Croatia,2025,2,9427,72,2.1215657154980376e-4
+TAS,Tasmania,Southern and Eastern Europe,Hungary,2025,2,9427,73,2.1215657154980376e-4
+TAS,Tasmania,Southern and Central Asia,Kazakhstan,2025,2,9427,74,2.1215657154980376e-4
+TAS,Tasmania,Southern and Central Asia,Maldives,2025,2,9427,75,2.1215657154980376e-4
+TAS,Tasmania,North Africa and the Middle East,Morocco,2025,2,9427,76,2.1215657154980376e-4
+TAS,Tasmania,Sub-Saharan Africa,Namibia,2025,2,9427,77,2.1215657154980376e-4
+TAS,Tasmania,North Africa and the Middle East,Oman,2025,2,9427,78,2.1215657154980376e-4
+TAS,Tasmania,Sub-Saharan Africa,Tanzania,2025,2,9427,79,2.1215657154980376e-4
+TAS,Tasmania,North Africa and the Middle East,United Arab Emirates,2025,2,9427,80,2.1215657154980376e-4
+TAS,Tasmania,Southern and Central Asia,Afghanistan,2025,1,9427,81,1.0607828577490188e-4
+TAS,Tasmania,Americas,Barbados,2025,1,9427,82,1.0607828577490188e-4
+TAS,Tasmania,Americas,Bolivia,2025,1,9427,83,1.0607828577490188e-4
+TAS,Tasmania,Sub-Saharan Africa,Botswana,2025,1,9427,84,1.0607828577490188e-4
+TAS,Tasmania,Americas,Costa Rica,2025,1,9427,85,1.0607828577490188e-4
+TAS,Tasmania,Americas,Cuba,2025,1,9427,86,1.0607828577490188e-4
+TAS,Tasmania,Southern and Eastern Europe,Czech Republic,2025,1,9427,87,1.0607828577490188e-4
+TAS,Tasmania,Sub-Saharan Africa,Djibouti,2025,1,9427,88,1.0607828577490188e-4
+TAS,Tasmania,Southern and Eastern Europe,Greece,2025,1,9427,89,1.0607828577490188e-4
+TAS,Tasmania,Americas,Honduras,2025,1,9427,90,1.0607828577490188e-4
+TAS,Tasmania,North Africa and the Middle East,Israel,2025,1,9427,91,1.0607828577490188e-4
+TAS,Tasmania,Americas,Jamaica,2025,1,9427,92,1.0607828577490188e-4
+TAS,Tasmania,Southern and Central Asia,Kyrgyzstan,2025,1,9427,93,1.0607828577490188e-4
+TAS,Tasmania,Sub-Saharan Africa,Liberia,2025,1,9427,94,1.0607828577490188e-4
+TAS,Tasmania,North-East Asia,Macau,2025,1,9427,95,1.0607828577490188e-4
+TAS,Tasmania,Sub-Saharan Africa,Malawi,2025,1,9427,96,1.0607828577490188e-4
+TAS,Tasmania,Southern and Eastern Europe,North Macedonia,2025,1,9427,97,1.0607828577490188e-4
+TAS,Tasmania,Americas,Paraguay,2025,1,9427,98,1.0607828577490188e-4
+TAS,Tasmania,Southern and Eastern Europe,Portugal,2025,1,9427,99,1.0607828577490188e-4
+TAS,Tasmania,Oceania and Antarctica,Solomon Islands,2025,1,9427,100,1.0607828577490188e-4
+TAS,Tasmania,North Africa and the Middle East,Sudan,2025,1,9427,101,1.0607828577490188e-4
+TAS,Tasmania,North Africa and the Middle East,Syria,2025,1,9427,102,1.0607828577490188e-4
+TAS,Tasmania,Oceania and Antarctica,Tonga,2025,1,9427,103,1.0607828577490188e-4
+TAS,Tasmania,Southern and Central Asia,Turkmenistan,2025,1,9427,104,1.0607828577490188e-4
+TAS,Tasmania,Southern and Eastern Europe,Ukraine,2025,1,9427,105,1.0607828577490188e-4
+TAS,Tasmania,Southern and Central Asia,Uzbekistan,2025,1,9427,106,1.0607828577490188e-4
+TAS,Tasmania,Oceania and Antarctica,Vanuatu,2025,1,9427,107,1.0607828577490188e-4
+TAS,Tasmania,Sub-Saharan Africa,Zambia,2025,1,9427,108,1.0607828577490188e-4
+VIC,Victoria,Southern and Central Asia,India,2025,78367,322347,1,0.2431137873161531
+VIC,Victoria,North-East Asia,China,2025,67069,322347,2,0.20806460119064238
+VIC,Victoria,South-East Asia,Vietnam,2025,18325,322347,3,0.056848675495661506
+VIC,Victoria,Southern and Central Asia,Sri Lanka,2025,17319,322347,4,0.05372781505644538
+VIC,Victoria,Southern and Central Asia,Nepal,2025,14071,322347,5,0.04365171693857861
+VIC,Victoria,Americas,Colombia,2025,13438,322347,6,0.041687994614499284
+VIC,Victoria,South-East Asia,Philippines,2025,12717,322347,7,0.039451274558162476
+VIC,Victoria,South-East Asia,Thailand,2025,9846,322347,8,0.030544723543262386
+VIC,Victoria,South-East Asia,Indonesia,2025,9576,322347,9,0.029707116864745135
+VIC,Victoria,Southern and Central Asia,Pakistan,2025,9295,322347,10,0.0288353854696957
+VIC,Victoria,South-East Asia,Malaysia,2025,8653,322347,11,0.02684374292299913
+VIC,Victoria,Southern and Central Asia,Bangladesh,2025,7744,322347,12,0.02402380043865772
+VIC,Victoria,North-East Asia,Taiwan,2025,4134,322347,13,0.01282468892218634
+VIC,Victoria,South-East Asia,Cambodia,2025,3560,322347,14,0.011043999168597815
+VIC,Victoria,North-East Asia,Hong Kong SAR,2025,3540,322347,15,0.01098195422944839
+VIC,Victoria,North-East Asia,Japan,2025,3463,322347,16,0.0107430812137231
+VIC,Victoria,Sub-Saharan Africa,Kenya,2025,3158,322347,17,0.009796895891694354
+VIC,Victoria,North-East Asia,"Korea, Republic of (South)",2025,3012,322347,18,0.009343967835903544
+VIC,Victoria,North Africa and the Middle East,Turkiye,2025,2789,322347,19,0.008652166764387445
+VIC,Victoria,Americas,Brazil,2025,2607,322347,20,0.00808755781812767
+VIC,Victoria,South-East Asia,Singapore,2025,2370,322347,21,0.0073523252892069724
+VIC,Victoria,North Africa and the Middle East,Saudi Arabia,2025,2092,322347,22,0.006489900635029952
+VIC,Victoria,Oceania and Antarctica,Fiji,2025,1865,322347,23,0.005785690575683968
+VIC,Victoria,Americas,Chile,2025,1833,322347,24,0.005686418673044887
+VIC,Victoria,Americas,Mexico,2025,1757,322347,25,0.005450647904277068
+VIC,Victoria,Americas,United States of America,2025,1444,322347,26,0.0044796446065885525
+VIC,Victoria,North-West Europe,United Kingdom,2025,1275,322347,27,0.003955364870775903
+VIC,Victoria,North Africa and the Middle East,Iran,2025,1250,322347,28,0.0038778086968391206
+VIC,Victoria,Sub-Saharan Africa,Mauritius,2025,1002,322347,29,0.003108451451386239
+VIC,Victoria,Southern and Eastern Europe,Italy,2025,966,322347,30,0.0029967705609172724
+VIC,Victoria,Americas,Canada,2025,880,322347,31,0.002729977322574741
+VIC,Victoria,North-West Europe,France,2025,746,322347,32,0.002314276230273587
+VIC,Victoria,North-West Europe,Germany,2025,707,322347,33,0.0021932885989322066
+VIC,Victoria,North-East Asia,Mongolia,2025,703,322347,34,0.0021808796111023212
+VIC,Victoria,Americas,Ecuador,2025,644,322347,35,0.001997847040611515
+VIC,Victoria,Southern and Eastern Europe,Spain,2025,636,322347,36,0.0019730290649517443
+VIC,Victoria,Americas,Peru,2025,615,322347,37,0.0019078818788448473
+VIC,Victoria,Sub-Saharan Africa,Nigeria,2025,576,322347,38,0.0017868942475034667
+VIC,Victoria,Americas,Argentina,2025,571,322347,39,0.0017713830127161104
+VIC,Victoria,Sub-Saharan Africa,Zimbabwe,2025,513,322347,40,0.001591452689182775
+VIC,Victoria,South-East Asia,Laos,2025,460,322347,41,0.0014270336004367963
+VIC,Victoria,Southern and Central Asia,Bhutan,2025,431,322347,42,0.0013370684386701287
+VIC,Victoria,North Africa and the Middle East,Kuwait,2025,399,322347,43,0.0012377965360310472
+VIC,Victoria,North Africa and the Middle East,United Arab Emirates,2025,373,322347,44,0.0011571381151367936
+VIC,Victoria,South-East Asia,Myanmar,2025,292,322347,45,9.058561115816185e-4
+VIC,Victoria,North-East Asia,Macau,2025,244,322347,46,7.569482576229963e-4
+VIC,Victoria,North-West Europe,Ireland,2025,241,322347,47,7.476415167505825e-4
+VIC,Victoria,Southern and Eastern Europe,Russian Federation,2025,240,322347,48,7.445392697931111e-4
+VIC,Victoria,North-West Europe,Netherlands,2025,236,322347,49,7.32130281963226e-4
+VIC,Victoria,Sub-Saharan Africa,South Africa,2025,221,322347,50,6.855965776011565e-4
+VIC,Victoria,North-West Europe,Denmark,2025,216,322347,51,6.700853428138001e-4
+VIC,Victoria,North-West Europe,Sweden,2025,201,322347,52,6.235516384517306e-4
+VIC,Victoria,Southern and Eastern Europe,Portugal,2025,185,322347,53,5.739156871321898e-4
+VIC,Victoria,North-West Europe,Norway,2025,168,322347,54,5.211774888551779e-4
+VIC,Victoria,North Africa and the Middle East,Egypt,2025,159,322347,55,4.932572662379361e-4
+VIC,Victoria,Sub-Saharan Africa,Ethiopia,2025,157,322347,56,4.8705277232299356e-4
+VIC,Victoria,North Africa and the Middle East,Oman,2025,144,322347,57,4.467235618758667e-4
+VIC,Victoria,Oceania and Antarctica,Papua New Guinea,2025,140,322347,58,4.3431457404598153e-4
+VIC,Victoria,Southern and Eastern Europe,Greece,2025,116,322347,59,3.598606470666704e-4
+VIC,Victoria,Southern and Eastern Europe,Poland,2025,116,322347,60,3.598606470666704e-4
+VIC,Victoria,South-East Asia,Brunei Darussalam,2025,114,322347,61,3.536561531517278e-4
+VIC,Victoria,North-West Europe,Belgium,2025,113,322347,62,3.505539061942565e-4
+VIC,Victoria,Sub-Saharan Africa,Ghana,2025,113,322347,63,3.505539061942565e-4
+VIC,Victoria,North-West Europe,Switzerland,2025,111,322347,64,3.443494122793139e-4
+VIC,Victoria,Southern and Eastern Europe,North Macedonia,2025,92,322347,65,2.854067200873593e-4
+VIC,Victoria,Sub-Saharan Africa,Uganda,2025,90,322347,66,2.7920222617241667e-4
+VIC,Victoria,North Africa and the Middle East,Israel,2025,87,322347,67,2.698954853000028e-4
+VIC,Victoria,North Africa and the Middle East,Lebanon,2025,87,322347,68,2.698954853000028e-4
+VIC,Victoria,North Africa and the Middle East,Jordan,2025,86,322347,69,2.667932383425315e-4
+VIC,Victoria,Southern and Central Asia,Uzbekistan,2025,84,322347,70,2.6058874442758893e-4
+VIC,Victoria,Sub-Saharan Africa,Botswana,2025,80,322347,71,2.481797565977037e-4
+VIC,Victoria,Southern and Central Asia,Maldives,2025,75,322347,72,2.3266852181034724e-4
+VIC,Victoria,Southern and Central Asia,Kazakhstan,2025,69,322347,73,2.1405504006551945e-4
+VIC,Victoria,Southern and Eastern Europe,Czech Republic,2025,67,322347,74,2.0785054615057687e-4
+VIC,Victoria,South-East Asia,Timor-Leste,2025,54,322347,75,1.6752133570345002e-4
+VIC,Victoria,Southern and Eastern Europe,Lithuania,2025,52,322347,76,1.6131684178850741e-4
+VIC,Victoria,Sub-Saharan Africa,Tanzania,2025,50,322347,77,1.5511234787356484e-4
+VIC,Victoria,North-West Europe,Austria,2025,47,322347,78,1.4580560700115094e-4
+VIC,Victoria,Americas,Uruguay,2025,44,322347,79,1.3649886612873704e-4
+VIC,Victoria,Americas,Bolivia,2025,41,322347,80,1.2719212525632315e-4
+VIC,Victoria,Americas,Venezuela,2025,41,322347,81,1.2719212525632315e-4
+VIC,Victoria,North-West Europe,Finland,2025,37,322347,82,1.1478313742643798e-4
+VIC,Victoria,Americas,Guatemala,2025,36,322347,83,1.1168089046896667e-4
+VIC,Victoria,Americas,Paraguay,2025,31,322347,84,9.61696556816102e-5
+VIC,Victoria,Oceania and Antarctica,Tonga,2025,30,322347,85,9.306740872413889e-5
+VIC,Victoria,Southern and Eastern Europe,Ukraine,2025,29,322347,86,8.99651617666676e-5
+VIC,Victoria,Southern and Eastern Europe,Hungary,2025,28,322347,87,8.68629148091963e-5
+VIC,Victoria,Southern and Eastern Europe,Romania,2025,26,322347,88,8.065842089425371e-5
+VIC,Victoria,Southern and Eastern Europe,Albania,2025,25,322347,89,7.755617393678242e-5
+VIC,Victoria,Sub-Saharan Africa,Zambia,2025,24,322347,90,7.445392697931111e-5
+VIC,Victoria,Oceania and Antarctica,Samoa,2025,22,322347,91,6.824943306436852e-5
+VIC,Victoria,Southern and Eastern Europe,Slovakia,2025,22,322347,92,6.824943306436852e-5
+VIC,Victoria,Oceania and Antarctica,Solomon Islands,2025,22,322347,93,6.824943306436852e-5
+VIC,Victoria,Sub-Saharan Africa,Malawi,2025,21,322347,94,6.514718610689723e-5
+VIC,Victoria,Americas,Panama,2025,21,322347,95,6.514718610689723e-5
+VIC,Victoria,North Africa and the Middle East,Iraq,2025,20,322347,96,6.204493914942593e-5
+VIC,Victoria,North Africa and the Middle East,Morocco,2025,20,322347,97,6.204493914942593e-5
+VIC,Victoria,Southern and Eastern Europe,Bulgaria,2025,19,322347,98,5.894269219195463e-5
+VIC,Victoria,Americas,El Salvador,2025,19,322347,99,5.894269219195463e-5
+VIC,Victoria,Southern and Eastern Europe,Malta,2025,17,322347,100,5.273819827701204e-5
+VIC,Victoria,Southern and Eastern Europe,Estonia,2025,16,322347,101,4.963595131954074e-5
+VIC,Victoria,Unknown,Other,2025,16,322347,102,4.963595131954074e-5
+VIC,Victoria,Americas,Honduras,2025,15,322347,103,4.6533704362069447e-5
+VIC,Victoria,Southern and Eastern Europe,Slovenia,2025,15,322347,104,4.6533704362069447e-5
+VIC,Victoria,Southern and Central Asia,Armenia,2025,14,322347,105,4.343145740459815e-5
+VIC,Victoria,Southern and Eastern Europe,Croatia,2025,14,322347,106,4.343145740459815e-5
+VIC,Victoria,Southern and Eastern Europe,Serbia,2025,14,322347,107,4.343145740459815e-5
+VIC,Victoria,Southern and Central Asia,Afghanistan,2025,13,322347,108,4.0329210447126854e-5
+VIC,Victoria,Sub-Saharan Africa,Madagascar,2025,13,322347,109,4.0329210447126854e-5
+VIC,Victoria,Oceania and Antarctica,Vanuatu,2025,13,322347,110,4.0329210447126854e-5
+VIC,Victoria,North Africa and the Middle East,Bahrain,2025,12,322347,111,3.722696348965556e-5
+VIC,Victoria,North Africa and the Middle East,Sudan,2025,12,322347,112,3.722696348965556e-5
+VIC,Victoria,Oceania and Antarctica,Kiribati,2025,11,322347,113,3.412471653218426e-5
+VIC,Victoria,Southern and Central Asia,Azerbaijan,2025,10,322347,114,3.1022469574712964e-5
+VIC,Victoria,Southern and Eastern Europe,Cyprus,2025,10,322347,115,3.1022469574712964e-5
+VIC,Victoria,Americas,Dominican Republic,2025,10,322347,116,3.1022469574712964e-5
+VIC,Victoria,Americas,Costa Rica,2025,9,322347,117,2.7920222617241668e-5
+VIC,Victoria,Southern and Central Asia,Kyrgyzstan,2025,9,322347,118,2.7920222617241668e-5
+VIC,Victoria,North-West Europe,Luxembourg,2025,9,322347,119,2.7920222617241668e-5
+VIC,Victoria,Sub-Saharan Africa,"Congo, Democratic Republic of",2025,8,322347,120,2.481797565977037e-5
+VIC,Victoria,Americas,Jamaica,2025,8,322347,121,2.481797565977037e-5
+VIC,Victoria,North Africa and the Middle East,Syria,2025,8,322347,122,2.481797565977037e-5
+VIC,Victoria,North Africa and the Middle East,Tunisia,2025,8,322347,123,2.481797565977037e-5
+VIC,Victoria,North Africa and the Middle East,Algeria,2025,7,322347,124,2.1715728702299075e-5
+VIC,Victoria,Southern and Eastern Europe,Latvia,2025,7,322347,125,2.1715728702299075e-5
+VIC,Victoria,North Africa and the Middle East,Yemen,2025,7,322347,126,2.1715728702299075e-5
+VIC,Victoria,Southern and Eastern Europe,Belarus,2025,6,322347,127,1.861348174482778e-5
+VIC,Victoria,North-West Europe,Iceland,2025,6,322347,128,1.861348174482778e-5
+VIC,Victoria,Sub-Saharan Africa,Rwanda,2025,6,322347,129,1.861348174482778e-5
+VIC,Victoria,Sub-Saharan Africa,Seychelles,2025,6,322347,130,1.861348174482778e-5
+VIC,Victoria,Southern and Eastern Europe,Bosnia and Herzegovina,2025,5,322347,131,1.5511234787356482e-5
+VIC,Victoria,Sub-Saharan Africa,Burundi,2025,5,322347,132,1.5511234787356482e-5
+VIC,Victoria,Sub-Saharan Africa,Cameroon,2025,5,322347,133,1.5511234787356482e-5
+VIC,Victoria,North Africa and the Middle East,Gaza Strip and West Bank,2025,5,322347,134,1.5511234787356482e-5
+VIC,Victoria,Southern and Eastern Europe,Montenegro,2025,5,322347,135,1.5511234787356482e-5
+VIC,Victoria,North Africa and the Middle East,Qatar,2025,5,322347,136,1.5511234787356482e-5
+VIC,Victoria,Southern and Eastern Europe,Kosovo,2025,4,322347,137,1.2408987829885186e-5
+VIC,Victoria,Sub-Saharan Africa,Lesotho,2025,4,322347,138,1.2408987829885186e-5
+VIC,Victoria,Sub-Saharan Africa,Mozambique,2025,4,322347,139,1.2408987829885186e-5
+VIC,Victoria,Oceania and Antarctica,Nauru,2025,4,322347,140,1.2408987829885186e-5
+VIC,Victoria,Americas,Barbados,2025,3,322347,141,9.30674087241389e-6
+VIC,Victoria,Americas,Cuba,2025,3,322347,142,9.30674087241389e-6
+VIC,Victoria,Sub-Saharan Africa,Djibouti,2025,3,322347,143,9.30674087241389e-6
+VIC,Victoria,Americas,Dominica,2025,3,322347,144,9.30674087241389e-6
+VIC,Victoria,Southern and Eastern Europe,Moldova,2025,3,322347,145,9.30674087241389e-6
+VIC,Victoria,Americas,Nicaragua,2025,3,322347,146,9.30674087241389e-6
+VIC,Victoria,Sub-Saharan Africa,Sierra Leone,2025,3,322347,147,9.30674087241389e-6
+VIC,Victoria,Americas,St Kitts and Nevis,2025,3,322347,148,9.30674087241389e-6
+VIC,Victoria,Americas,Bahamas,2025,2,322347,149,6.204493914942593e-6
+VIC,Victoria,Sub-Saharan Africa,Cote d'Ivoire,2025,2,322347,150,6.204493914942593e-6
+VIC,Victoria,Sub-Saharan Africa,Eritrea,2025,2,322347,151,6.204493914942593e-6
+VIC,Victoria,Sub-Saharan Africa,Gambia,2025,2,322347,152,6.204493914942593e-6
+VIC,Victoria,Southern and Central Asia,Georgia,2025,2,322347,153,6.204493914942593e-6
+VIC,Victoria,Sub-Saharan Africa,Liberia,2025,2,322347,154,6.204493914942593e-6
+VIC,Victoria,North Africa and the Middle East,South Sudan,2025,2,322347,155,6.204493914942593e-6
+VIC,Victoria,Americas,Trinidad and Tobago,2025,2,322347,156,6.204493914942593e-6
+VIC,Victoria,Southern and Central Asia,Turkmenistan,2025,2,322347,157,6.204493914942593e-6
+VIC,Victoria,Oceania and Antarctica,Tuvalu,2025,2,322347,158,6.204493914942593e-6
+VIC,Victoria,Americas,Antigua and Barbuda,2025,1,322347,159,3.1022469574712964e-6
+VIC,Victoria,Americas,Bermuda,2025,1,322347,160,3.1022469574712964e-6
+VIC,Victoria,Sub-Saharan Africa,Chad,2025,1,322347,161,3.1022469574712964e-6
+VIC,Victoria,Americas,Grenada,2025,1,322347,162,3.1022469574712964e-6
+VIC,Victoria,Americas,Haiti,2025,1,322347,163,3.1022469574712964e-6
+VIC,Victoria,North-West Europe,Monaco,2025,1,322347,164,3.1022469574712964e-6
+VIC,Victoria,Oceania and Antarctica,New Caledonia,2025,1,322347,165,3.1022469574712964e-6
+VIC,Victoria,Southern and Eastern Europe,San Marino,2025,1,322347,166,3.1022469574712964e-6
+VIC,Victoria,Americas,St Lucia,2025,1,322347,167,3.1022469574712964e-6
+VIC,Victoria,Americas,St Vincent and the Grenadines,2025,1,322347,168,3.1022469574712964e-6
+VIC,Victoria,Americas,Suriname,2025,1,322347,169,3.1022469574712964e-6
+VIC,Victoria,Unknown,United Kingdom (Other),2025,1,322347,170,3.1022469574712964e-6
+WA,Western Australia,Southern and Central Asia,India,2025,15044,89530,1,0.16803306154361666
+WA,Western Australia,Southern and Central Asia,Bhutan,2025,11264,89530,2,0.12581257678990282
+WA,Western Australia,North-East Asia,China,2025,9015,89530,3,0.1006925053054842
+WA,Western Australia,Southern and Central Asia,Pakistan,2025,5450,89530,4,0.06087345024014297
+WA,Western Australia,South-East Asia,Philippines,2025,5199,89530,5,0.05806992069697308
+WA,Western Australia,Southern and Central Asia,Nepal,2025,4777,89530,6,0.05335641684351614
+WA,Western Australia,Southern and Central Asia,Bangladesh,2025,3731,89530,7,0.0416731821735731
+WA,Western Australia,Americas,Colombia,2025,2872,89530,8,0.032078632860493686
+WA,Western Australia,South-East Asia,Vietnam,2025,2835,89530,9,0.031665363565285376
+WA,Western Australia,Sub-Saharan Africa,Kenya,2025,2535,89530,10,0.028314531441974756
+WA,Western Australia,Southern and Central Asia,Sri Lanka,2025,2310,89530,11,0.02580140734949179
+WA,Western Australia,South-East Asia,Indonesia,2025,2306,89530,12,0.025756729587847648
+WA,Western Australia,Americas,Brazil,2025,2295,89530,13,0.02563386574332626
+WA,Western Australia,South-East Asia,Malaysia,2025,1712,89530,14,0.019122081983692616
+WA,Western Australia,North-East Asia,Japan,2025,1409,89530,15,0.015737741539148888
+WA,Western Australia,South-East Asia,Singapore,2025,1264,89530,16,0.014118172679548754
+WA,Western Australia,North-East Asia,Hong Kong SAR,2025,1239,89530,17,0.01383893666927287
+WA,Western Australia,Sub-Saharan Africa,Mauritius,2025,1042,89530,18,0.011638556908298894
+WA,Western Australia,North-East Asia,Taiwan,2025,1009,89530,19,0.011269965374734726
+WA,Western Australia,North-East Asia,"Korea, Republic of (South)",2025,833,89530,20,0.009304143862392493
+WA,Western Australia,North-West Europe,United Kingdom,2025,822,89530,21,0.009181280017871104
+WA,Western Australia,South-East Asia,Thailand,2025,799,89530,22,0.008924382888417291
+WA,Western Australia,North-West Europe,France,2025,728,89530,23,0.008131352619233777
+WA,Western Australia,Sub-Saharan Africa,Zimbabwe,2025,674,89530,24,0.007528202837037865
+WA,Western Australia,Americas,Chile,2025,671,89530,25,0.007494694515804758
+WA,Western Australia,Southern and Eastern Europe,Italy,2025,577,89530,26,0.00644476711716743
+WA,Western Australia,Southern and Eastern Europe,Spain,2025,423,89530,27,0.004724673293867977
+WA,Western Australia,Americas,Argentina,2025,421,89530,28,0.004702334413045906
+WA,Western Australia,North-West Europe,Germany,2025,389,89530,29,0.004344912319892773
+WA,Western Australia,Americas,United States of America,2025,382,89530,30,0.0042667262370155255
+WA,Western Australia,North-East Asia,Mongolia,2025,354,89530,31,0.003953981905506534
+WA,Western Australia,North Africa and the Middle East,Iran,2025,347,89530,32,0.0038757958226292863
+WA,Western Australia,Americas,Peru,2025,336,89530,33,0.003752931978107897
+WA,Western Australia,North Africa and the Middle East,Turkiye,2025,294,89530,34,0.0032838154808444097
+WA,Western Australia,Sub-Saharan Africa,South Africa,2025,268,89530,35,0.002993410030157489
+WA,Western Australia,Americas,Ecuador,2025,262,89530,36,0.002926393387691277
+WA,Western Australia,Americas,Canada,2025,259,89530,37,0.0028928850664581706
+WA,Western Australia,North Africa and the Middle East,Saudi Arabia,2025,218,89530,38,0.0024349380096057188
+WA,Western Australia,Sub-Saharan Africa,Nigeria,2025,215,89530,39,0.0024014296883726124
+WA,Western Australia,Americas,Mexico,2025,193,89530,40,0.0021557019993298336
+WA,Western Australia,North-West Europe,Ireland,2025,167,89530,41,0.001865296548642913
+WA,Western Australia,Sub-Saharan Africa,Zambia,2025,167,89530,42,0.001865296548642913
+WA,Western Australia,South-East Asia,Cambodia,2025,157,89530,43,0.0017536021445325588
+WA,Western Australia,Southern and Eastern Europe,Russian Federation,2025,110,89530,44,0.0012286384452138948
+WA,Western Australia,North-West Europe,Netherlands,2025,105,89530,45,0.0011727912431587178
+WA,Western Australia,North-West Europe,Sweden,2025,100,89530,46,0.0011169440411035406
+WA,Western Australia,North-West Europe,Belgium,2025,99,89530,47,0.0011057746006925054
+WA,Western Australia,Sub-Saharan Africa,Ghana,2025,98,89530,48,0.00109460516028147
+WA,Western Australia,South-East Asia,Myanmar,2025,94,89530,49,0.0010499273986373282
+WA,Western Australia,North Africa and the Middle East,United Arab Emirates,2025,85,89530,50,9.494024349380096e-4
+WA,Western Australia,North-West Europe,Switzerland,2025,82,89530,51,9.158941137049033e-4
+WA,Western Australia,Southern and Eastern Europe,Estonia,2025,75,89530,52,8.377080308276556e-4
+WA,Western Australia,North-West Europe,Norway,2025,74,89530,53,8.265385904166201e-4
+WA,Western Australia,Oceania and Antarctica,Fiji,2025,64,89530,54,7.148441863062661e-4
+WA,Western Australia,Southern and Eastern Europe,Portugal,2025,64,89530,55,7.148441863062661e-4
+WA,Western Australia,Southern and Eastern Europe,Poland,2025,51,89530,56,5.696414609628058e-4
+WA,Western Australia,Sub-Saharan Africa,Malawi,2025,50,89530,57,5.584720205517703e-4
+WA,Western Australia,Sub-Saharan Africa,Botswana,2025,48,89530,58,5.361331397296995e-4
+WA,Western Australia,North-West Europe,Denmark,2025,43,89530,59,4.802859376745225e-4
+WA,Western Australia,North Africa and the Middle East,Egypt,2025,43,89530,60,4.802859376745225e-4
+WA,Western Australia,South-East Asia,Brunei Darussalam,2025,41,89530,61,4.5794705685245167e-4
+WA,Western Australia,Oceania and Antarctica,Papua New Guinea,2025,41,89530,62,4.5794705685245167e-4
+WA,Western Australia,Southern and Central Asia,Kazakhstan,2025,40,89530,63,4.467776164414163e-4
+WA,Western Australia,Sub-Saharan Africa,Ethiopia,2025,39,89530,64,4.356081760303809e-4
+WA,Western Australia,Americas,Venezuela,2025,37,89530,65,4.1326929520831007e-4
+WA,Western Australia,Southern and Eastern Europe,Czech Republic,2025,34,89530,66,3.7976097397520386e-4
+WA,Western Australia,North Africa and the Middle East,Kuwait,2025,34,89530,67,3.7976097397520386e-4
+WA,Western Australia,Sub-Saharan Africa,Uganda,2025,34,89530,68,3.7976097397520386e-4
+WA,Western Australia,North Africa and the Middle East,Jordan,2025,33,89530,69,3.685915335641684e-4
+WA,Western Australia,North-East Asia,Macau,2025,31,89530,70,3.4625265274209764e-4
+WA,Western Australia,Southern and Central Asia,Maldives,2025,30,89530,71,3.350832123310622e-4
+WA,Western Australia,North-West Europe,Finland,2025,28,89530,72,0.00031274433150899137
+WA,Western Australia,North Africa and the Middle East,Israel,2025,26,89530,73,2.904054506869206e-4
+WA,Western Australia,Southern and Eastern Europe,Slovakia,2025,26,89530,74,2.904054506869206e-4
+WA,Western Australia,Southern and Central Asia,Uzbekistan,2025,25,89530,75,2.7923601027588516e-4
+WA,Western Australia,Sub-Saharan Africa,Tanzania,2025,23,89530,76,2.568971294538144e-4
+WA,Western Australia,Americas,Bolivia,2025,22,89530,77,2.4572768904277894e-4
+WA,Western Australia,Southern and Eastern Europe,Hungary,2025,21,89530,78,2.3455824863174356e-4
+WA,Western Australia,Southern and Eastern Europe,North Macedonia,2025,21,89530,79,2.3455824863174356e-4
+WA,Western Australia,South-East Asia,Laos,2025,19,89530,80,2.1221936780967273e-4
+WA,Western Australia,North-West Europe,Austria,2025,18,89530,81,2.0104992739863732e-4
+WA,Western Australia,Southern and Eastern Europe,Lithuania,2025,18,89530,82,2.0104992739863732e-4
+WA,Western Australia,Americas,Uruguay,2025,18,89530,83,2.0104992739863732e-4
+WA,Western Australia,Southern and Eastern Europe,Greece,2025,17,89530,84,1.8988048698760193e-4
+WA,Western Australia,North Africa and the Middle East,Oman,2025,16,89530,85,1.7871104657656651e-4
+WA,Western Australia,Americas,Paraguay,2025,13,89530,86,1.452027253434603e-4
+WA,Western Australia,Sub-Saharan Africa,Namibia,2025,12,89530,87,1.3403328493242489e-4
+WA,Western Australia,Sub-Saharan Africa,Seychelles,2025,12,89530,88,1.3403328493242489e-4
+WA,Western Australia,Sub-Saharan Africa,"Congo, Democratic Republic of",2025,11,89530,89,1.2286384452138947e-4
+WA,Western Australia,Sub-Saharan Africa,Mozambique,2025,11,89530,90,1.2286384452138947e-4
+WA,Western Australia,Southern and Eastern Europe,Romania,2025,11,89530,91,1.2286384452138947e-4
+WA,Western Australia,Southern and Eastern Europe,Slovenia,2025,9,89530,92,1.0052496369931866e-4
+WA,Western Australia,Southern and Eastern Europe,Bulgaria,2025,8,89530,93,8.935552328828326e-5
+WA,Western Australia,Southern and Eastern Europe,Croatia,2025,8,89530,94,8.935552328828326e-5
+WA,Western Australia,Americas,Guatemala,2025,8,89530,95,8.935552328828326e-5
+WA,Western Australia,North Africa and the Middle East,Morocco,2025,8,89530,96,8.935552328828326e-5
+WA,Western Australia,North Africa and the Middle East,Iraq,2025,7,89530,97,7.818608287724784e-5
+WA,Western Australia,Southern and Eastern Europe,Serbia,2025,7,89530,98,7.818608287724784e-5
+WA,Western Australia,North Africa and the Middle East,Tunisia,2025,7,89530,99,7.818608287724784e-5
+WA,Western Australia,Oceania and Antarctica,Vanuatu,2025,7,89530,100,7.818608287724784e-5
+WA,Western Australia,Southern and Central Asia,Azerbaijan,2025,6,89530,101,6.701664246621244e-5
+WA,Western Australia,Sub-Saharan Africa,Gabon,2025,6,89530,102,6.701664246621244e-5
+WA,Western Australia,North Africa and the Middle East,Lebanon,2025,6,89530,103,6.701664246621244e-5
+WA,Western Australia,Unknown,Other,2025,6,89530,104,6.701664246621244e-5
+WA,Western Australia,Americas,Panama,2025,6,89530,105,6.701664246621244e-5
+WA,Western Australia,South-East Asia,Timor-Leste,2025,6,89530,106,6.701664246621244e-5
+WA,Western Australia,Oceania and Antarctica,Tonga,2025,6,89530,107,6.701664246621244e-5
+WA,Western Australia,Southern and Eastern Europe,Ukraine,2025,6,89530,108,6.701664246621244e-5
+WA,Western Australia,Southern and Central Asia,Armenia,2025,5,89530,109,5.5847202055177036e-5
+WA,Western Australia,Americas,Costa Rica,2025,5,89530,110,5.5847202055177036e-5
+WA,Western Australia,Sub-Saharan Africa,Rwanda,2025,5,89530,111,5.5847202055177036e-5
+WA,Western Australia,North Africa and the Middle East,Algeria,2025,4,89530,112,4.467776164414163e-5
+WA,Western Australia,Americas,El Salvador,2025,4,89530,113,4.467776164414163e-5
+WA,Western Australia,Americas,Honduras,2025,4,89530,114,4.467776164414163e-5
+WA,Western Australia,Southern and Central Asia,Kyrgyzstan,2025,4,89530,115,4.467776164414163e-5
+WA,Western Australia,Sub-Saharan Africa,Sierra Leone,2025,4,89530,116,4.467776164414163e-5
+WA,Western Australia,North Africa and the Middle East,Sudan,2025,4,89530,117,4.467776164414163e-5
+WA,Western Australia,Southern and Eastern Europe,Belarus,2025,3,89530,118,3.350832123310622e-5
+WA,Western Australia,Sub-Saharan Africa,Cameroon,2025,3,89530,119,3.350832123310622e-5
+WA,Western Australia,North-West Europe,Iceland,2025,3,89530,120,3.350832123310622e-5
+WA,Western Australia,Sub-Saharan Africa,Liberia,2025,3,89530,121,3.350832123310622e-5
+WA,Western Australia,North-West Europe,Luxembourg,2025,3,89530,122,3.350832123310622e-5
+WA,Western Australia,Southern and Eastern Europe,Malta,2025,3,89530,123,3.350832123310622e-5
+WA,Western Australia,Oceania and Antarctica,Solomon Islands,2025,3,89530,124,3.350832123310622e-5
+WA,Western Australia,Sub-Saharan Africa,Swaziland,2025,3,89530,125,3.350832123310622e-5
+WA,Western Australia,Southern and Central Asia,Turkmenistan,2025,3,89530,126,3.350832123310622e-5
+WA,Western Australia,North Africa and the Middle East,Yemen,2025,3,89530,127,3.350832123310622e-5
+WA,Western Australia,Southern and Central Asia,Afghanistan,2025,2,89530,128,2.2338880822070814e-5
+WA,Western Australia,Sub-Saharan Africa,Burundi,2025,2,89530,129,2.2338880822070814e-5
+WA,Western Australia,Americas,Cuba,2025,2,89530,130,2.2338880822070814e-5
+WA,Western Australia,North Africa and the Middle East,Gaza Strip and West Bank,2025,2,89530,131,2.2338880822070814e-5
+WA,Western Australia,Americas,Jamaica,2025,2,89530,132,2.2338880822070814e-5
+WA,Western Australia,Southern and Eastern Europe,Latvia,2025,2,89530,133,2.2338880822070814e-5
+WA,Western Australia,Sub-Saharan Africa,Madagascar,2025,2,89530,134,2.2338880822070814e-5
+WA,Western Australia,Southern and Eastern Europe,Montenegro,2025,2,89530,135,2.2338880822070814e-5
+WA,Western Australia,North Africa and the Middle East,Syria,2025,2,89530,136,2.2338880822070814e-5
+WA,Western Australia,Unknown,United Kingdom (Other),2025,2,89530,137,2.2338880822070814e-5
+WA,Western Australia,Southern and Eastern Europe,Albania,2025,1,89530,138,1.1169440411035407e-5
+WA,Western Australia,Americas,Bahamas,2025,1,89530,139,1.1169440411035407e-5
+WA,Western Australia,North Africa and the Middle East,Bahrain,2025,1,89530,140,1.1169440411035407e-5
+WA,Western Australia,Southern and Eastern Europe,Bosnia and Herzegovina,2025,1,89530,141,1.1169440411035407e-5
+WA,Western Australia,Sub-Saharan Africa,Chad,2025,1,89530,142,1.1169440411035407e-5
+WA,Western Australia,Sub-Saharan Africa,"Congo, Republic of",2025,1,89530,143,1.1169440411035407e-5
+WA,Western Australia,Sub-Saharan Africa,Gambia,2025,1,89530,144,1.1169440411035407e-5
+WA,Western Australia,North Africa and the Middle East,Libya,2025,1,89530,145,1.1169440411035407e-5
+WA,Western Australia,Americas,Nicaragua,2025,1,89530,146,1.1169440411035407e-5
+WA,Western Australia,Sub-Saharan Africa,Senegal,2025,1,89530,147,1.1169440411035407e-5
+WA,Western Australia,Sub-Saharan Africa,St Helena,2025,1,89530,148,1.1169440411035407e-5
+WA,Western Australia,Americas,Trinidad and Tobago,2025,1,89530,149,1.1169440411035407e-5
+WA,Western Australia,Oceania and Antarctica,Tuvalu,2025,1,89530,150,1.1169440411035407e-5
