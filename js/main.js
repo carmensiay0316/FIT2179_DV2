@@ -27,5 +27,6 @@ vegaEmbed("#sector_income_heatmap", "vega/sector_income_heatmap.json", {
   actions: false})
   .catch(console.error);
 
-vegaEmbed("#migration_diverging_flow", "vega/migration_diverging_flow.json", { actions: false })
+vegaEmbed("#student_net_migration_gap_map", "vega/student_net_migration_map.json", {
+  actions: false})
   .catch(console.error);

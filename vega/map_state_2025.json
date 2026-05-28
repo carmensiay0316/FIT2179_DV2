@@ -37,74 +37,160 @@
     }
   ],
 
-  "data": {
-    "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.geojson",
-    "format": {
-      "type": "json",
-      "property": "features"
-    }
-  },
-
   "projection": {
     "type": "mercator",
     "center": {"expr": "center_to"},
     "scale": {"expr": "zoom_level"}
   },
 
-  "transform": [
+  "layer": [
     {
-      "calculate": "datum.properties.STATE_NAME",
-      "as": "map_state_name"
-    },
-    {
-      "lookup": "map_state_name",
-      "from": {
-        "data": {
-          "url": "data/students_state_2025_map.csv"
+      "data": {
+        "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+
+      "transform": [
+        {
+          "calculate": "datum.properties.STATE_NAME",
+          "as": "map_state_name"
         },
-        "key": "state_name",
-        "fields": ["state_abbr", "enrolments"]
+        {
+          "lookup": "map_state_name",
+          "from": {
+            "data": {
+              "url": "data/students_state_2025_map.csv"
+            },
+            "key": "state_name",
+            "fields": ["state_abbr", "enrolments"]
+          }
+        }
+      ],
+
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#4b5563",
+        "strokeWidth": 0.8
+      },
+
+      "encoding": {
+        "color": {
+          "field": "enrolments",
+          "type": "quantitative",
+          "title": "2025 enrolments",
+          "scale": {
+            "type": "threshold",
+            "domain": [25000, 75000, 150000, 300000],
+            "range": ["#e6f0f7", "#bdd7e7", "#6baed6", "#3182bd", "#08519c"]
+          },
+          "legend": {
+            "format": ","
+          }
+        },
+        "tooltip": [
+          {
+            "field": "map_state_name",
+            "type": "nominal",
+            "title": "State"
+          },
+          {
+            "field": "state_abbr",
+            "type": "nominal",
+            "title": "Abbreviation"
+          },
+          {
+            "field": "enrolments",
+            "type": "quantitative",
+            "title": "2025 enrolments",
+            "format": ","
+          }
+        ]
+      }
+    },
+
+    {
+      "data": {
+        "values": [
+          {"state": "WA", "longitude": 121.5, "latitude": -26.5},
+          {"state": "NT", "longitude": 133.5, "latitude": -19.5},
+          {"state": "SA", "longitude": 135.5, "latitude": -30.5},
+          {"state": "QLD", "longitude": 145.5, "latitude": -22.5},
+          {"state": "NSW", "longitude": 147.0, "latitude": -32.5},
+          {"state": "VIC", "longitude": 144.5, "latitude": -37.2},
+          {"state": "TAS", "longitude": 146.5, "latitude": -42.2},
+          {"state": "ACT", "longitude": 149.0, "latitude": -35.3}
+        ]
+      },
+
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "stroke": "white",
+        "strokeWidth": 3
+      },
+
+      "encoding": {
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "state",
+          "type": "nominal"
+        }
+      }
+    },
+
+    {
+      "data": {
+        "values": [
+          {"state": "WA", "longitude": 121.5, "latitude": -26.5},
+          {"state": "NT", "longitude": 133.5, "latitude": -19.5},
+          {"state": "SA", "longitude": 135.5, "latitude": -30.5},
+          {"state": "QLD", "longitude": 145.5, "latitude": -22.5},
+          {"state": "NSW", "longitude": 147.0, "latitude": -32.5},
+          {"state": "VIC", "longitude": 144.5, "latitude": -37.2},
+          {"state": "TAS", "longitude": 146.5, "latitude": -42.2},
+          {"state": "ACT", "longitude": 149.0, "latitude": -35.3}
+        ]
+      },
+
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#111827"
+      },
+
+      "encoding": {
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "state",
+          "type": "nominal"
+        }
       }
     }
   ],
 
-  "mark": {
-    "type": "geoshape",
-    "stroke": "white",
-    "strokeWidth": 1.2
-  },
-
-  "encoding": {
-    "color": {
-      "field": "enrolments",
-      "type": "quantitative",
-      "title": "2025 enrolments",
-      "scale": {
-        "type": "threshold",
-        "domain": [25000, 75000, 150000, 300000],
-        "range": ["#e6f0f7", "#bdd7e7", "#6baed6", "#3182bd", "#08519c"]
-      },
-      "legend": {
-        "format": ","
-      }
+  "config": {
+    "view": {
+      "stroke": null
     },
-    "tooltip": [
-      {
-        "field": "map_state_name",
-        "type": "nominal",
-        "title": "State"
-      },
-      {
-        "field": "state_abbr",
-        "type": "nominal",
-        "title": "Abbreviation"
-      },
-      {
-        "field": "enrolments",
-        "type": "quantitative",
-        "title": "2025 enrolments",
-        "format": ","
-      }
-    ]
+    "font": "Arial"
   }
-}
+} 

@@ -1,0 +1,284 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "width": 820,
+  "height": 500,
+
+  "title": {
+    "text": "Student migration balance varies across Australian states",
+    "subtitle": "Net student migration is calculated as student arrivals minus student departures. Use the slider to change financial year.",
+    "anchor": "start",
+    "fontSize": 17,
+    "subtitleFontSize": 11,
+    "subtitleColor": "#555"
+  },
+
+  "params": [
+    {
+      "name": "selected_year",
+      "value": 2024,
+      "bind": {
+        "input": "range",
+        "min": 2004,
+        "max": 2024,
+        "step": 1,
+        "name": "Financial year start: "
+      }
+    }
+  ],
+
+  "data": {
+    "url": "data/student_net_migration_by_year.csv"
+  },
+
+  "transform": [
+    {
+      "filter": "datum.year_start == selected_year"
+    },
+    {
+      "lookup": "state_name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.geojson",
+          "format": {
+            "type": "json",
+            "property": "features"
+          }
+        },
+        "key": "properties.STATE_NAME"
+      },
+      "as": "geo"
+    }
+  ],
+
+  "projection": {
+    "type": "mercator",
+    "center": [134, -28],
+    "scale": 560
+  },
+
+  "layer": [
+    {
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#4b5563",
+        "strokeWidth": 0.8
+      },
+
+      "encoding": {
+        "shape": {
+          "field": "geo",
+          "type": "geojson"
+        },
+
+        "color": {
+          "field": "net_student_migration",
+          "type": "quantitative",
+          "title": "Net student migration",
+          "scale": {
+            "type": "threshold",
+            "domain": [-10000, 0, 5000, 15000, 30000, 60000],
+            "range": [
+              "#b35806",
+              "#f1a340",
+              "#fee08b",
+              "#91bfdb",
+              "#4575b4",
+              "#2166ac",
+              "#053061"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "title": "Net student migration",
+            "labelFontSize": 11,
+            "titleFontSize": 12
+          }
+        },
+
+        "tooltip": [
+          {
+            "field": "state_name",
+            "type": "nominal",
+            "title": "State"
+          },
+          {
+            "field": "financial_year",
+            "type": "nominal",
+            "title": "Financial year"
+          },
+          {
+            "field": "student_arrivals",
+            "type": "quantitative",
+            "title": "Student arrivals",
+            "format": ","
+          },
+          {
+            "field": "student_departures",
+            "type": "quantitative",
+            "title": "Student departures",
+            "format": ","
+          },
+          {
+            "field": "net_student_migration",
+            "type": "quantitative",
+            "title": "Net student migration",
+            "format": ","
+          }
+        ]
+      }
+    },
+
+    {
+      "data": {
+        "values": [
+          {
+            "state": "WA",
+            "longitude": 121.5,
+            "latitude": -26.5
+          },
+          {
+            "state": "NT",
+            "longitude": 133.5,
+            "latitude": -19.5
+          },
+          {
+            "state": "SA",
+            "longitude": 135.5,
+            "latitude": -30.5
+          },
+          {
+            "state": "QLD",
+            "longitude": 145.5,
+            "latitude": -22.5
+          },
+          {
+            "state": "NSW",
+            "longitude": 147.0,
+            "latitude": -32.5
+          },
+          {
+            "state": "VIC",
+            "longitude": 144.5,
+            "latitude": -37.2
+          },
+          {
+            "state": "TAS",
+            "longitude": 146.5,
+            "latitude": -42.2
+          },
+          {
+            "state": "ACT",
+            "longitude": 149.0,
+            "latitude": -35.3
+          }
+        ]
+      },
+
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#111827",
+        "stroke": "white",
+        "strokeWidth": 2
+      },
+
+      "encoding": {
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "state",
+          "type": "nominal"
+        }
+      }
+    },
+
+    {
+      "data": {
+        "values": [
+          {
+            "state": "WA",
+            "longitude": 121.5,
+            "latitude": -26.5
+          },
+          {
+            "state": "NT",
+            "longitude": 133.5,
+            "latitude": -19.5
+          },
+          {
+            "state": "SA",
+            "longitude": 135.5,
+            "latitude": -30.5
+          },
+          {
+            "state": "QLD",
+            "longitude": 145.5,
+            "latitude": -22.5
+          },
+          {
+            "state": "NSW",
+            "longitude": 147.0,
+            "latitude": -32.5
+          },
+          {
+            "state": "VIC",
+            "longitude": 144.5,
+            "latitude": -37.2
+          },
+          {
+            "state": "TAS",
+            "longitude": 146.5,
+            "latitude": -42.2
+          },
+          {
+            "state": "ACT",
+            "longitude": 149.0,
+            "latitude": -35.3
+          }
+        ]
+      },
+
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#111827"
+      },
+
+      "encoding": {
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "state",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Arial",
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    }
+  }
+}

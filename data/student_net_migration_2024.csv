@@ -1,0 +1,9 @@
+state,state_name,student_arrivals,student_departures,net_student_migration,longitude,latitude,label_lon,label_lat,net_label
+NSW,New South Wales,55030,19080,35950,147,-32,153,-31.5,"NSW: 35,950"
+VIC,Victoria,50110,14370,35740,144.5,-37,150,-38,"VIC: 35,740"
+QLD,Queensland,21950,8320,13630,145,-22.5,151.5,-21,"QLD: 13,630"
+SA,South Australia,8930,1970,6960,135.5,-30,137,-36,"SA:  6,960"
+WA,Western Australia,15230,2930,12300,121.5,-26,116,-25,"WA: 12,300"
+TAS,Tasmania,710,190,520,146.5,-42,147,-43.8,TAS:    520
+NT,Northern Territory,970,80,890,133,-19.5,133,-13.5,NT:    890
+ACT,Australian Capital Territory,3770,1710,2060,149.1,-35.3,153,-35.5,"ACT:  2,060"
