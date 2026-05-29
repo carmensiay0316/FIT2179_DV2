@@ -62,18 +62,18 @@
       "title": "Education sector",
       "scale": {
         "domain": [
-          "Higher Education",
           "VET",
+          "Higher Education",
           "ELICOS",
           "Non-award",
           "Schools"
         ],
         "range": [
-          "#2F6DA3",
-          "#6FAF8F",
-          "#E3C66B",
-          "#C97C7C",
-          "#B7D4E8"
+          "#CAD2C5",
+          "#84A98C",
+          "#52796F",
+          "#354F52",
+          "#2F3E46"
         ]
       }
     },
