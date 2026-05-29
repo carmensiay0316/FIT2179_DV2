@@ -7,6 +7,27 @@
     "url": "data/students_sector_year.csv"
   },
 
+  "transform": [
+    {
+      "calculate": "datum.sector == 'VET' ? 1 : datum.sector == 'Higher Education' ? 2 : datum.sector == 'ELICOS' ? 3 : datum.sector == 'Non-award' ? 4 : datum.sector == 'Schools' ? 5 : 6",
+      "as": "sector_order"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "enrolments",
+          "as": "year_total"
+        }
+      ],
+      "groupby": ["year"]
+    },
+    {
+      "calculate": "datum.enrolments / datum.year_total",
+      "as": "share"
+    }
+  ],
+
   "mark": {
     "type": "area",
     "tooltip": true
@@ -26,33 +47,44 @@
       "field": "enrolments",
       "type": "quantitative",
       "title": "International student enrolments",
+      "stack": "zero",
       "axis": {
         "format": "~s",
         "tickCount": 6
-      },
-      "stack": "zero"
+      }
     },
 
     "color": {
-    "field": "sector",
-    "type": "nominal",
-    "title": "Education sector",
-    "scale": {
+      "field": "sector",
+      "type": "nominal",
+      "title": "Education sector",
+      "scale": {
         "domain": [
-        "VET",
-        "Higher Education",
-        "ELICOS",
-        "Non-award",
-        "Schools"
+          "VET",
+          "Higher Education",
+          "ELICOS",
+          "Non-award",
+          "Schools"
         ],
         "range": [
-        "#2F6DA3",
-        "#6FAF8F",
-        "#E3C66B",
-        "#C97C7C",
-        "#B7D4E8"
+          "#CAD2C5",
+          "#84A98C",
+          "#52796F",
+          "#354F52",
+          "#2F3E46"
         ]
-    }
+      },
+      "legend": {
+        "orient": "right",
+        "titleFontSize": 12,
+        "labelFontSize": 11
+      }
+    },
+
+    "order": {
+      "field": "sector_order",
+      "type": "quantitative",
+      "sort": "ascending"
     },
 
     "tooltip": [
@@ -69,9 +101,28 @@
       {
         "field": "enrolments",
         "type": "quantitative",
-        "title": "Enrolments",
+        "title": "Sector enrolments",
+        "format": ","
+      },
+      {
+        "field": "share",
+        "type": "quantitative",
+        "title": "Share of year total",
+        "format": ".1%"
+      },
+      {
+        "field": "year_total",
+        "type": "quantitative",
+        "title": "Total enrolments in year",
         "format": ","
       }
     ]
+  },
+
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Arial"
   }
 }

@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "vconcat": [
     {
-      "width": 760,
+      "width": 650,
       "height": 360,
       "title": {
         "text": "Geographic location of the top 20 source countries",
@@ -25,7 +25,8 @@
             "type": "geoshape",
             "fill": "#eeeeee",
             "stroke": "white",
-            "strokeWidth": 0.4
+            "strokeWidth": 0.4,
+            "clip": true
           }
         },
         {
@@ -179,120 +180,110 @@
         }
       ]
     },
-    {
-      "width": 760,
-      "height": 95,
-      "data": {
-        "values": [
           {
-            "x_pos": 240,
-            "enrolments": 50000,
-            "label": "50,000"
+        "width": 760,
+        "height": 110,
+        "data": {
+          "values": [
+            { "x_pos": 110, "enrolments": 50000,  "label": "50,000" },
+            { "x_pos": 250, "enrolments": 100000, "label": "100,000" },
+            { "x_pos": 400, "enrolments": 150000, "label": "150,000" },
+            { "x_pos": 560, "enrolments": 200000, "label": "200,000" }
+          ]
+        },
+        "layer": [
+          {
+            "data": {
+              "values": [ {} ]
+            },
+            "mark": {
+              "type": "rect",
+              "fill": "white",
+              "stroke": "#B8C2CC",
+              "strokeWidth": 1.5,
+              "cornerRadius": 8
+            },
+            "encoding": {
+              "x": { "value": 20 },
+              "x2": { "value": 650 },
+              "y": { "value": 10 },
+              "y2": { "value": 100 }
+            }
           },
           {
-            "x_pos": 370,
-            "enrolments": 100000,
-            "label": "100,000"
+            "data": {
+              "values": [ {} ]
+            },
+            "mark": {
+              "type": "text",
+              "align": "left",
+              "fontSize": 12,
+              "fontWeight": "bold",
+              "color": "#222"
+            },
+            "encoding": {
+              "x": { "value": 35 },
+              "y": { "value": 22 },
+              "text": { "value": "Legend: Country total enrolments" }
+            }
           },
           {
-            "x_pos": 510,
-            "enrolments": 150000,
-            "label": "150,000"
+            "mark": {
+              "type": "circle",
+              "fill": "#AFC2D5",
+              "stroke": "white",
+              "strokeWidth": 1
+            },
+            "encoding": {
+              "x": {
+                "field": "x_pos",
+                "type": "quantitative",
+                "scale": { "domain": [0, 760] },
+                "axis": null
+              },
+              "y": { "value": 55 },
+              "size": {
+                "field": "enrolments",
+                "type": "quantitative",
+                "scale": {
+                  "domain": [0, 340000],
+                  "range": [80, 3200]
+                },
+                "legend": null
+              }
+            }
           },
           {
-            "x_pos": 650,
-            "enrolments": 200000,
-            "label": "200,000"
+            "mark": {
+              "type": "text",
+              "align": "center",
+              "baseline": "top",
+              "dy": 22,
+              "fontSize": 11,
+              "color": "#333"
+            },
+            "encoding": {
+              "x": {
+                "field": "x_pos",
+                "type": "quantitative",
+                "scale": { "domain": [0, 760] },
+                "axis": null
+              },
+              "y": { "value": 55 },
+              "text": {
+                "field": "label",
+                "type": "nominal"
+              }
+            }
           }
         ]
       },
-      "layer": [
-        {
-          "mark": {
-            "type": "text",
-            "align": "center",
-            "fontSize": 12,
-            "fontWeight": "bold",
-            "color": "#222"
-          },
-          "encoding": {
-            "x": {
-              "value": 430
-            },
-            "y": {
-              "value": 14
-            },
-            "text": {
-              "value": "Country total enrolments"
-            }
-          }
-        },
-        {
-          "mark": {
-            "type": "circle",
-            "fill": "#AFC2D5",
-            "stroke": "white",
-            "strokeWidth": 1
-          },
-          "encoding": {
-            "x": {
-              "field": "x_pos",
-              "type": "quantitative",
-              "scale": {
-                "domain": [0, 760]
-              },
-              "axis": null
-            },
-            "y": {
-              "value": 42
-            },
-            "size": {
-              "field": "enrolments",
-              "type": "quantitative",
-              "scale": {
-                "domain": [0, 340000],
-                "range": [80, 3200]
-              },
-              "legend": null
-            }
-          }
-        },
-        {
-          "mark": {
-            "type": "text",
-            "align": "center",
-            "baseline": "top",
-            "dy": 22,
-            "fontSize": 11,
-            "color": "#333"
-          },
-          "encoding": {
-            "x": {
-              "field": "x_pos",
-              "type": "quantitative",
-              "scale": {
-                "domain": [0, 760]
-              },
-              "axis": null
-            },
-            "y": {
-              "value": 42
-            },
-            "text": {
-              "field": "label",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    {
+
+      {
       "width": 760,
-      "height": 320,
-      "title": {
-        "text": "Top 20 source countries by international student enrolments",
-        "anchor": "start",
-        "fontSize": 15
+      "height": 350,
+      "padding": {
+        "top": 35
       },
       "data": {
         "url": "data/students_country_top20_geo.csv",
@@ -325,6 +316,32 @@
         }
       },
       "layer": [
+        {
+          "data": {
+            "values": [
+              {}
+            ]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 15,
+            "fontWeight": "bold",
+            "color": "#222"
+          },
+          "encoding": {
+            "x": {
+              "value": 0
+            },
+            "y": {
+              "value": -30
+            },
+            "text": {
+              "value": "Top 20 source countries by international student enrolments"
+            }
+          }
+        },
         {
           "mark": {
             "type": "bar",

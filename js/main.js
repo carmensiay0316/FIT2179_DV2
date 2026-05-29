@@ -4,9 +4,6 @@ vegaEmbed("#bar_state_2025", "vega/bar_state_2025.json", { actions: false })
 vegaEmbed("#bar_country_2025", "vega/bar_country_2025.json", { actions: false })
   .catch(console.error);
 
-//vegaEmbed("#source_country_worldmap","vega/source_country_worldmap.json",{actions: false})
-///  .catch(console.error);
-
 vegaEmbed("#map_state_2025", "vega/map_state_2025.json", { actions: false })
   .catch(console.error);
 
