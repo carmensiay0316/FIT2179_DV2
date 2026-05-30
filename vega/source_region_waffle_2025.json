@@ -1,71 +1,94 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 620,
+
+  "width": 650,
   "height": 420,
 
   "data": {
-    "url": "data/source_region_waffle_2025.csv"
+    "url": "data/source_region_waffle_2025.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "x": "number",
+        "y": "number",
+        "enrolments": "number",
+        "share": "number",
+        "tiles": "number",
+        "tile_id": "number"
+      }
+    }
   },
 
   "mark": {
     "type": "rect",
-    "cornerRadius": 3,
     "stroke": "white",
-    "strokeWidth": 1.5
+    "strokeWidth": 1.2
   },
 
   "encoding": {
     "x": {
       "field": "x",
       "type": "ordinal",
-      "axis": null
+      "axis": null,
+      "sort": "ascending"
     },
+
     "y": {
       "field": "y",
       "type": "ordinal",
-      "axis": null
+      "axis": null,
+      "sort": "descending"
     },
+
     "color": {
       "field": "region",
       "type": "nominal",
       "title": "Source region",
       "scale": {
         "domain": [
-          "East Asia",
-          "South Asia",
-          "Southeast Asia",
-          "South America",
-          "Africa"
+          "North-East Asia",
+          "Southern and Central Asia",
+          "South-East Asia",
+          "Americas",
+          "Africa",
+          "North-West Europe",
+          "Oceania"
         ],
         "range": [
-          "#CCD5AE",
-          "#E9EDC9",
-          "#FEFAE0",
-          "#FAEDCD",
-          "#D4A373"
+          "#EDE0D4",
+          "#E6CCB2",
+          "#DDB892",
+          "#B08968",
+          "#7F5539",
+          "#9C6644",
+          "#B08569"
         ]
       },
       "legend": {
         "orient": "bottom",
         "direction": "horizontal",
-        "columns": 3
+        "columns": 3,
+        "titleFontSize": 12,
+        "labelFontSize": 11,
+        "symbolSize": 90
       }
     },
+
     "tooltip": [
       {
         "field": "region",
         "type": "nominal",
-        "title": "Region"
+        "title": "Source region"
       },
       {
         "field": "enrolment_label",
         "type": "nominal",
-        "title": "Top-20 enrolments"
+        "title": "Top-country enrolments"
       },
       {
         "field": "share_label",
         "type": "nominal",
-        "title": "Share of top-20"
+        "title": "Share"
       }
     ]
   },
@@ -73,6 +96,7 @@
   "config": {
     "view": {
       "stroke": null
-    }
+    },
+    "font": "Arial"
   }
 }

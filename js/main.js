@@ -1,36 +1,83 @@
-vegaEmbed("#bar_country_2025","vega/bar_country_2025.json",
-  {actions: false})
-.then(function(result) {
-  result.view.addEventListener("click", function(event, item) {
-    if (item && item.datum && item.datum.country_name) {
-      result.view
-        .signal("selected_country", item.datum.country_name)
-        .runAsync();
-    }
-  });
-})
-.catch(console.error);
+vegaEmbed("#bar_country_2025", "vega/bar_country_2025.json", { actions: false })
+  .then(function(result) {
+    result.view.addEventListener("click", function(event, item) {
+      if (item && item.datum && item.datum.country_name) {
+        result.view
+          .signal("selected_country", item.datum.country_name)
+          .runAsync();
+      }
+    });
 
-vegaEmbed("#map_state_2025","vega/map_state_2025.json",{actions: false})
-.then(function(result) {
-  result.view.addEventListener("click", function(event, item) {
-    if (item && item.datum && item.datum.state_abbr) {
+    result.view.addEventListener("dblclick", function() {
       result.view
-        .signal("selected_state", item.datum.state_abbr)
+        .signal("selected_country", "")
         .runAsync();
-    }
-  });
-  result.view.addEventListener("dblclick", function(event, item) {
-    result.view
-      .signal("selected_state", "")
-      .runAsync();
-  });
-}).catch(console.error);
+    });
+  })
+  .catch(console.error);
 
-vegaEmbed("#linked_state_country_lollipop", "vega/linked_state_country_lollipop.json", {actions: false})
+vegaEmbed("#map_state_2025", "vega/map_state_2025.json", { actions: false })
+  .then(function(result) {
+    result.view.addEventListener("click", function(event, item) {
+      if (item && item.datum && item.datum.state_abbr) {
+        result.view
+          .signal("selected_state", item.datum.state_abbr)
+          .runAsync();
+      }
+    });
+
+    result.view.addEventListener("dblclick", function() {
+      result.view
+        .signal("selected_state", "")
+        .runAsync();
+    });
+  })
+  .catch(console.error);
+
+vegaEmbed("#linked_state_country_lollipop", "vega/linked_state_country_lollipop.json", { actions: false })
+  .then(function(result) {
+    result.view.addEventListener("click", function(event, item) {
+      if (item && item.datum && item.datum.nationality) {
+        result.view
+          .signal("selected_lollipop_country", item.datum.nationality)
+          .runAsync();
+      }
+    });
+
+    result.view.addEventListener("dblclick", function() {
+      result.view
+        .signal("selected_lollipop_country", "")
+        .runAsync();
+    });
+  })
   .catch(console.error);
 
 vegaEmbed("#sector_area_2019_2025", "vega/sector_area_2019to2025.json", { actions: false })
+  .then(function(result) {
+    function updateSectorAnnotation(item) {
+      if (item && item.datum && item.datum.sector_label && item.datum.year) {
+        result.view
+          .signal("selected_sector_area", item.datum.sector_label)
+          .signal("selected_year_area", Number(item.datum.year))
+          .runAsync();
+      }
+    }
+
+    result.view.addEventListener("mouseover", function(event, item) {
+      updateSectorAnnotation(item);
+    });
+
+    result.view.addEventListener("click", function(event, item) {
+      updateSectorAnnotation(item);
+    });
+
+    result.view.addEventListener("dblclick", function() {
+      result.view
+        .signal("selected_sector_area", "")
+        .signal("selected_year_area", 0)
+        .runAsync();
+    });
+  })
   .catch(console.error);
 
 vegaEmbed("#sector_bump_2019_2025", "vega/sector_bump_2019to2025.json", { actions: false })
@@ -39,14 +86,11 @@ vegaEmbed("#sector_bump_2019_2025", "vega/sector_bump_2019to2025.json", { action
 vegaEmbed("#source_region_waffle_2025", "vega/source_region_waffle_2025.json", { actions: false })
   .catch(console.error);
 
-vegaEmbed("#state_income_indexed_line", "vega/state_income_indexed_line.json", {
-  actions: false})
+vegaEmbed("#state_income_indexed_line", "vega/state_income_indexed_line.json", { actions: false })
   .catch(console.error);
 
-vegaEmbed("#sector_income_heatmap", "vega/sector_income_heatmap.json", {
-  actions: false})
+vegaEmbed("#sector_income_heatmap", "vega/sector_income_heatmap.json", { actions: false })
   .catch(console.error);
 
-vegaEmbed("#student_net_migration_gap_map", "vega/student_net_migration_map.json", {
-  actions: false})
+vegaEmbed("#student_net_migration_gap_map", "vega/student_net_migration_map.json", { actions: false })
   .catch(console.error);

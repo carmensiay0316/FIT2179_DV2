@@ -1,128 +1,492 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 520,
-  "height": 380,
 
-  "data": {
-    "url": "data/students_sector_year.csv"
-  },
-
-  "transform": [
+  "params": [
     {
-      "calculate": "datum.sector == 'VET' ? 1 : datum.sector == 'Higher Education' ? 2 : datum.sector == 'ELICOS' ? 3 : datum.sector == 'Non-award' ? 4 : datum.sector == 'Schools' ? 5 : 6",
-      "as": "sector_order"
+      "name": "selected_sector_area",
+      "value": ""
     },
     {
-      "joinaggregate": [
-        {
-          "op": "sum",
-          "field": "enrolments",
-          "as": "year_total"
-        }
-      ],
-      "groupby": ["year"]
-    },
-    {
-      "calculate": "datum.enrolments / datum.year_total",
-      "as": "share"
+      "name": "selected_year_area",
+      "value": 0
     }
   ],
 
-  "mark": {
-    "type": "area",
-    "tooltip": true
-  },
+  "hconcat": [
+    {
+      "width": 610,
+      "height": 360,
 
-  "encoding": {
-    "x": {
-      "field": "year",
-      "type": "ordinal",
-      "title": "Year",
-      "axis": {
-        "labelAngle": 0
-      }
-    },
+      "data": {
+        "url": "data/students_sector_year.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "year": "number",
+            "enrolments": "number"
+          }
+        }
+      },
 
-    "y": {
-      "field": "enrolments",
-      "type": "quantitative",
-      "title": "International student enrolments",
-      "stack": "zero",
-      "axis": {
-        "format": "~s",
-        "tickCount": 6
-      }
-    },
+      "transform": [
+        {
+          "calculate": "datum.sector == 'VET' || datum.sector == 'Vocational Education and Training' ? 'Vocational Education and Training' : datum.sector == 'ELICOS' ? 'English language courses' : datum.sector",
+          "as": "sector_label"
+        },
+        {
+          "calculate": "datum.sector_label == 'Vocational Education and Training' ? 1 : datum.sector_label == 'Higher Education' ? 2 : datum.sector_label == 'English language courses' ? 3 : datum.sector_label == 'Non-award' ? 4 : datum.sector_label == 'Schools' ? 5 : 6",
+          "as": "sector_order"
+        },
+        {
+          "joinaggregate": [
+            {
+              "op": "sum",
+              "field": "enrolments",
+              "as": "year_total"
+            }
+          ],
+          "groupby": ["year"]
+        },
+        {
+          "calculate": "datum.enrolments / datum.year_total",
+          "as": "share"
+        }
+      ],
 
-    "color": {
-      "field": "sector",
-      "type": "nominal",
-      "title": "Education sector",
-      "scale": {
-        "domain": [
-          "VET",
-          "Higher Education",
-          "ELICOS",
-          "Non-award",
-          "Schools"
-        ],
-        "range": [
-          "#CAD2C5",
-          "#84A98C",
-          "#52796F",
-          "#354F52",
-          "#2F3E46"
+      "mark": {
+        "type": "area",
+        "tooltip": true,
+        "cursor": "pointer"
+      },
+
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": "Year",
+          "axis": {
+            "labelAngle": 0
+          }
+        },
+
+        "y": {
+          "field": "enrolments",
+          "type": "quantitative",
+          "title": "International student enrolments",
+          "stack": "zero",
+          "axis": {
+            "format": "~s",
+            "tickCount": 6
+          }
+        },
+
+        "color": {
+          "field": "sector_label",
+          "type": "nominal",
+          "title": "Education sector",
+          "scale": {
+            "domain": [
+              "Vocational Education and Training",
+              "Higher Education",
+              "English language courses",
+              "Non-award",
+              "Schools"
+            ],
+            "range": [
+              "#CAD2C5",
+              "#84A98C",
+              "#52796F",
+              "#354F52",
+              "#2F3E46"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "columns": 2,
+            "titleFontSize": 12,
+            "labelFontSize": 11,
+            "labelLimit": 260,
+            "symbolSize": 90
+          }
+        },
+
+        "opacity": {
+          "condition": {
+            "test": "selected_sector_area === '' || datum.sector_label === selected_sector_area",
+            "value": 1
+          },
+          "value": 0.35
+        },
+
+        "order": {
+          "field": "sector_order",
+          "type": "quantitative",
+          "sort": "ascending"
+        },
+
+        "tooltip": [
+          {
+            "field": "sector_label",
+            "type": "nominal",
+            "title": "Education sector"
+          },
+          {
+            "field": "year",
+            "type": "ordinal",
+            "title": "Year"
+          },
+          {
+            "field": "enrolments",
+            "type": "quantitative",
+            "title": "Sector enrolments",
+            "format": ","
+          },
+          {
+            "field": "share",
+            "type": "quantitative",
+            "title": "Share of year total",
+            "format": ".1%"
+          },
+          {
+            "field": "year_total",
+            "type": "quantitative",
+            "title": "Total enrolments in year",
+            "format": ","
+          }
         ]
-      },
-      "legend": {
-        "orient": "right",
-        "titleFontSize": 12,
-        "labelFontSize": 11
       }
     },
 
-    "order": {
-      "field": "sector_order",
-      "type": "quantitative",
-      "sort": "ascending"
-    },
+    {
+      "width": 240,
+      "height": 360,
 
-    "tooltip": [
-      {
-        "field": "sector",
-        "type": "nominal",
-        "title": "Sector"
-      },
-      {
-        "field": "year",
-        "type": "ordinal",
-        "title": "Year"
-      },
-      {
-        "field": "enrolments",
-        "type": "quantitative",
-        "title": "Sector enrolments",
-        "format": ","
-      },
-      {
-        "field": "share",
-        "type": "quantitative",
-        "title": "Share of year total",
-        "format": ".1%"
-      },
-      {
-        "field": "year_total",
-        "type": "quantitative",
-        "title": "Total enrolments in year",
-        "format": ","
-      }
-    ]
-  },
+      "layer": [
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "rect",
+            "fill": "#F7F3EF",
+            "stroke": "#CAD2C5",
+            "strokeWidth": 1.2,
+            "cornerRadius": 8
+          },
+          "encoding": {
+            "x": { "value": 0 },
+            "x2": { "value": 240 },
+            "y": { "value": 0 },
+            "y2": { "value": 250 }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "color": "#2F3E46"
+          },
+          "encoding": {
+            "x": { "value": 16 },
+            "y": { "value": 18 },
+            "text": {
+              "value": "Hover details"
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [
+              {
+                "line": "Move your cursor over",
+                "y": 60
+              },
+              {
+                "line": "an area to view",
+                "y": 82
+              },
+              {
+                "line": "sector details here.",
+                "y": 104
+              }
+            ]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 12,
+            "color": "#333"
+          },
+          "encoding": {
+            "x": { "value": 16 },
+            "y": {
+              "field": "y",
+              "type": "quantitative",
+              "scale": { "domain": [0, 360] },
+              "axis": null
+            },
+            "text": {
+              "field": "line",
+              "type": "nominal"
+            },
+            "opacity": {
+              "condition": {
+                "test": "selected_sector_area === ''",
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        },
+
+        {
+          "data": {
+            "url": "data/students_sector_year.csv",
+            "format": {
+              "type": "csv",
+              "parse": {
+                "year": "number",
+                "enrolments": "number"
+              }
+            }
+          },
+          "transform": [
+            {
+              "calculate": "datum.sector == 'VET' || datum.sector == 'Vocational Education and Training' ? 'Vocational Education and Training' : datum.sector == 'ELICOS' ? 'English language courses' : datum.sector",
+              "as": "sector_label"
+            },
+            {
+              "joinaggregate": [
+                {
+                  "op": "sum",
+                  "field": "enrolments",
+                  "as": "year_total"
+                }
+              ],
+              "groupby": ["year"]
+            },
+            {
+              "calculate": "datum.enrolments / datum.year_total",
+              "as": "share"
+            },
+            {
+              "filter": "selected_sector_area !== '' && datum.sector_label === selected_sector_area && datum.year === selected_year_area"
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "size": 90,
+            "stroke": "#2F3E46",
+            "strokeWidth": 0.8
+          },
+          "encoding": {
+            "x": { "value": 22 },
+            "y": { "value": 62 },
+            "color": {
+              "field": "sector_label",
+              "type": "nominal",
+              "scale": {
+                "domain": [
+                  "Vocational Education and Training",
+                  "Higher Education",
+                  "English language courses",
+                  "Non-award",
+                  "Schools"
+                ],
+                "range": [
+                  "#CAD2C5",
+                  "#84A98C",
+                  "#52796F",
+                  "#354F52",
+                  "#2F3E46"
+                ]
+              },
+              "legend": null
+            }
+          }
+        },
+
+        {
+          "data": {
+            "url": "data/students_sector_year.csv",
+            "format": {
+              "type": "csv",
+              "parse": {
+                "year": "number",
+                "enrolments": "number"
+              }
+            }
+          },
+          "transform": [
+            {
+              "calculate": "datum.sector == 'VET' || datum.sector == 'Vocational Education and Training' ? 'Vocational Education and Training' : datum.sector == 'ELICOS' ? 'English language courses' : datum.sector",
+              "as": "sector_label"
+            },
+            {
+              "joinaggregate": [
+                {
+                  "op": "sum",
+                  "field": "enrolments",
+                  "as": "year_total"
+                }
+              ],
+              "groupby": ["year"]
+            },
+            {
+              "calculate": "datum.enrolments / datum.year_total",
+              "as": "share"
+            },
+            {
+              "filter": "selected_sector_area !== '' && datum.sector_label === selected_sector_area && datum.year === selected_year_area"
+            },
+            {
+              "calculate": "'Sector:'",
+              "as": "sector_title"
+            },
+            {
+              "calculate": "datum.sector_label",
+              "as": "sector_name"
+            },
+            {
+              "calculate": "'Year: ' + datum.year",
+              "as": "line_2"
+            },
+            {
+              "calculate": "'Sector enrolments: ' + format(datum.enrolments, ',.0f')",
+              "as": "line_3"
+            },
+            {
+              "calculate": "'Share of year: ' + format(datum.share, '.1%')",
+              "as": "line_4"
+            },
+            {
+              "calculate": "'Total enrolments: ' + format(datum.year_total, ',.0f')",
+              "as": "line_5"
+            }
+          ],
+          "layer": [
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "color": "#2F3E46",
+                "limit": 205
+              },
+              "encoding": {
+                "x": { "value": 38 },
+                "y": { "value": 54 },
+                "text": {
+                  "field": "sector_title",
+                  "type": "nominal"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "fontSize": 12,
+                "color": "#333",
+                "limit": 205
+              },
+              "encoding": {
+                "x": { "value": 16 },
+                "y": { "value": 88 },
+                "text": {
+                  "field": "sector_name",
+                  "type": "nominal"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "fontSize": 12,
+                "color": "#333",
+                "limit": 205
+              },
+              "encoding": {
+                "x": { "value": 16 },
+                "y": { "value": 116 },
+                "text": {
+                  "field": "line_3",
+                  "type": "nominal"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "fontSize": 12,
+                "color": "#333",
+                "limit": 205
+              },
+              "encoding": {
+                "x": { "value": 16 },
+                "y": { "value": 144 },
+                "text": {
+                  "field": "line_4",
+                  "type": "nominal"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "fontSize": 12,
+                "color": "#333",
+                "limit": 205
+              },
+              "encoding": {
+                "x": { "value": 16 },
+                "y": { "value": 172 },
+                "text": {
+                  "field": "line_5",
+                  "type": "nominal"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "spacing": 24,
 
   "config": {
     "view": {
       "stroke": null
     },
-    "font": "Arial"
+    "font": "Arial",
+    "axis": {
+      "grid": true,
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    }
   }
 }

@@ -18,211 +18,391 @@
   <main>
 
     <section class="hero">
-      <h1>Mapping the Geography of International Student Enrolments in Australia</h1>
+      <p class="section-label">International student enrolments in Australia</p>
+
+      <h1>
+        Mapping where international students study,<br>
+        where they come from, and what they study
+      </h1>
+
       <p>
-        This visualisation explores how international student enrolments are distributed
-        across Australian states, source countries and education sectors. It shows that
-        enrolments are concentrated in a few major states, rely heavily on several source
-        countries, and are mainly driven by Higher Education and VET.
+        This visualisation explores international student enrolments in Australia.<br>
+        It compares state concentration, source countries, education sectors,<br>
+        export income, and student-related migration flows.
       </p>
     </section>
 
     <section class="chart-section">
-      <h2>Enrolment concentration across states and source countries</h2>
-      <p>
-        The first section introduces the main concentration pattern. International student
-        enrolments in 2025 were concentrated in both a small number of Australian states
-        and a small number of source countries.
-      </p>
+      <div class="section-heading">
+        <p class="section-label">Subtopic 1</p>
+
+        <h2>
+          Where do Australia’s international students come from?
+        </h2>
+
+        <p>
+          This section shows the top source countries in 2025.<br>
+          It links each country’s location with its enrolment ranking.
+        </p>
+      </div>
 
       <div class="chart-grid">
         <div class="chart-card">
-          <h3>Source country concentration</h3>
+          <h3>
+            Top source countries and their locations
+          </h3>
+
           <p>
-            China and India were the two largest source countries for international
-            student enrolments in 2025. Nepal was also a major source country, followed
-            by the Philippines and Vietnam.
+            The map shows where the top source countries are located.<br>
+            Circle size shows total student enrolments from each country.<br>
+            The lollipop chart ranks countries by total enrolments.
           </p>
 
           <p>
-            *Click a country on the proportional symbol map to highlight it in the ranking and view the annotation
+            China and India were the two largest source countries.<br>
+            Nepal, the Philippines and Vietnam formed the next group.
           </p>
+
+          <p class="chart-note">
+            Click a country on either view to highlight it everywhere.
+          </p>
+
           <div id="bar_country_2025"></div>
         </div>
       </div>
     </section>
 
     <section class="chart-section">
-      <h2>The spatial footprint of international student enrolments</h2>
-      <p>
-        The maps translate the state ranking into geography. The choropleth map shows
-        where enrolments are concentrated, while the proportional symbol map makes the
-        size gap between states more visible.
-      </p>
+      <div class="section-heading">
+        <p class="section-label">Subtopic 2</p>
+
+        <h2>
+          Where are international student enrolments concentrated in Australia?
+        </h2>
+
+        <p>
+          This section first compares enrolments across Australian states.<br>
+          It then shows which countries contributed most within each state.
+        </p>
+      </div>
 
       <div class="chart-grid">
         <div class="chart-card map-card">
-          <h3>Choropleth map of state enrolments</h3>
+          <h3>
+            1. Which states enrolled the most international students?
+          </h3>
+
           <p>
-            The choropleth map highlights the east-coast concentration, especially in
-            New South Wales and Victoria, with Queensland forming a second tier.
+            The shaded map shows total enrolments by Australian state.<br>
+            Darker states had larger student enrolments in 2025.<br>
+            The bar chart below gives the exact state ranking.
           </p>
+
+          <p>
+            New South Wales and Victoria recorded the largest totals.<br>
+            Queensland formed the next major state-level group.
+          </p>
+
+          <p class="chart-note">
+            Click a state on the map or bar chart to highlight it.
+          </p>
+
           <div id="map_state_2025"></div>
-      </div>
+        </div>
 
-      <div class="chart-card">
-      <h3>State enrolments and source-country composition</h3>
-      <p>
-        The map shows the geographic concentration of international student
-        enrolments across Australian states and territories. Hover over a state to
-        update the lollipop chart, which shows the top source countries contributing
-        to that state's enrolments.
-      </p>
+        <div class="chart-card">
+          <h3>
+            2. Which countries contributed most within each state?
+          </h3>
 
-      <div id="linked_state_country_lollipop"></div>
+          <p>
+            This chart looks inside one selected state or territory.<br>
+            It ranks the top countries students came from in 2025.<br>
+            Colour shows each country’s broader world region.
+          </p>
 
-      <p class="chart-note">
-        This linked view combines geographic overview with details on demand. The
-        map shows where enrolments are concentrated, while the lollipop chart shows
-        which countries contribute most to the hovered state.
-      </p>
+          <p>
+            This helps compare whether states depend on similar countries.<br>
+            It adds country detail after the state-level overview above.
+          </p>
+
+          <p class="chart-note">
+            Use the dropdown to choose a state and update the ranking.<br>
+            Click a country dot, line, or label to show its annotation.<br>
+          </p>
+
+          <div id="linked_state_country_lollipop"></div>
+        </div>
       </div>
     </section>
 
     <section class="chart-section">
-      <h2>Sector composition and ranking changes from 2019 to 2025</h2>
-      <p>
-        The sector charts show how international student enrolments changed over time.
-        Higher Education and VET remained the two largest sectors, while ELICOS was
-        more disrupted during the pandemic period.
-      </p>
+      <div class="section-heading">
+        <p class="section-label">Subtopic 3</p>
+
+        <h2>
+          How did education sector enrolments change over time?
+        </h2>
+
+        <p>
+          This section compares enrolment patterns across education sectors.<br>
+          The first chart shows how large each sector was over time.<br>
+          The second chart shows whether sector rankings changed each year.
+        </p>
+      </div>
 
       <div class="chart-grid">
         <div class="chart-card">
-          <h3>Sector enrolment composition over time</h3>
+          <h3>
+            Sector enrolment volume by education sector, 2019 to 2025
+          </h3>
+
           <p>
-            The stacked area chart shows the enrolment volume of each education sector
-            from 2019 to 2025. Higher Education and VET dominate the overall pattern.
+            This stacked area chart shows how enrolments changed by sector.<br>
+            Total enrolments fell sharply between 2020 and 2021.<br>
+            This reflects the disruption during the pandemic-affected period.<br>
+            Enrolments then recovered strongly from 2022 to 2024.
           </p>
+
+          <p>
+            Higher Education remained the largest sector across the whole period.<br>
+            Vocational Education and Training was the second largest sector.<br>
+            English-language courses were smaller, but still changed noticeably.<br>
+            Schools and Non-award enrolments remained comparatively small.
+          </p>
+
+          <p class="chart-note">
+            The chart highlights both sector size and overall recovery.<br>
+            It shows that recovery was driven mainly by the largest sectors.<br>
+            Move your cursor over an area to update the side annotation.<br>
+            Double-click the chart to clear the selected sector detail.
+          </p>
+
           <div id="sector_area_2019_2025"></div>
         </div>
 
         <div class="chart-card">
-          <h3>Sector ranking over time</h3>
+          <h3>
+            Sector ranking over time
+          </h3>
+
           <p>
-            The bump chart ranks education sectors by enrolments each year. It shows
-            that the largest sectors mostly stayed in the same order across the period.
+            This ranking chart compares education sectors by enrolment size each year.<br>
+            Rank 1 means the sector had the highest enrolments that year.<br>
+            Lower positions show sectors with smaller enrolment totals.
           </p>
+
+          <p>
+            The chart shows that sector positions changed during this period.<br>
+            The largest sectors stayed near the top across most years.<br>
+            Smaller sectors moved between lower ranks as enrolments changed.
+          </p>
+
+          <p>
+            This view is useful because it focuses on relative position.<br>
+            It shows whether a sector became more or less important.<br>
+            However, it should be read with the previous area chart.
+          </p>
+
+          <p class="chart-note">
+            The area chart shows enrolment size, while this chart shows ranking.<br>
+            Together, they explain both sector scale and sector position.
+          </p>
+
           <div id="sector_bump_2019_2025"></div>
         </div>
       </div>
     </section>
 
     <section class="chart-section">
-    <h2>Regional source markets reveal broader enrolment dependence</h2>
-    <p>
-    Grouping the top source countries into broader regions shows that
-    Australia’s international student enrolments are strongly connected to
-    East Asian, South Asian and Southeast Asian source markets. This view
-    reduces the complexity of the country ranking and highlights broader
-    regional dependence.
-    </p>
+      <div class="section-heading">
+        <p class="section-label">Subtopic 4</p>
 
-    <div class="chart-card">
-      <h3>Regional source-market waffle chart</h3>
-      <p>
-      Each square represents about one percent of enrolments among the top 20
-      source countries in 2025. Colour groups those countries into broader
-      source regions.
-      </p>
+        <h2>
+          Which world regions do Australia’s main source countries come from?
+        </h2>
 
-      <div id="source_region_waffle_2025"></div>
-    </div>
+        <p>
+          This section groups the top source countries into broader regions.<br>
+          It shows whether enrolments depend on many regions equally.<br>
+          It also reveals which regions dominate the source-country pattern.
+        </p>
+      </div>
+
+      <div class="chart-grid">
+        <div class="chart-card">
+          <h3>
+            Regional share of top source-country enrolments
+          </h3>
+
+          <p>
+            Each square represents about one percent of top-country enrolments.<br>
+            The waffle chart groups countries into broader source regions.<br>
+            This makes the country ranking easier to summarise regionally.
+          </p>
+
+          <p class="chart-note">
+            This chart summarises the top source countries, not all countries.<br>
+            It should be read as a regional overview of major sources.
+          </p>
+
+          <div id="source_region_waffle_2025"></div>
+
+           <p>
+            Southern and Central Asia forms the largest regional share.<br>
+            North-East Asia is also a major source region.<br>
+            Together, these two regions dominate the top-country enrolment pattern.
+          </p>
+
+          <p>
+            South-East Asia contributes another important share of enrolments.<br>
+            The Americas and Africa appear, but with smaller shares.<br>
+            This shows Australia’s source market is regionally concentrated.
+          </p>
+
+        </div>
+      </div>
     </section>
 
     <section class="chart-section">
-    <h2>Export income recovery by state</h2>
-    <p>
-      Enrolment counts show where international students study, but education
-      export income shows the economic value of international education. This view
-      compares how each state's export income changed relative to its 2019–20 level.
-    </p>
+      <div class="section-heading">
+        <p class="section-label">Subtopic 5</p>
 
-    <div class="chart-card">
-      <h3>Indexed education export income across Australian states</h3>
-      <p>
-        The index is set to 100 in 2019–20 for each state. Values above 100 mean
-        that export income has recovered beyond the 2019–20 level, while values
-        below 100 indicate that export income remained lower than the baseline.
-        Hover over the lines to view each state's exact export income and recovery index.
-      </p>
+        <h2>
+          How did education export income recover by state?
+        </h2>
 
-      <div id="state_income_indexed_line"></div>
-    </div>
+        <p>
+          Enrolments show where international students study in Australia.<br>
+          Export income shows the economic value linked to international education.<br>
+          This section compares how strongly each state recovered after disruption.
+        </p>
+      </div>
+
+      <div class="chart-grid">
+        <div class="chart-card">
+          <h3>
+            Indexed education export income across states
+          </h3>
+
+          <p>
+            This figure compares how education export income changed across states.<br>
+            Each state starts at 100 in 2019–20, before the disruption.<br>
+            Values below 100 show income below the 2019–20 baseline.<br>
+            Values above 100 show recovery beyond the 2019–20 baseline.
+          </p>
+
+          <p class="chart-note">
+            Read this figure as recovery speed, not absolute income size.<br>
+            A higher index means stronger recovery relative to 2019–20.
+          </p>
+
+          <div id="state_income_indexed_line"></div>
+
+          <p>
+            Most states experienced a clear fall between 2020–21 and 2021–22.<br>
+            This suggests education export income was strongly affected during that period.<br>
+            Recovery became much clearer from 2022–23 onwards across most states.<br>
+            By 2023–24, several states had already exceeded their baseline level.
+          </p>
+
+          <p>
+            Western Australia shows the strongest recovery by 2024–25.<br>
+            Its index rises well above 200, far ahead of other states.<br>
+            New South Wales, Australian Capital Territory and South Australia also recovered strongly.<br>
+            Victoria and Queensland recovered, but at a more moderate level.
+          </p>
+
+          <p>
+            Tasmania is the main exception in this figure.<br>
+            Its index remains below 100 throughout the later years.<br>
+            This means its education export income had not recovered to baseline.<br>
+            Overall, the figure shows recovery was uneven across Australian states.
+          </p>
+
+
+          <div id="state_income_indexed_line"></div>
+        </div>
+      </div>
     </section>
 
     <section class="chart-section">
-    <h2>Export income differs strongly across education sectors</h2>
-    <p>
-      Student enrolments show the size of international education, but export
-      income shows its economic value. This view compares how much income each
-      education sector contributed across financial years.
-    </p>
+      <div class="section-heading">
+        <p class="section-label">Subtopic 6</p>
 
-    <div class="chart-card">
-      <h3>Education export income by sector and financial year</h3>
-      <p>
-        Darker cells indicate higher export income. The heatmap makes it easier
-        to compare both sector differences and the pandemic-related decline across
-        years.
-      </p>
+        <h2>
+          How does export income differ across education sectors?
+        </h2>
 
-      <div id="sector_income_heatmap"></div>
+        <p>
+          Student enrolments show the size of international education.<br>
+          Export income shows how much economic value each sector contributes.
+        </p>
+      </div>
 
-      <p class="chart-note">
-        Higher Education generated the largest export income across all years.
-        Most sectors declined during the pandemic-affected years before recovering
-        after 2022–23.
-      </p>
+      <div class="chart-grid">
+        <div class="chart-card">
+          <h3>
+            Education export income by sector and financial year
+          </h3>
 
-      <p class="source-note">
-        Source: Australian Government Department of Education, Education export income, financial year.
-      </p>
-    </div>
+          <p>
+            Darker cells indicate higher education export income.<br>
+            The heatmap compares sector differences across financial years.
+          </p>
+
+          <div id="sector_income_heatmap"></div>
+
+          <p class="chart-note">
+            Higher Education generated the largest export income across all years.
+          </p>
+
+          <p class="source-note">
+            Source: Australian Government Department of Education.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="chart-section">
-    <h2>Student enrolments sit within broader migration flows</h2>
-    <p>
-      The Department of Education data shows where international students study,
-      while the ABS migration data shows how student-related overseas migration
-      movements differ across states and years. This view connects the enrolment
-      story with Australia's temporary migration system.
-    </p>
+      <div class="section-heading">
+        <p class="section-label">Subtopic 7</p>
 
-    <div class="chart-card">
-      <h3>Student migration balance by state</h3>
-      <p>
-        Net student migration is calculated as student arrivals minus student
-        departures. Orange indicates negative net student migration, while blue
-        indicates positive net student migration. Use the slider to compare
-        financial years from 2004–05 to 2024–25.
-      </p>
+        <h2>
+          How do enrolments relate to student migration flows?
+        </h2>
 
-      <div id="student_net_migration_gap_map"></div>
+        <p>
+          Enrolment data shows where international students study.<br>
+          Migration data shows student arrivals and departures across states.
+        </p>
+      </div>
 
-      <p class="chart-note">
-        The fixed colour scale makes it possible to compare years consistently.
-        Pandemic-affected years show the sharp disruption to student migration,
-        while later years show the recovery in net student migrant gains.
-      </p>
+      <div class="chart-grid">
+        <div class="chart-card">
+          <h3>
+            Net student migration by state
+          </h3>
 
-      <p class="source-note">
-        Source: Australian Bureau of Statistics, Overseas Migration. Estimates for
-        2024–25 are preliminary and rounded to the nearest 10.
-      </p>
-    </div>
+          <p>
+            Net student migration equals student arrivals minus departures.<br>
+            Blue indicates positive net student migration.<br>
+            Orange indicates negative net student migration.
+          </p>
+
+          <div id="student_net_migration_gap_map"></div>
+
+          <p class="chart-note">
+            Use the slider to compare financial years over time.
+          </p>
+
+          <p class="source-note">
+            Source: Australian Bureau of Statistics, Overseas Migration.
+          </p>
+        </div>
+      </div>
     </section>
+
   </main>
 
   <script src="js/main.js"></script>

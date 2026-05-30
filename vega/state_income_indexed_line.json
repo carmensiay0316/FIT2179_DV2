@@ -1,12 +1,12 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "width": 760,
+  "width": 750,
   "height": 430,
 
   "title": {
-    "text": "How did education export income recover across states?",
-    "subtitle": "Indexed education export income, where 2019–20 = 100.",
+    "text": "How strongly did education export income recover by state?",
+    "subtitle": "Index, where each state’s 2019–20 income equals 100.",
     "anchor": "start",
     "fontSize": 18,
     "subtitleFontSize": 12,
@@ -36,6 +36,10 @@
     {
       "calculate": "datum.income_million / 1000",
       "as": "income_billion"
+    },
+    {
+      "calculate": "datum.State == 'NSW' ? 'New South Wales' : datum.State == 'VIC' ? 'Victoria' : datum.State == 'QLD' || datum.State == 'QL' ? 'Queensland' : datum.State == 'WA' ? 'Western Australia' : datum.State == 'SA' ? 'South Australia' : datum.State == 'TAS' ? 'Tasmania' : datum.State == 'ACT' ? 'Australian Capital Territory' : datum.State == 'NT' ? 'Northern Territory' : datum.State",
+      "as": "state_name_full"
     }
   ],
 
@@ -81,18 +85,54 @@
         "y": {
           "field": "income_index",
           "type": "quantitative",
-          "title": "Index, 2019–20 = 100"
+          "title": "Index, 2019–20 = 100",
+          "scale": {
+            "domain": [0, 220]
+          }
         },
 
         "color": {
-          "field": "State",
+          "field": "state_name_full",
           "type": "nominal",
-          "title": "State"
+          "title": "State",
+          "scale": {
+            "domain": [
+              "New South Wales",
+              "Victoria",
+              "Queensland",
+              "Western Australia",
+              "South Australia",
+              "Tasmania",
+              "Australian Capital Territory",
+              "Northern Territory"
+            ],
+            "range": [
+              "#797D62",
+              "#9B9B7A",
+              "#D9AE94",
+              "#F1DCA7",
+              "#FFCB69",
+              "#D08C60",
+              "#997B66",
+              "#AD9585"
+            ]
+          },
+          "legend": {
+            "orient": "right",
+            "titleFontSize": 12,
+            "labelFontSize": 11,
+            "labelLimit": 170
+          }
+        },
+
+        "detail": {
+          "field": "state_name_full",
+          "type": "nominal"
         },
 
         "tooltip": [
           {
-            "field": "State",
+            "field": "state_name_full",
             "type": "nominal",
             "title": "State"
           },

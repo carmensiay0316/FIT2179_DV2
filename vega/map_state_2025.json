@@ -411,9 +411,18 @@
 
       "encoding": {
         "y": {
-          "field": "state",
+          "field": "state_name_full",
           "type": "nominal",
-          "sort": ["NSW", "VIC", "QLD", "WA", "SA", "ACT", "TAS", "NT"],
+          "sort": [
+          "New South Wales",
+          "Victoria",
+          "Queensland",
+          "Western Australia",
+          "South Australia",
+          "Australian Capital Territory",
+          "Tasmania",
+          "Northern Territory"
+          ],
           "title": null,
           "axis": {
             "labelFontSize": 12
@@ -435,7 +444,7 @@
         },
         "tooltip": [
           {
-            "field": "state",
+            "field": "state_name_full",
             "type": "nominal",
             "title": "State"
           },
@@ -572,7 +581,7 @@
               "filter": "selected_state !== '' && datum.state_abbr === selected_state"
             },
             {
-              "calculate": "'Abbreviation: ' + datum.state",
+              "calculate": "'State code: ' + datum.state",
               "as": "abbr_label"
             }
           ],

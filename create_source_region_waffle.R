@@ -10,30 +10,33 @@ students_country_2025 <- read_csv(
 
 country_region <- tribble(
   ~country, ~region,
-  "China", "East Asia",
-  "India", "South Asia",
-  "Nepal", "South Asia",
-  "Philippines", "Southeast Asia",
-  "Vietnam", "Southeast Asia",
-  "Colombia", "South America",
-  "Bangladesh", "South Asia",
-  "Pakistan", "South Asia",
-  "Indonesia", "Southeast Asia",
-  "Brazil", "South America",
-  "Thailand", "Southeast Asia",
-  "Sri Lanka", "South Asia",
-  "Malaysia", "Southeast Asia",
-  "Korea, Republic of (South)", "East Asia",
-  "Bhutan", "South Asia",
-  "Taiwan", "East Asia",
-  "Japan", "East Asia",
-  "Hong Kong SAR", "East Asia",
+  "China", "North-East Asia",
+  "India", "Southern and Central Asia",
+  "Nepal", "Southern and Central Asia",
+  "Philippines", "South-East Asia",
+  "Vietnam", "South-East Asia",
+  "Colombia", "Americas",
+  "Bangladesh", "Southern and Central Asia",
+  "Pakistan", "Southern and Central Asia",
+  "Indonesia", "South-East Asia",
+  "Brazil", "Americas",
+  "Thailand", "South-East Asia",
+  "Sri Lanka", "Southern and Central Asia",
+  "Malaysia", "South-East Asia",
+  "Korea, Republic of (South)", "North-East Asia",
+  "Bhutan", "Southern and Central Asia",
+  "Taiwan", "North-East Asia",
+  "Japan", "North-East Asia",
+  "Hong Kong SAR", "North-East Asia",
   "Kenya", "Africa",
-  "Mongolia", "East Asia"
+  "Mongolia", "North-East Asia"
 )
 
 source_region_summary_2025 <- students_country_2025 |>
   left_join(country_region, by = "country") |>
+  mutate(
+    region = replace_na(region, "Other")
+  ) |>
   group_by(region) |>
   summarise(
     enrolments = sum(enrolments, na.rm = TRUE),
@@ -45,7 +48,6 @@ source_region_summary_2025 <- students_country_2025 |>
   ) |>
   arrange(desc(enrolments))
 
-# Make sure total tiles = 100
 difference <- 100 - sum(source_region_summary_2025$tiles)
 
 if (difference != 0) {
