@@ -1,14 +1,33 @@
-vegaEmbed("#bar_state_2025", "vega/bar_state_2025.json", { actions: false })
-  .catch(console.error);
+vegaEmbed("#bar_country_2025","vega/bar_country_2025.json",
+  {actions: false})
+.then(function(result) {
+  result.view.addEventListener("click", function(event, item) {
+    if (item && item.datum && item.datum.country_name) {
+      result.view
+        .signal("selected_country", item.datum.country_name)
+        .runAsync();
+    }
+  });
+})
+.catch(console.error);
 
-vegaEmbed("#bar_country_2025", "vega/bar_country_2025.json", { actions: false })
-  .catch(console.error);
+vegaEmbed("#map_state_2025","vega/map_state_2025.json",{actions: false})
+.then(function(result) {
+  result.view.addEventListener("click", function(event, item) {
+    if (item && item.datum && item.datum.state_abbr) {
+      result.view
+        .signal("selected_state", item.datum.state_abbr)
+        .runAsync();
+    }
+  });
+  result.view.addEventListener("dblclick", function(event, item) {
+    result.view
+      .signal("selected_state", "")
+      .runAsync();
+  });
+}).catch(console.error);
 
-vegaEmbed("#map_state_2025", "vega/map_state_2025.json", { actions: false })
-  .catch(console.error);
-
-vegaEmbed("#linked_state_country_lollipop", "vega/linked_state_country_lollipop.json", {
-  actions: false})
+vegaEmbed("#linked_state_country_lollipop", "vega/linked_state_country_lollipop.json", {actions: false})
   .catch(console.error);
 
 vegaEmbed("#sector_area_2019_2025", "vega/sector_area_2019to2025.json", { actions: false })

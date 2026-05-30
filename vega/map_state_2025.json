@@ -32,6 +32,10 @@
         ],
         "name": "Map centre: "
       }
+    },
+    {
+      "name": "selected_state",
+      "value": ""
     }
   ],
 
@@ -76,18 +80,6 @@
               }
             }
           ],
-          "params": [
-            {
-              "name": "state_pick_map",
-              "select": {
-                "type": "point",
-                "fields": ["state_abbr"],
-                "on": "click",
-                "clear": "dblclick",
-                "toggle": false
-              }
-            }
-          ],
           "mark": {
             "type": "geoshape",
             "cursor": "pointer"
@@ -105,23 +97,21 @@
             },
             "stroke": {
               "condition": {
-                "param": "state_pick_map",
-                "empty": false,
+                "test": "selected_state !== '' && datum.state_abbr === selected_state",
                 "value": "#49111C"
               },
               "value": "#4b5563"
             },
             "strokeWidth": {
               "condition": {
-                "param": "state_pick_map",
-                "empty": false,
+                "test": "selected_state !== '' && datum.state_abbr === selected_state",
                 "value": 3
               },
               "value": 0.8
             },
             "opacity": {
               "condition": {
-                "param": "state_pick_map",
+                "test": "selected_state === '' || datum.state_abbr === selected_state",
                 "value": 1
               },
               "value": 0.55
@@ -171,7 +161,8 @@
             "fontSize": 11,
             "fontWeight": "bold",
             "stroke": "white",
-            "strokeWidth": 3
+            "strokeWidth": 3,
+            "cursor": "pointer"
           },
           "encoding": {
             "longitude": {
@@ -188,7 +179,7 @@
             },
             "opacity": {
               "condition": {
-                "param": "state_pick_map",
+                "test": "selected_state === '' || datum.state_abbr === selected_state",
                 "value": 1
               },
               "value": 0.55
@@ -218,7 +209,8 @@
           "mark": {
             "type": "text",
             "fontSize": 11,
-            "fontWeight": "bold"
+            "fontWeight": "bold",
+            "cursor": "pointer"
           },
           "encoding": {
             "longitude": {
@@ -235,15 +227,14 @@
             },
             "color": {
               "condition": {
-                "param": "state_pick_map",
-                "empty": false,
+                "test": "selected_state !== '' && datum.state_abbr === selected_state",
                 "value": "#49111C"
               },
               "value": "#111827"
             },
             "opacity": {
               "condition": {
-                "param": "state_pick_map",
+                "test": "selected_state === '' || datum.state_abbr === selected_state",
                 "value": 1
               },
               "value": 0.55
@@ -422,7 +413,7 @@
         "y": {
           "field": "state",
           "type": "nominal",
-          "sort": ["NSW", "VIC", "QLD", "WA", "SA", "ACT", "TAS", "NT"], 
+          "sort": ["NSW", "VIC", "QLD", "WA", "SA", "ACT", "TAS", "NT"],
           "title": null,
           "axis": {
             "labelFontSize": 12
@@ -461,7 +452,8 @@
         {
           "mark": {
             "type": "bar",
-            "stroke": "#49111C"
+            "stroke": "#49111C",
+            "cursor": "pointer"
           },
           "encoding": {
             "color": {
@@ -476,15 +468,14 @@
             },
             "strokeWidth": {
               "condition": {
-                "param": "state_pick_map",
-                "empty": false,
+                "test": "selected_state !== '' && datum.state_abbr === selected_state",
                 "value": 3
               },
               "value": 0
             },
             "opacity": {
               "condition": {
-                "param": "state_pick_map",
+                "test": "selected_state === '' || datum.state_abbr === selected_state",
                 "value": 1
               },
               "value": 0.45
@@ -498,7 +489,8 @@
             "align": "left",
             "baseline": "middle",
             "dx": 6,
-            "fontSize": 12
+            "fontSize": 12,
+            "cursor": "pointer"
           },
           "encoding": {
             "text": {
@@ -508,15 +500,14 @@
             },
             "color": {
               "condition": {
-                "param": "state_pick_map",
-                "empty": false,
+                "test": "selected_state !== '' && datum.state_abbr === selected_state",
                 "value": "#49111C"
               },
               "value": "#0A0908"
             },
             "opacity": {
               "condition": {
-                "param": "state_pick_map",
+                "test": "selected_state === '' || datum.state_abbr === selected_state",
                 "value": 1
               },
               "value": 0.55
@@ -527,10 +518,7 @@
         {
           "transform": [
             {
-              "filter": {
-                "param": "state_pick_map",
-                "empty": false
-              }
+              "filter": "selected_state !== '' && datum.state_abbr === selected_state"
             }
           ],
           "mark": {
@@ -552,10 +540,7 @@
         {
           "transform": [
             {
-              "filter": {
-                "param": "state_pick_map",
-                "empty": false
-              }
+              "filter": "selected_state !== '' && datum.state_abbr === selected_state"
             },
             {
               "calculate": "'State: ' + datum.state_name_full",
@@ -584,10 +569,7 @@
         {
           "transform": [
             {
-              "filter": {
-                "param": "state_pick_map",
-                "empty": false
-              }
+              "filter": "selected_state !== '' && datum.state_abbr === selected_state"
             },
             {
               "calculate": "'Abbreviation: ' + datum.state",
@@ -615,10 +597,7 @@
         {
           "transform": [
             {
-              "filter": {
-                "param": "state_pick_map",
-                "empty": false
-              }
+              "filter": "selected_state !== '' && datum.state_abbr === selected_state"
             },
             {
               "calculate": "'2025 enrolments: ' + format(datum.enrolments, ',.0f')",
