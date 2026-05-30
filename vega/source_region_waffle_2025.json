@@ -115,7 +115,7 @@
     },
 
     {
-      "width": 270,
+      "width": 300,
       "height": 420,
 
       "layer": [
@@ -138,10 +138,10 @@
               "value": 300
             },
             "y": {
-              "value": 0
+              "value": 70
             },
             "y2": {
-              "value": 285
+              "value": 330
             }
           }
         },
@@ -160,13 +160,174 @@
           },
           "encoding": {
             "x": {
-              "value": 16
+              "value": 18
             },
             "y": {
-              "value": 18
+              "value": 94
             },
             "text": {
               "value": "Selected region details"
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "color": "#2F3E46",
+            "limit": 260
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 138
+            },
+            "text": {
+              "value": "Main pattern:"
+            },
+            "opacity": {
+              "condition": {
+                "test": "selected_waffle_region === ''",
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 12,
+            "color": "#333",
+            "limit": 260
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 172
+            },
+            "text": {
+              "value": "Southern and Central Asia"
+            },
+            "opacity": {
+              "condition": {
+                "test": "selected_waffle_region === ''",
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 12,
+            "color": "#333",
+            "limit": 260
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 194
+            },
+            "text": {
+              "value": "is the largest source region."
+            },
+            "opacity": {
+              "condition": {
+                "test": "selected_waffle_region === ''",
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 12,
+            "color": "#333",
+            "limit": 260
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 238
+            },
+            "text": {
+              "value": "North-East Asia is also"
+            },
+            "opacity": {
+              "condition": {
+                "test": "selected_waffle_region === ''",
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 12,
+            "color": "#333",
+            "limit": 260
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 260
+            },
+            "text": {
+              "value": "a major source region."
+            },
+            "opacity": {
+              "condition": {
+                "test": "selected_waffle_region === ''",
+                "value": 1
+              },
+              "value": 0
             }
           }
         },
@@ -199,11 +360,6 @@
                   "op": "max",
                   "field": "share",
                   "as": "region_share"
-                },
-                {
-                  "op": "max",
-                  "field": "tiles",
-                  "as": "region_tiles"
                 }
               ],
               "groupby": ["region"]
@@ -230,10 +386,10 @@
               },
               "encoding": {
                 "x": {
-                  "value": 16
+                  "value": 18
                 },
                 "y": {
-                  "value": 58
+                  "value": 135
                 },
                 "text": {
                   "value": "Source region:"
@@ -253,10 +409,10 @@
               },
               "encoding": {
                 "x": {
-                  "value": 16
+                  "value": 18
                 },
                 "y": {
-                  "value": 80
+                  "value": 157
                 },
                 "text": {
                   "field": "region",
@@ -276,10 +432,10 @@
               },
               "encoding": {
                 "x": {
-                  "value": 16
+                  "value": 18
                 },
                 "y": {
-                  "value": 128
+                  "value": 208
                 },
                 "text": {
                   "field": "enrolment_line",
@@ -294,14 +450,15 @@
                 "align": "left",
                 "baseline": "top",
                 "fontSize": 12,
-                "color": "#333"
+                "color": "#333",
+                "limit": 260
               },
               "encoding": {
                 "x": {
-                  "value": 16
+                  "value": 18
                 },
                 "y": {
-                  "value": 160
+                  "value": 240
                 },
                 "text": {
                   "field": "share_line",
@@ -315,7 +472,7 @@
     }
   ],
 
-  "spacing": 14,
+  "spacing": 16,
 
   "config": {
     "view": {

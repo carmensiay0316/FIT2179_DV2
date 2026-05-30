@@ -243,10 +243,10 @@
               "value": 310
             },
             "y": {
-              "value": 0
+              "value": 35
             },
             "y2": {
-              "value": 270
+              "value": 285
             }
           }
         },
@@ -268,10 +268,171 @@
               "value": 18
             },
             "y": {
-              "value": 18
+              "value": 58
             },
             "text": {
               "value": "Selected cell details"
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "color": "#2F3E46",
+            "limit": 270
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 102
+            },
+            "text": {
+              "value": "Before selecting a cell:"
+            },
+            "opacity": {
+              "condition": {
+                "test": "selected_heatmap_sector === ''",
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 12,
+            "color": "#333",
+            "limit": 270
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 137
+            },
+            "text": {
+              "value": "Higher Education generates"
+            },
+            "opacity": {
+              "condition": {
+                "test": "selected_heatmap_sector === ''",
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 12,
+            "color": "#333",
+            "limit": 270
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 159
+            },
+            "text": {
+              "value": "the largest export income."
+            },
+            "opacity": {
+              "condition": {
+                "test": "selected_heatmap_sector === ''",
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 12,
+            "color": "#333",
+            "limit": 270
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 205
+            },
+            "text": {
+              "value": "Click a cell to show"
+            },
+            "opacity": {
+              "condition": {
+                "test": "selected_heatmap_sector === ''",
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 12,
+            "color": "#333",
+            "limit": 270
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 227
+            },
+            "text": {
+              "value": "the exact year and value."
+            },
+            "opacity": {
+              "condition": {
+                "test": "selected_heatmap_sector === ''",
+                "value": 1
+              },
+              "value": 0
             }
           }
         },
@@ -340,7 +501,7 @@
                   "value": 18
                 },
                 "y": {
-                  "value": 56
+                  "value": 98
                 },
                 "text": {
                   "value": "Sector:"
@@ -363,7 +524,7 @@
                   "value": 18
                 },
                 "y": {
-                  "value": 78
+                  "value": 120
                 },
                 "text": {
                   "field": "sector_label",
@@ -378,14 +539,15 @@
                 "align": "left",
                 "baseline": "top",
                 "fontSize": 12,
-                "color": "#333"
+                "color": "#333",
+                "limit": 270
               },
               "encoding": {
                 "x": {
                   "value": 18
                 },
                 "y": {
-                  "value": 122
+                  "value": 164
                 },
                 "text": {
                   "field": "year_line",
@@ -408,7 +570,7 @@
                   "value": 18
                 },
                 "y": {
-                  "value": 154
+                  "value": 194
                 },
                 "text": {
                   "field": "billion_line",
@@ -431,7 +593,7 @@
                   "value": 18
                 },
                 "y": {
-                  "value": 186
+                  "value": 224
                 },
                 "text": {
                   "field": "million_line",
@@ -445,7 +607,7 @@
     }
   ],
 
-  "spacing": 8,
+  "spacing": 14,
 
   "config": {
     "view": {

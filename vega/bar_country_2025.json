@@ -82,9 +82,9 @@
             "color": {
               "condition": {
                 "test": "datum.country_name === selected_country",
-                "value": "#E76F51"
+                "value": "#1F5F83"
               },
-              "value": "#AFC2D5",
+              "value": "#6FA3A0",
               "legend": null
             },
             "opacity": {
@@ -157,7 +157,7 @@
             "color": {
               "condition": {
                 "test": "datum.country_name === selected_country",
-                "value": "#C44536"
+                "value": "#1F5F83"
               },
               "value": "#4A4A4A"
             },
@@ -253,7 +253,7 @@
         {
           "mark": {
             "type": "circle",
-            "fill": "#AFC2D5",
+            "fill": "#6FA3A0",
             "stroke": "white",
             "strokeWidth": 1
           },
@@ -392,7 +392,7 @@
             "color": {
               "condition": {
                 "test": "datum.country_name === selected_country",
-                "value": "#E76F51"
+                "value": "#1F5F83"
               },
               "value": "#A7B6C2",
               "legend": null
@@ -428,9 +428,9 @@
             "color": {
               "condition": {
                 "test": "datum.country_name === selected_country",
-                "value": "#E76F51"
+                "value": "#1F5F83"
               },
-              "value": "#AFC2D5",
+              "value": "#6FA3A0",
               "legend": null
             },
             "opacity": {
@@ -514,7 +514,7 @@
           "mark": {
             "type": "rect",
             "fill": "#FFF7ED",
-            "stroke": "#E76F51",
+            "stroke": "#1F5F83",
             "strokeWidth": 1,
             "cornerRadius": 6,
             "opacity": 0.95
@@ -563,7 +563,7 @@
             "baseline": "top",
             "fontSize": 11,
             "fontWeight": "bold",
-            "color": "#C44536",
+            "color": "#1F5F83",
             "limit": 190
           },
           "encoding": {
@@ -651,7 +651,7 @@
             "align": "left",
             "baseline": "top",
             "fontSize": 11,
-            "color": "#333",
+            "color": "#1F5F83",
             "limit": 190
           },
           "encoding": {

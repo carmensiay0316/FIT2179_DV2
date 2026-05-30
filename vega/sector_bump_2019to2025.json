@@ -89,11 +89,11 @@
               "Schools"
             ],
             "range": [
-              "#CAD2C5",
-              "#84A98C",
-              "#52796F",
-              "#354F52",
-              "#2F3E46"
+              "#4A4E69",
+              "#C9ADA7",
+              "#9A8C98",
+              "#F2E9E4",
+              "#22223B"
             ]
           },
           "legend": {
@@ -178,10 +178,10 @@
               "value": 320
             },
             "y": {
-              "value": 0
+              "value": 65
             },
             "y2": {
-              "value": 285
+              "value": 335
             }
           }
         },
@@ -200,13 +200,174 @@
           },
           "encoding": {
             "x": {
-              "value": 16
+              "value": 18
             },
             "y": {
-              "value": 18
+              "value": 88
             },
             "text": {
               "value": "Selected rank details"
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "color": "#2F3E46",
+            "limit": 280
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 130
+            },
+            "text": {
+              "value": "Main pattern:"
+            },
+            "opacity": {
+              "condition": {
+                "test": "selected_bump_sector === ''",
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 12,
+            "color": "#333",
+            "limit": 280
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 165
+            },
+            "text": {
+              "value": "This view compares"
+            },
+            "opacity": {
+              "condition": {
+                "test": "selected_bump_sector === ''",
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 12,
+            "color": "#333",
+            "limit": 280
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 187
+            },
+            "text": {
+              "value": "sector position, not size."
+            },
+            "opacity": {
+              "condition": {
+                "test": "selected_bump_sector === ''",
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 12,
+            "color": "#333",
+            "limit": 280
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 225
+            },
+            "text": {
+              "value": "Click a point to inspect"
+            },
+            "opacity": {
+              "condition": {
+                "test": "selected_bump_sector === ''",
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 12,
+            "color": "#333",
+            "limit": 280
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 247
+            },
+            "text": {
+              "value": "one sector-year rank."
+            },
+            "opacity": {
+              "condition": {
+                "test": "selected_bump_sector === ''",
+                "value": 1
+              },
+              "value": 0
             }
           }
         },
@@ -265,10 +426,10 @@
               },
               "encoding": {
                 "x": {
-                  "value": 16
+                  "value": 18
                 },
                 "y": {
-                  "value": 58
+                  "value": 125
                 },
                 "text": {
                   "value": "Sector:"
@@ -284,14 +445,14 @@
                 "fontSize": 12,
                 "fontWeight": "bold",
                 "color": "#2F3E46",
-                "limit": 288
+                "limit": 280
               },
               "encoding": {
                 "x": {
-                  "value": 16
+                  "value": 18
                 },
                 "y": {
-                  "value": 80
+                  "value": 147
                 },
                 "text": {
                   "field": "sector_label",
@@ -306,14 +467,15 @@
                 "align": "left",
                 "baseline": "top",
                 "fontSize": 12,
-                "color": "#333"
+                "color": "#333",
+                "limit": 280
               },
               "encoding": {
                 "x": {
-                  "value": 16
+                  "value": 18
                 },
                 "y": {
-                  "value": 124
+                  "value": 190
                 },
                 "text": {
                   "field": "year_line",
@@ -328,14 +490,15 @@
                 "align": "left",
                 "baseline": "top",
                 "fontSize": 12,
-                "color": "#333"
+                "color": "#333",
+                "limit": 280
               },
               "encoding": {
                 "x": {
-                  "value": 16
+                  "value": 18
                 },
                 "y": {
-                  "value": 156
+                  "value": 220
                 },
                 "text": {
                   "field": "rank_line",
@@ -351,14 +514,14 @@
                 "baseline": "top",
                 "fontSize": 12,
                 "color": "#333",
-                "limit": 288
+                "limit": 280
               },
               "encoding": {
                 "x": {
-                  "value": 16
+                  "value": 18
                 },
                 "y": {
-                  "value": 188
+                  "value": 250
                 },
                 "text": {
                   "field": "enrolment_line",

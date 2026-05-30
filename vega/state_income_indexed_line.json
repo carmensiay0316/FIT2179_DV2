@@ -34,11 +34,11 @@
           "as": ["financial_year", "income_million"]
         },
         {
-          "calculate": "toNumber(replace(datum.income_million + '', ',', ''))",
+          "calculate": "toNumber(replace(datum.income_million + '', /,/g, ''))",
           "as": "income_million_num"
         },
         {
-          "calculate": "toNumber(replace(datum['2019-20'] + '', ',', ''))",
+          "calculate": "toNumber(replace(datum['2019-20'] + '', /,/g, ''))",
           "as": "base_income"
         },
         {
@@ -68,6 +68,7 @@
             }
           }
         },
+
         {
           "mark": {
             "type": "line",
@@ -96,6 +97,7 @@
                 "labelAngle": 0
               }
             },
+
             "y": {
               "field": "income_index",
               "type": "quantitative",
@@ -104,6 +106,7 @@
                 "domain": [0, 220]
               }
             },
+
             "color": {
               "field": "state_name_full",
               "type": "nominal",
@@ -140,6 +143,7 @@
                 "symbolSize": 90
               }
             },
+
             "opacity": {
               "condition": {
                 "test": "selected_income_state === '' || datum.state_name_full === selected_income_state",
@@ -147,6 +151,7 @@
               },
               "value": 0.25
             },
+
             "strokeWidth": {
               "condition": {
                 "test": "selected_income_state !== '' && datum.state_name_full === selected_income_state",
@@ -154,10 +159,12 @@
               },
               "value": 2.4
             },
+
             "detail": {
               "field": "state_name_full",
               "type": "nominal"
             },
+
             "tooltip": [
               {
                 "field": "state_name_full",
@@ -194,7 +201,7 @@
     },
 
     {
-      "width": 255,
+      "width": 270,
       "height": 380,
 
       "layer": [
@@ -214,16 +221,17 @@
               "value": 0
             },
             "x2": {
-              "value": 255
+              "value": 270
             },
             "y": {
-              "value": 0
+              "value": 65
             },
             "y2": {
-              "value": 260
+              "value": 335
             }
           }
         },
+
         {
           "data": {
             "values": [{}]
@@ -238,17 +246,178 @@
           },
           "encoding": {
             "x": {
-              "value": 16
+              "value": 18
             },
             "y": {
-              "value": 18
+              "value": 88
             },
             "text": {
               "value": "Selected state details"
             }
           }
         },
-        
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "color": "#2F3E46",
+            "limit": 235
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 130
+            },
+            "text": {
+              "value": "Main pattern:"
+            },
+            "opacity": {
+              "condition": {
+                "test": "selected_income_state === ''",
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 12,
+            "color": "#333",
+            "limit": 235
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 165
+            },
+            "text": {
+              "value": "Western Australia shows"
+            },
+            "opacity": {
+              "condition": {
+                "test": "selected_income_state === ''",
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 12,
+            "color": "#333",
+            "limit": 235
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 187
+            },
+            "text": {
+              "value": "the strongest recovery."
+            },
+            "opacity": {
+              "condition": {
+                "test": "selected_income_state === ''",
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 12,
+            "color": "#333",
+            "limit": 235
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 225
+            },
+            "text": {
+              "value": "Tasmania remains below"
+            },
+            "opacity": {
+              "condition": {
+                "test": "selected_income_state === ''",
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 12,
+            "color": "#333",
+            "limit": 235
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 247
+            },
+            "text": {
+              "value": "the baseline in 2024–25."
+            },
+            "opacity": {
+              "condition": {
+                "test": "selected_income_state === ''",
+                "value": 1
+              },
+              "value": 0
+            }
+          }
+        },
+
         {
           "data": {
             "url": "data/education_export_income.csv"
@@ -266,11 +435,11 @@
               "as": ["financial_year", "income_million"]
             },
             {
-              "calculate": "toNumber(replace(datum.income_million + '', ',', ''))",
+              "calculate": "toNumber(replace(datum.income_million + '', /,/g, ''))",
               "as": "income_million_num"
             },
             {
-              "calculate": "toNumber(replace(datum['2019-20'] + '', ',', ''))",
+              "calculate": "toNumber(replace(datum['2019-20'] + '', /,/g, ''))",
               "as": "base_income"
             },
             {
@@ -305,6 +474,7 @@
               "as": "income_million_line"
             }
           ],
+
           "layer": [
             {
               "mark": {
@@ -317,16 +487,17 @@
               },
               "encoding": {
                 "x": {
-                  "value": 16
+                  "value": 18
                 },
                 "y": {
-                  "value": 58
+                  "value": 125
                 },
                 "text": {
                   "value": "State:"
                 }
               }
             },
+
             {
               "mark": {
                 "type": "text",
@@ -335,14 +506,14 @@
                 "fontSize": 12,
                 "fontWeight": "bold",
                 "color": "#2F3E46",
-                "limit": 225
+                "limit": 235
               },
               "encoding": {
                 "x": {
-                  "value": 16
+                  "value": 18
                 },
                 "y": {
-                  "value": 80
+                  "value": 147
                 },
                 "text": {
                   "field": "state_name_full",
@@ -350,20 +521,22 @@
                 }
               }
             },
+
             {
               "mark": {
                 "type": "text",
                 "align": "left",
                 "baseline": "top",
                 "fontSize": 12,
-                "color": "#333"
+                "color": "#333",
+                "limit": 235
               },
               "encoding": {
                 "x": {
-                  "value": 16
+                  "value": 18
                 },
                 "y": {
-                  "value": 124
+                  "value": 190
                 },
                 "text": {
                   "field": "year_line",
@@ -371,20 +544,22 @@
                 }
               }
             },
+
             {
               "mark": {
                 "type": "text",
                 "align": "left",
                 "baseline": "top",
                 "fontSize": 12,
-                "color": "#333"
+                "color": "#333",
+                "limit": 235
               },
               "encoding": {
                 "x": {
-                  "value": 16
+                  "value": 18
                 },
                 "y": {
-                  "value": 154
+                  "value": 220
                 },
                 "text": {
                   "field": "index_line",
@@ -392,6 +567,7 @@
                 }
               }
             },
+
             {
               "mark": {
                 "type": "text",
@@ -399,14 +575,14 @@
                 "baseline": "top",
                 "fontSize": 12,
                 "color": "#333",
-                "limit": 225
+                "limit": 235
               },
               "encoding": {
                 "x": {
-                  "value": 16
+                  "value": 18
                 },
                 "y": {
-                  "value": 184
+                  "value": 250
                 },
                 "text": {
                   "field": "income_billion_line",
@@ -414,6 +590,7 @@
                 }
               }
             },
+
             {
               "mark": {
                 "type": "text",
@@ -421,14 +598,14 @@
                 "baseline": "top",
                 "fontSize": 12,
                 "color": "#333",
-                "limit": 225
+                "limit": 235
               },
               "encoding": {
                 "x": {
-                  "value": 16
+                  "value": 18
                 },
                 "y": {
-                  "value": 214
+                  "value": 280
                 },
                 "text": {
                   "field": "income_million_line",
@@ -442,7 +619,7 @@
     }
   ],
 
-  "spacing": 8,
+  "spacing": 14,
 
   "config": {
     "view": {
