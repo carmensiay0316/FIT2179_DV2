@@ -62,7 +62,8 @@
       "mark": {
         "type": "geoshape",
         "stroke": "#4b5563",
-        "strokeWidth": 0.8
+        "strokeWidth": 0.8,
+        "cursor": "pointer"
       },
 
       "encoding": {
@@ -72,30 +73,30 @@
         },
 
         "color": {
-          "field": "net_student_migration",
-          "type": "quantitative",
-          "title": "Net student migration",
-          "scale": {
-            "type": "threshold",
-            "domain": [-10000, 0, 5000, 15000, 30000, 60000],
-            "range": [
-              "#b35806",
-              "#f1a340",
-              "#fee08b",
-              "#91bfdb",
-              "#4575b4",
-              "#2166ac",
-              "#053061"
-            ]
-          },
-          "legend": {
-            "orient": "bottom",
-            "direction": "horizontal",
-            "title": "Net student migration",
-            "labelFontSize": 11,
-            "titleFontSize": 12
-          }
+        "field": "net_student_migration",
+        "type": "quantitative",
+        "title": "Net student migration",
+        "scale": {
+          "type": "linear",
+          "domain": [-10000, 0, 60000],
+          "range": [
+            "#A05A10",
+            "#F7F5EF",
+            "#1F5F83"
+          ],
+          "clamp": true
         },
+        "legend": {
+          "orient": "bottom",
+          "direction": "horizontal",
+          "title": "Net student migration",
+          "gradientLength": 300,
+          "labelFontSize": 11,
+          "titleFontSize": 12,
+          "values": [-10000, 0, 15000, 30000, 60000],
+          "labelExpr": "datum.value == -10000 ? '-10k' : datum.value == 0 ? '0' : datum.value == 15000 ? '15k' : datum.value == 30000 ? '30k' : datum.value == 60000 ? '60k' : format(datum.value, '~s')"
+        }
+      },
 
         "tooltip": [
           {
@@ -133,46 +134,14 @@
     {
       "data": {
         "values": [
-          {
-            "state": "WA",
-            "longitude": 121.5,
-            "latitude": -26.5
-          },
-          {
-            "state": "NT",
-            "longitude": 133.5,
-            "latitude": -19.5
-          },
-          {
-            "state": "SA",
-            "longitude": 135.5,
-            "latitude": -30.5
-          },
-          {
-            "state": "QLD",
-            "longitude": 145.5,
-            "latitude": -22.5
-          },
-          {
-            "state": "NSW",
-            "longitude": 147.0,
-            "latitude": -32.5
-          },
-          {
-            "state": "VIC",
-            "longitude": 144.5,
-            "latitude": -37.2
-          },
-          {
-            "state": "TAS",
-            "longitude": 146.5,
-            "latitude": -42.2
-          },
-          {
-            "state": "ACT",
-            "longitude": 149.0,
-            "latitude": -35.3
-          }
+          { "state": "WA", "longitude": 121.5, "latitude": -26.5 },
+          { "state": "NT", "longitude": 133.5, "latitude": -19.5 },
+          { "state": "SA", "longitude": 135.5, "latitude": -30.5 },
+          { "state": "QLD", "longitude": 145.5, "latitude": -22.5 },
+          { "state": "NSW", "longitude": 147.0, "latitude": -32.5 },
+          { "state": "VIC", "longitude": 144.5, "latitude": -37.2 },
+          { "state": "TAS", "longitude": 146.5, "latitude": -42.2 },
+          { "state": "ACT", "longitude": 149.0, "latitude": -35.3 }
         ]
       },
 
@@ -204,46 +173,14 @@
     {
       "data": {
         "values": [
-          {
-            "state": "WA",
-            "longitude": 121.5,
-            "latitude": -26.5
-          },
-          {
-            "state": "NT",
-            "longitude": 133.5,
-            "latitude": -19.5
-          },
-          {
-            "state": "SA",
-            "longitude": 135.5,
-            "latitude": -30.5
-          },
-          {
-            "state": "QLD",
-            "longitude": 145.5,
-            "latitude": -22.5
-          },
-          {
-            "state": "NSW",
-            "longitude": 147.0,
-            "latitude": -32.5
-          },
-          {
-            "state": "VIC",
-            "longitude": 144.5,
-            "latitude": -37.2
-          },
-          {
-            "state": "TAS",
-            "longitude": 146.5,
-            "latitude": -42.2
-          },
-          {
-            "state": "ACT",
-            "longitude": 149.0,
-            "latitude": -35.3
-          }
+          { "state": "WA", "longitude": 121.5, "latitude": -26.5 },
+          { "state": "NT", "longitude": 133.5, "latitude": -19.5 },
+          { "state": "SA", "longitude": 135.5, "latitude": -30.5 },
+          { "state": "QLD", "longitude": 145.5, "latitude": -22.5 },
+          { "state": "NSW", "longitude": 147.0, "latitude": -32.5 },
+          { "state": "VIC", "longitude": 144.5, "latitude": -37.2 },
+          { "state": "TAS", "longitude": 146.5, "latitude": -42.2 },
+          { "state": "ACT", "longitude": 149.0, "latitude": -35.3 }
         ]
       },
 

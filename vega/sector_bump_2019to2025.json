@@ -1,105 +1,393 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 520,
-  "height": 380,
 
-  "data": {
-    "url": "data/students_sector_year.csv"
-  },
-
-  "transform": [
+  "params": [
     {
-      "window": [
+      "name": "selected_bump_sector",
+      "value": ""
+    },
+    {
+      "name": "selected_bump_year",
+      "value": ""
+    }
+  ],
+
+  "hconcat": [
+    {
+      "width": 520,
+      "height": 380,
+
+      "data": {
+        "url": "data/students_sector_year.csv"
+      },
+
+      "transform": [
         {
-          "op": "rank",
-          "as": "rank"
+          "window": [
+            {
+              "op": "rank",
+              "as": "rank"
+            }
+          ],
+          "groupby": ["year"],
+          "sort": [
+            {
+              "field": "enrolments",
+              "order": "descending"
+            }
+          ]
+        },
+        {
+          "calculate": "datum.sector == 'VET' ? 'Vocational Education and Training' : datum.sector == 'ELICOS' ? 'English language courses' : datum.sector",
+          "as": "sector_label"
         }
       ],
-      "groupby": ["year"],
-      "sort": [
+
+      "mark": {
+        "type": "line",
+        "point": {
+          "filled": true,
+          "size": 90
+        },
+        "strokeWidth": 3,
+        "tooltip": true,
+        "cursor": "pointer"
+      },
+
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": "Year",
+          "axis": {
+            "labelAngle": 0
+          }
+        },
+
+        "y": {
+          "field": "rank",
+          "type": "quantitative",
+          "title": "Sector rank by enrolments",
+          "scale": {
+            "domain": [5, 1]
+          },
+          "axis": {
+            "values": [1, 2, 3, 4, 5]
+          }
+        },
+
+        "color": {
+          "field": "sector_label",
+          "type": "nominal",
+          "title": "Education sector",
+          "scale": {
+            "domain": [
+              "Vocational Education and Training",
+              "Higher Education",
+              "English language courses",
+              "Non-award",
+              "Schools"
+            ],
+            "range": [
+              "#CAD2C5",
+              "#84A98C",
+              "#52796F",
+              "#354F52",
+              "#2F3E46"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "columns": 2,
+            "titleFontSize": 12,
+            "labelFontSize": 11,
+            "labelLimit": 260,
+            "symbolSize": 90
+          }
+        },
+
+        "opacity": {
+          "condition": {
+            "test": "selected_bump_sector === '' || datum.sector_label === selected_bump_sector",
+            "value": 1
+          },
+          "value": 0.22
+        },
+
+        "strokeWidth": {
+          "condition": {
+            "test": "selected_bump_sector !== '' && datum.sector_label === selected_bump_sector",
+            "value": 4
+          },
+          "value": 2.6
+        },
+
+        "detail": {
+          "field": "sector_label",
+          "type": "nominal"
+        },
+
+        "tooltip": [
+          {
+            "field": "sector_label",
+            "type": "nominal",
+            "title": "Sector"
+          },
+          {
+            "field": "year",
+            "type": "ordinal",
+            "title": "Year"
+          },
+          {
+            "field": "rank",
+            "type": "quantitative",
+            "title": "Rank"
+          },
+          {
+            "field": "enrolments",
+            "type": "quantitative",
+            "title": "Enrolments",
+            "format": ","
+          }
+        ]
+      }
+    },
+
+    {
+      "width": 320,
+      "height": 380,
+
+      "layer": [
         {
-          "field": "enrolments",
-          "order": "descending"
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "rect",
+            "fill": "#F7F3EF",
+            "stroke": "#CAD2C5",
+            "strokeWidth": 1.2,
+            "cornerRadius": 8
+          },
+          "encoding": {
+            "x": {
+              "value": 0
+            },
+            "x2": {
+              "value": 320
+            },
+            "y": {
+              "value": 0
+            },
+            "y2": {
+              "value": 285
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "color": "#2F3E46"
+          },
+          "encoding": {
+            "x": {
+              "value": 16
+            },
+            "y": {
+              "value": 18
+            },
+            "text": {
+              "value": "Selected rank details"
+            }
+          }
+        },
+
+        {
+          "data": {
+            "url": "data/students_sector_year.csv"
+          },
+
+          "transform": [
+            {
+              "window": [
+                {
+                  "op": "rank",
+                  "as": "rank"
+                }
+              ],
+              "groupby": ["year"],
+              "sort": [
+                {
+                  "field": "enrolments",
+                  "order": "descending"
+                }
+              ]
+            },
+            {
+              "calculate": "datum.sector == 'VET' ? 'Vocational Education and Training' : datum.sector == 'ELICOS' ? 'English language courses' : datum.sector",
+              "as": "sector_label"
+            },
+            {
+              "filter": "selected_bump_sector !== '' && datum.sector_label === selected_bump_sector && datum.year + '' === selected_bump_year"
+            },
+            {
+              "calculate": "'Year: ' + datum.year",
+              "as": "year_line"
+            },
+            {
+              "calculate": "'Rank: ' + datum.rank",
+              "as": "rank_line"
+            },
+            {
+              "calculate": "'Enrolments: ' + format(datum.enrolments, ',.0f')",
+              "as": "enrolment_line"
+            }
+          ],
+
+          "layer": [
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "color": "#2F3E46"
+              },
+              "encoding": {
+                "x": {
+                  "value": 16
+                },
+                "y": {
+                  "value": 58
+                },
+                "text": {
+                  "value": "Sector:"
+                }
+              }
+            },
+
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "color": "#2F3E46",
+                "limit": 288
+              },
+              "encoding": {
+                "x": {
+                  "value": 16
+                },
+                "y": {
+                  "value": 80
+                },
+                "text": {
+                  "field": "sector_label",
+                  "type": "nominal"
+                }
+              }
+            },
+
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "fontSize": 12,
+                "color": "#333"
+              },
+              "encoding": {
+                "x": {
+                  "value": 16
+                },
+                "y": {
+                  "value": 124
+                },
+                "text": {
+                  "field": "year_line",
+                  "type": "nominal"
+                }
+              }
+            },
+
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "fontSize": 12,
+                "color": "#333"
+              },
+              "encoding": {
+                "x": {
+                  "value": 16
+                },
+                "y": {
+                  "value": 156
+                },
+                "text": {
+                  "field": "rank_line",
+                  "type": "nominal"
+                }
+              }
+            },
+
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "fontSize": 12,
+                "color": "#333",
+                "limit": 288
+              },
+              "encoding": {
+                "x": {
+                  "value": 16
+                },
+                "y": {
+                  "value": 188
+                },
+                "text": {
+                  "field": "enrolment_line",
+                  "type": "nominal"
+                }
+              }
+            }
+          ]
         }
       ]
     }
   ],
 
-  "mark": {
-    "type": "line",
-    "point": {
-      "filled": true,
-      "size": 90
-    },
-    "strokeWidth": 3
-  },
+  "spacing": 24,
 
-  "encoding": {
-    "x": {
-      "field": "year",
-      "type": "ordinal",
-      "title": "Year",
-      "axis": {
-        "labelAngle": 0
-      }
+  "config": {
+    "view": {
+      "stroke": null
     },
-
-    "y": {
-      "field": "rank",
-      "type": "quantitative",
-      "title": "Sector rank by enrolments",
-      "scale": {
-        "domain": [5, 1]
-      },
-      "axis": {
-        "values": [1, 2, 3, 4, 5]
-      }
+    "font": "Arial",
+    "axis": {
+      "grid": true,
+      "gridColor": "#e5e7eb",
+      "labelFontSize": 11,
+      "titleFontSize": 12
     },
-
-    "color": {
-      "field": "sector",
-      "type": "nominal",
-      "title": "Education sector",
-      "scale": {
-        "domain": [
-          "Vocational Education and Training",
-          "Higher Education",
-          "ELICOS",
-          "Non-award",
-          "Schools"
-        ],
-        "range": [
-          "#CAD2C5",
-          "#84A98C",
-          "#52796F",
-          "#354F52",
-          "#2F3E46"
-        ]
-      }
-    },
-
-    "tooltip": [
-      {
-        "field": "sector",
-        "type": "nominal",
-        "title": "Sector"
-      },
-      {
-        "field": "year",
-        "type": "ordinal",
-        "title": "Year"
-      },
-      {
-        "field": "rank",
-        "type": "quantitative",
-        "title": "Rank"
-      },
-      {
-        "field": "enrolments",
-        "type": "quantitative",
-        "title": "Enrolments",
-        "format": ","
-      }
-    ]
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    }
   }
 }

@@ -14,7 +14,8 @@ body {
 main {
   width: min(1120px, calc(100% - 48px));
   margin: 0 auto;
-  padding: 40px 24px 72px 24px;
+  padding: 40px 24px;
+  box-sizing: border-box;
 }
 
 /* Hero section */
@@ -40,114 +41,141 @@ main {
 }
 
 /* Typography */
-h1,
-h2,
-h3 {
-  color: #0A0908;
+.section-label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #B56576;
+  margin: 0 0 10px 0;
 }
 
 h2 {
   font-size: 30px;
   line-height: 1.2;
-  margin: 0;
+  margin: 0 0 16px 0;
+  color: #111827;
 }
 
 h3 {
   font-size: 24px;
   line-height: 1.25;
-  margin: 0 0 14px 0;
+  margin: 0 0 18px 0;
+  color: #111827;
 }
 
 p {
   font-size: 17px;
-  line-height: 1.6;
-  max-width: 780px;
+  line-height: 1.55;
+  max-width: 760px;
 }
 
-/* Major section box */
+/* Section heading cards */
 .chart-section {
-  max-width: 1180px;
-  margin: 64px auto;
-  padding: 34px;
-  background: #f1ece5;
-  border: 1.5px solid #d6cec5;
-  border-radius: 24px;
+  margin-top: 54px;
+  padding-bottom: 26px;
+}
+
+.section-heading {
+  background-color: #ffffff;
+  border-left: 6px solid #6A1530;
+  border-radius: 14px;
+  padding: 28px 34px;
+  margin-bottom: 34px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
 }
 
-/* Subtopic title block */
-.section-heading {
-  margin-bottom: 32px;
-  padding: 26px 30px;
-  background: #ffffff;
-  border-left: 8px solid #49111C;
-  border-radius: 18px;
-  box-shadow: 0 8px 20px rgba(10, 9, 8, 0.04);
-}
-
-.section-label {
-  margin: 0 0 10px 0;
-  color: #B56576;
-  font-size: 0.82rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-}
-
-.section-heading h2 {
-  margin: 0 0 16px 0;
-  font-size: 31px;
-}
-
-.section-heading p {
-  margin: 0;
-  max-width: 850px;
-}
-
-/* Make charts vertical */
-.chart-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 34px;
-  width: 100%;
+.section-heading p:last-child {
+  margin-bottom: 0;
 }
 
 /* Chart cards */
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+  width: 100%;
+}
+
 .chart-card {
   background-color: #ffffff;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1040px;
   margin: 0 auto;
   padding: 30px;
-  border-radius: 18px;
+  border-radius: 14px;
   box-sizing: border-box;
   overflow: visible;
-  border: 1px solid #e3ded8;
-  box-shadow: 0 8px 24px rgba(10, 9, 8, 0.06);
-}
-
-.chart-card h3 {
-  font-size: 24px;
-  margin-top: 0;
-  margin-bottom: 14px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.04);
 }
 
 .chart-card p {
-  font-size: 15.8px;
-  line-height: 1.6;
-  max-width: 800px;
+  font-size: 15.5px;
+  line-height: 1.55;
+  max-width: 760px;
 }
 
-.chart-note {
-  color: #5E503F;
+/* Text + note layout */
+.chart-text-two-column {
+  display: grid;
+  grid-template-columns: 1.45fr 0.9fr;
+  gap: 34px;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+.chart-text-two-column p {
+  margin-top: 0;
+}
+
+.note-box {
+  background: #F7F3EF;
+  border-left: 5px solid #52796F;
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-sizing: border-box;
+  max-width: 330px;
+}
+
+.note-box h4 {
+  margin: 0 0 10px 0;
+  font-size: 15px;
+  color: #2F3E46;
+}
+
+.note-box p {
+  font-size: 14.5px;
+  line-height: 1.55;
+  margin: 0 0 12px 0;
+  max-width: none;
+}
+
+.note-box p:last-child {
+  margin-bottom: 0;
   font-style: italic;
-  margin-top: 16px;
+  color: #5E503F;
+}
+
+/* Analysis blocks */
+.chart-analysis-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 22px;
+}
+
+.chart-analysis-grid p {
+  font-size: 15.5px;
+  line-height: 1.55;
+  margin: 0;
+  max-width: none;
 }
 
 .source-note {
-  margin-top: 16px;
+  font-size: 14.5px;
   color: #5E503F;
-  font-size: 13.5px;
+  margin-top: 22px;
 }
 
 /* Vega chart safety */
@@ -161,12 +189,22 @@ p {
   height: auto;
 }
 
-/* Map cards */
-.map-card {
+/* Chart containers */
+#map_state_2025,
+#bar_country_2025,
+#linked_state_country_lollipop,
+#sector_area_2019_2025,
+#sector_bump_2019_2025,
+#source_region_waffle_2025,
+#state_income_indexed_line,
+#sector_income_heatmap,
+#student_net_migration_gap_map {
+  width: 100%;
+  max-width: 100%;
   overflow: visible;
 }
 
-/* Map control positioning */
+/* Map controls */
 #map_state_2025 {
   position: relative;
 }
@@ -185,20 +223,17 @@ p {
   margin-right: 12px;
 }
 
+/* Tighter spacing for larger charts */
+.income-card #state_income_indexed_line,
+.heatmap-card #sector_income_heatmap {
+  margin-top: 8px;
+}
+
 /* Smaller screens */
 @media (max-width: 900px) {
   main {
     width: min(100% - 28px, 1120px);
-    padding: 28px 14px 56px 14px;
-  }
-
-  .hero {
-    padding: 34px 26px;
-    border-radius: 18px;
-  }
-
-  .hero h1 {
-    font-size: 34px;
+    padding: 28px 14px;
   }
 
   h2 {
@@ -209,45 +244,81 @@ p {
     font-size: 21px;
   }
 
-  .chart-section {
-    padding: 22px;
-    margin: 44px auto;
-    border-radius: 18px;
+  p {
+    font-size: 15.5px;
   }
 
   .section-heading {
-    padding: 22px;
-  }
-
-  .section-heading h2 {
-    font-size: 25px;
+    padding: 24px;
   }
 
   .chart-card {
     padding: 22px;
   }
 
-  #map_state_2025 .vega-bindings {
-    position: static;
-    margin-top: 8px;
+  .chart-text-two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .note-box {
+    max-width: none;
+  }
+
+  .chart-analysis-grid {
+    grid-template-columns: 1fr;
   }
 }
 
-#linked_state_country_lollipop {
+.migration-map-wrapper {
   position: relative;
-  padding-top: 42px;
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
 }
 
-#linked_state_country_lollipop .vega-bindings {
+/* Keep the Vega map unchanged */
+#student_net_migration_gap_map {
+  width: 100%;
+  max-width: 100%;
+  overflow: visible;
+}
+
+/* Annotation box placed in the unused right-side space */
+.migration-annotation-panel {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  background: white;
-  padding: 4px 0;
-  font-size: 15px;
+  top: 120px;
+  right: 18px;
+
+  width: 285px;
+  min-height: 220px;
+  padding: 20px 22px;
+
+  background: #F7F3EF;
+  border: 1.2px solid #CAD2C5;
+  border-radius: 12px;
+  box-sizing: border-box;
+  z-index: 20;
 }
 
-#linked_state_country_lollipop .vega-bindings label {
-  margin-right: 12px;
+.migration-annotation-panel h4 {
+  margin: 0 0 16px 0;
+  font-size: 15px;
+  line-height: 1.35;
+  color: #2F3E46;
+}
+
+.migration-annotation-panel p {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: none;
+}
+
+.migration-annotation-panel p:last-child {
+  margin-bottom: 0;
+}
+
+.migration-annotation-panel strong {
+  font-weight: 700;
+  color: #111827;
 }

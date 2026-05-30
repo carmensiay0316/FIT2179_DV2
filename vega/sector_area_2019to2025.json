@@ -14,7 +14,7 @@
 
   "hconcat": [
     {
-      "width": 610,
+      "width": 590,
       "height": 360,
 
       "data": {
@@ -159,7 +159,7 @@
     },
 
     {
-      "width": 240,
+      "width": 280,
       "height": 360,
 
       "layer": [
@@ -175,10 +175,18 @@
             "cornerRadius": 8
           },
           "encoding": {
-            "x": { "value": 0 },
-            "x2": { "value": 240 },
-            "y": { "value": 0 },
-            "y2": { "value": 250 }
+            "x": {
+              "value": 0
+            },
+            "x2": {
+              "value": 280
+            },
+            "y": {
+              "value": 0
+            },
+            "y2": {
+              "value": 285
+            }
           }
         },
 
@@ -195,56 +203,14 @@
             "color": "#2F3E46"
           },
           "encoding": {
-            "x": { "value": 16 },
-            "y": { "value": 18 },
-            "text": {
-              "value": "Hover details"
-            }
-          }
-        },
-
-        {
-          "data": {
-            "values": [
-              {
-                "line": "Move your cursor over",
-                "y": 60
-              },
-              {
-                "line": "an area to view",
-                "y": 82
-              },
-              {
-                "line": "sector details here.",
-                "y": 104
-              }
-            ]
-          },
-          "mark": {
-            "type": "text",
-            "align": "left",
-            "baseline": "top",
-            "fontSize": 12,
-            "color": "#333"
-          },
-          "encoding": {
-            "x": { "value": 16 },
+            "x": {
+              "value": 16
+            },
             "y": {
-              "field": "y",
-              "type": "quantitative",
-              "scale": { "domain": [0, 360] },
-              "axis": null
+              "value": 18
             },
             "text": {
-              "field": "line",
-              "type": "nominal"
-            },
-            "opacity": {
-              "condition": {
-                "test": "selected_sector_area === ''",
-                "value": 1
-              },
-              "value": 0
+              "value": "Selected sector details"
             }
           }
         },
@@ -283,97 +249,7 @@
               "filter": "selected_sector_area !== '' && datum.sector_label === selected_sector_area && datum.year === selected_year_area"
             }
           ],
-          "mark": {
-            "type": "circle",
-            "size": 90,
-            "stroke": "#2F3E46",
-            "strokeWidth": 0.8
-          },
-          "encoding": {
-            "x": { "value": 22 },
-            "y": { "value": 62 },
-            "color": {
-              "field": "sector_label",
-              "type": "nominal",
-              "scale": {
-                "domain": [
-                  "Vocational Education and Training",
-                  "Higher Education",
-                  "English language courses",
-                  "Non-award",
-                  "Schools"
-                ],
-                "range": [
-                  "#CAD2C5",
-                  "#84A98C",
-                  "#52796F",
-                  "#354F52",
-                  "#2F3E46"
-                ]
-              },
-              "legend": null
-            }
-          }
-        },
 
-        {
-          "data": {
-            "url": "data/students_sector_year.csv",
-            "format": {
-              "type": "csv",
-              "parse": {
-                "year": "number",
-                "enrolments": "number"
-              }
-            }
-          },
-          "transform": [
-            {
-              "calculate": "datum.sector == 'VET' || datum.sector == 'Vocational Education and Training' ? 'Vocational Education and Training' : datum.sector == 'ELICOS' ? 'English language courses' : datum.sector",
-              "as": "sector_label"
-            },
-            {
-              "joinaggregate": [
-                {
-                  "op": "sum",
-                  "field": "enrolments",
-                  "as": "year_total"
-                }
-              ],
-              "groupby": ["year"]
-            },
-            {
-              "calculate": "datum.enrolments / datum.year_total",
-              "as": "share"
-            },
-            {
-              "filter": "selected_sector_area !== '' && datum.sector_label === selected_sector_area && datum.year === selected_year_area"
-            },
-            {
-              "calculate": "'Sector:'",
-              "as": "sector_title"
-            },
-            {
-              "calculate": "datum.sector_label",
-              "as": "sector_name"
-            },
-            {
-              "calculate": "'Year: ' + datum.year",
-              "as": "line_2"
-            },
-            {
-              "calculate": "'Sector enrolments: ' + format(datum.enrolments, ',.0f')",
-              "as": "line_3"
-            },
-            {
-              "calculate": "'Share of year: ' + format(datum.share, '.1%')",
-              "as": "line_4"
-            },
-            {
-              "calculate": "'Total enrolments: ' + format(datum.year_total, ',.0f')",
-              "as": "line_5"
-            }
-          ],
           "layer": [
             {
               "mark": {
@@ -382,86 +258,155 @@
                 "baseline": "top",
                 "fontSize": 12,
                 "fontWeight": "bold",
+                "color": "#2F3E46"
+              },
+              "encoding": {
+                "x": {
+                  "value": 16
+                },
+                "y": {
+                  "value": 54
+                },
+                "text": {
+                  "value": "Sector:"
+                }
+              }
+            },
+
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "fontSize": 12,
+                "fontWeight": "bold",
                 "color": "#2F3E46",
-                "limit": 205
+                "limit": 248
               },
               "encoding": {
-                "x": { "value": 38 },
-                "y": { "value": 54 },
+                "x": {
+                  "value": 16
+                },
+                "y": {
+                  "value": 76
+                },
                 "text": {
-                  "field": "sector_title",
+                  "field": "sector_label",
                   "type": "nominal"
                 }
               }
             },
+
             {
+              "transform": [
+                {
+                  "calculate": "'Year: ' + datum.year",
+                  "as": "year_line"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "fontSize": 12,
+                "color": "#333"
+              },
+              "encoding": {
+                "x": {
+                  "value": 16
+                },
+                "y": {
+                  "value": 116
+                },
+                "text": {
+                  "field": "year_line",
+                  "type": "nominal"
+                }
+              }
+            },
+
+            {
+              "transform": [
+                {
+                  "calculate": "'Sector enrolments: ' + format(datum.enrolments, ',.0f')",
+                  "as": "enrolment_line"
+                }
+              ],
               "mark": {
                 "type": "text",
                 "align": "left",
                 "baseline": "top",
                 "fontSize": 12,
                 "color": "#333",
-                "limit": 205
+                "limit": 248
               },
               "encoding": {
-                "x": { "value": 16 },
-                "y": { "value": 88 },
+                "x": {
+                  "value": 16
+                },
+                "y": {
+                  "value": 148
+                },
                 "text": {
-                  "field": "sector_name",
+                  "field": "enrolment_line",
                   "type": "nominal"
                 }
               }
             },
+
             {
+              "transform": [
+                {
+                  "calculate": "'Share of year: ' + format(datum.share, '.1%')",
+                  "as": "share_line"
+                }
+              ],
               "mark": {
                 "type": "text",
                 "align": "left",
                 "baseline": "top",
                 "fontSize": 12,
                 "color": "#333",
-                "limit": 205
+                "limit": 248
               },
               "encoding": {
-                "x": { "value": 16 },
-                "y": { "value": 116 },
+                "x": {
+                  "value": 16
+                },
+                "y": {
+                  "value": 180
+                },
                 "text": {
-                  "field": "line_3",
+                  "field": "share_line",
                   "type": "nominal"
                 }
               }
             },
+
             {
+              "transform": [
+                {
+                  "calculate": "'Total enrolments: ' + format(datum.year_total, ',.0f')",
+                  "as": "total_line"
+                }
+              ],
               "mark": {
                 "type": "text",
                 "align": "left",
                 "baseline": "top",
                 "fontSize": 12,
                 "color": "#333",
-                "limit": 205
+                "limit": 248
               },
               "encoding": {
-                "x": { "value": 16 },
-                "y": { "value": 144 },
+                "x": {
+                  "value": 16
+                },
+                "y": {
+                  "value": 212
+                },
                 "text": {
-                  "field": "line_4",
-                  "type": "nominal"
-                }
-              }
-            },
-            {
-              "mark": {
-                "type": "text",
-                "align": "left",
-                "baseline": "top",
-                "fontSize": 12,
-                "color": "#333",
-                "limit": 205
-              },
-              "encoding": {
-                "x": { "value": 16 },
-                "y": { "value": 172 },
-                "text": {
-                  "field": "line_5",
+                  "field": "total_line",
                   "type": "nominal"
                 }
               }

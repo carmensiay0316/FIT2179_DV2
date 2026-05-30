@@ -91,14 +91,20 @@
               "scale": {
                 "type": "threshold",
                 "domain": [25000, 75000, 150000, 300000],
-                "range": ["#F2F4F3", "#A9927D", "#5E503F", "#49111C", "#0A0908"]
+                "range": [
+                  "#F7F5EF",
+                  "#DDE5DD",
+                  "#B9CEC7",
+                  "#6FA3A0",
+                  "#1F5F83"
+                ]
               },
               "legend": null
             },
             "stroke": {
               "condition": {
                 "test": "selected_state !== '' && datum.state_abbr === selected_state",
-                "value": "#49111C"
+                "value": "#1F5F83"
               },
               "value": "#4b5563"
             },
@@ -228,7 +234,7 @@
             "color": {
               "condition": {
                 "test": "selected_state !== '' && datum.state_abbr === selected_state",
-                "value": "#49111C"
+                "value": "#1F5F83"
               },
               "value": "#111827"
             },
@@ -253,35 +259,35 @@
             "x_start": 45,
             "x_end": 115,
             "label_x": 80,
-            "colour": "#F2F4F3",
+            "colour": "#F7F5EF",
             "label": "<25,000"
           },
           {
             "x_start": 140,
             "x_end": 210,
             "label_x": 175,
-            "colour": "#A9927D",
+            "colour": "#DDE5DD",
             "label": "25,000–74,999"
           },
           {
             "x_start": 240,
             "x_end": 310,
             "label_x": 275,
-            "colour": "#5E503F",
+            "colour": "#B9CEC7",
             "label": "75,000–149,999"
           },
           {
             "x_start": 345,
             "x_end": 415,
             "label_x": 380,
-            "colour": "#49111C",
+            "colour": "#6FA3A0",
             "label": "150,000–299,999"
           },
           {
             "x_start": 455,
             "x_end": 525,
             "label_x": 490,
-            "colour": "#0A0908",
+            "colour": "#1F5F83",
             "label": "300,000+"
           }
         ]
@@ -414,14 +420,14 @@
           "field": "state_name_full",
           "type": "nominal",
           "sort": [
-          "New South Wales",
-          "Victoria",
-          "Queensland",
-          "Western Australia",
-          "South Australia",
-          "Australian Capital Territory",
-          "Tasmania",
-          "Northern Territory"
+            "New South Wales",
+            "Victoria",
+            "Queensland",
+            "Western Australia",
+            "South Australia",
+            "Australian Capital Territory",
+            "Tasmania",
+            "Northern Territory"
           ],
           "title": null,
           "axis": {
@@ -461,7 +467,7 @@
         {
           "mark": {
             "type": "bar",
-            "stroke": "#49111C",
+            "stroke": "#1F5F83",
             "cursor": "pointer"
           },
           "encoding": {
@@ -471,7 +477,13 @@
               "scale": {
                 "type": "threshold",
                 "domain": [25000, 75000, 150000, 300000],
-                "range": ["#F2F4F3", "#A9927D", "#5E503F", "#49111C", "#0A0908"]
+                "range": [
+                  "#F7F5EF",
+                  "#DDE5DD",
+                  "#B9CEC7",
+                  "#6FA3A0",
+                  "#1F5F83"
+                ]
               },
               "legend": null
             },
@@ -510,7 +522,7 @@
             "color": {
               "condition": {
                 "test": "selected_state !== '' && datum.state_abbr === selected_state",
-                "value": "#49111C"
+                "value": "#1F5F83"
               },
               "value": "#0A0908"
             },
@@ -532,8 +544,8 @@
           ],
           "mark": {
             "type": "rect",
-            "fill": "#F2F4F3",
-            "stroke": "#49111C",
+            "fill": "#F7F5EF",
+            "stroke": "#1F5F83",
             "strokeWidth": 1,
             "cornerRadius": 6,
             "opacity": 0.95
@@ -562,7 +574,7 @@
             "baseline": "top",
             "fontSize": 11,
             "fontWeight": "bold",
-            "color": "#49111C",
+            "color": "#1F5F83",
             "limit": 200
           },
           "encoding": {

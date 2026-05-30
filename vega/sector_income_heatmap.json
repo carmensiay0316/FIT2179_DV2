@@ -1,187 +1,451 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "width": 700,
-  "height": 300,
-
-  "title": {
-    "text": "Education export income by sector and financial year",
-    "subtitle": "Values are shown in A$ billion. Darker cells indicate higher export income.",
-    "anchor": "start",
-    "fontSize": 15,
-    "subtitleFontSize": 11,
-    "subtitleColor": "#555"
-  },
-
-  "data": {
-    "url": "data/sector_export_income.csv"
-  },
-
-  "transform": [
+  "params": [
     {
-      "fold": [
-        "2019-20",
-        "2020-21",
-        "2021-22",
-        "2022-23",
-        "2023-24",
-        "2024-25"
-      ],
-      "as": ["financial_year", "income_million"]
+      "name": "selected_heatmap_sector",
+      "value": ""
     },
     {
-      "calculate": "toNumber(datum.income_million)",
-      "as": "income_million_num"
-    },
-    {
-      "calculate": "datum.income_million_num / 1000",
-      "as": "income_billion"
-    },
-    {
-      "calculate": "format(datum.income_billion, '.1f')",
-      "as": "income_label"
+      "name": "selected_heatmap_year",
+      "value": ""
     }
   ],
 
-  "layer": [
+  "hconcat": [
     {
-      "mark": {
-        "type": "rect",
-        "stroke": "white",
-        "strokeWidth": 1
-      },
-      "encoding": {
-        "x": {
-          "field": "financial_year",
-          "type": "ordinal",
-          "title": "Financial year",
-          "sort": [
-            "2019-20",
-            "2020-21",
-            "2021-22",
-            "2022-23",
-            "2023-24",
-            "2024-25"
-          ],
-          "axis": {
-            "labelAngle": 0,
-            "labelFontSize": 11,
-            "titleFontSize": 12
-          }
-        },
+      "width": 420,
+      "height": 300,
 
-        "y": {
-          "field": "sector",
-          "type": "nominal",
-          "title": null,
-          "sort": [
-            "Higher Education",
-            "VET",
-            "ELICOS",
-            "Schools",
-            "Non-award",
-            "New Zealand",
-            "AusAID/Defence"
-          ],
-          "axis": {
-            "labelFontSize": 11
-          }
-        },
-
-        "color": {
-          "field": "income_billion",
-          "type": "quantitative",
-          "title": "Export income, A$ billion",
-          "scale": {
-            "scheme": "blues",
-            "type": "sqrt"
-          },
-          "legend": {
-            "orient": "bottom",
-            "direction": "horizontal",
-            "gradientLength": 300,
-            "titleAnchor": "middle",
-            "titleFontSize": 11,
-            "labelFontSize": 10
-          }
-        },
-
-        "tooltip": [
-          {
-            "field": "sector",
-            "type": "nominal",
-            "title": "Sector"
-          },
-          {
-            "field": "financial_year",
-            "type": "ordinal",
-            "title": "Financial year"
-          },
-          {
-            "field": "income_million_num",
-            "type": "quantitative",
-            "title": "Export income, A$ million",
-            "format": ","
-          },
-          {
-            "field": "income_billion",
-            "type": "quantitative",
-            "title": "Export income, A$ billion",
-            "format": ".1f"
-          }
-        ]
-      }
-    },
-
-    {
-      "mark": {
-        "type": "text",
-        "fontSize": 10,
-        "fontWeight": "bold"
-      },
-      "encoding": {
-        "x": {
-          "field": "financial_year",
-          "type": "ordinal",
-          "sort": [
-            "2019-20",
-            "2020-21",
-            "2021-22",
-            "2022-23",
-            "2023-24",
-            "2024-25"
-          ]
-        },
-
-        "y": {
-          "field": "sector",
-          "type": "nominal",
-          "sort": [
-            "Higher Education",
-            "VET",
-            "ELICOS",
-            "Schools",
-            "Non-award",
-            "New Zealand",
-            "AusAID/Defence"
-          ]
-        },
-
-        "text": {
-          "field": "income_label",
-          "type": "nominal"
-        },
-
-        "color": {
-          "condition": {
-            "test": "datum.income_billion > 8",
-            "value": "white"
-          },
-          "value": "#111827"
+      "data": {
+        "url": "data/sector_export_income.csv",
+        "format": {
+          "type": "csv"
         }
-      }
+      },
+
+      "transform": [
+        {
+          "fold": [
+            "2019-20",
+            "2020-21",
+            "2021-22",
+            "2022-23",
+            "2023-24",
+            "2024-25"
+          ],
+          "as": ["financial_year", "income_million"]
+        },
+        {
+          "calculate": "toNumber(replace(datum.income_million + '', ',', ''))",
+          "as": "income_million_num"
+        },
+        {
+          "calculate": "datum.income_million_num / 1000",
+          "as": "income_billion"
+        },
+        {
+          "calculate": "format(datum.income_billion, '.1f')",
+          "as": "income_label"
+        },
+        {
+          "calculate": "datum.sector == 'VET' ? 'Vocational Education and Training' : datum.sector == 'ELICOS' ? 'English language courses' : datum.sector",
+          "as": "sector_label"
+        }
+      ],
+
+      "layer": [
+        {
+          "mark": {
+            "type": "rect",
+            "stroke": "white",
+            "strokeWidth": 1,
+            "tooltip": true,
+            "cursor": "pointer"
+          },
+
+          "encoding": {
+            "x": {
+              "field": "financial_year",
+              "type": "ordinal",
+              "title": "Financial year",
+              "sort": [
+                "2019-20",
+                "2020-21",
+                "2021-22",
+                "2022-23",
+                "2023-24",
+                "2024-25"
+              ],
+              "axis": {
+                "labelAngle": 0,
+                "labelFontSize": 11,
+                "titleFontSize": 12
+              }
+            },
+
+            "y": {
+              "field": "sector_label",
+              "type": "nominal",
+              "title": null,
+              "sort": [
+                "Higher Education",
+                "Vocational Education and Training",
+                "English language courses",
+                "Schools",
+                "Non-award",
+                "New Zealand",
+                "AusAID/Defence"
+              ],
+              "axis": {
+                "labelFontSize": 11,
+                "labelLimit": 220
+              }
+            },
+
+            "color": {
+              "field": "income_billion",
+              "type": "quantitative",
+              "title": "Export income, A$ billion",
+              "scale": {
+                "scheme": "blues",
+                "type": "linear",
+                "domain": [0, 40]
+              },
+              "legend": {
+                "orient": "bottom",
+                "direction": "horizontal",
+                "gradientLength": 250,
+                "titleAnchor": "middle",
+                "titleFontSize": 11,
+                "labelFontSize": 10,
+                "values": [0, 10, 20, 30, 40],
+                "format": ".0f"
+              }
+            },
+
+            "opacity": {
+              "condition": {
+                "test": "selected_heatmap_sector === '' || (datum.sector_label === selected_heatmap_sector && datum.financial_year === selected_heatmap_year)",
+                "value": 1
+              },
+              "value": 0.35
+            },
+
+            "tooltip": [
+              {
+                "field": "sector_label",
+                "type": "nominal",
+                "title": "Sector"
+              },
+              {
+                "field": "financial_year",
+                "type": "ordinal",
+                "title": "Financial year"
+              },
+              {
+                "field": "income_million_num",
+                "type": "quantitative",
+                "title": "Export income, A$ million",
+                "format": ","
+              },
+              {
+                "field": "income_billion",
+                "type": "quantitative",
+                "title": "Export income, A$ billion",
+                "format": ".1f"
+              }
+            ]
+          }
+        },
+
+        {
+          "mark": {
+            "type": "text",
+            "fontSize": 10,
+            "fontWeight": "bold"
+          },
+
+          "encoding": {
+            "x": {
+              "field": "financial_year",
+              "type": "ordinal",
+              "sort": [
+                "2019-20",
+                "2020-21",
+                "2021-22",
+                "2022-23",
+                "2023-24",
+                "2024-25"
+              ]
+            },
+
+            "y": {
+              "field": "sector_label",
+              "type": "nominal",
+              "sort": [
+                "Higher Education",
+                "Vocational Education and Training",
+                "English language courses",
+                "Schools",
+                "Non-award",
+                "New Zealand",
+                "AusAID/Defence"
+              ]
+            },
+
+            "text": {
+              "field": "income_label",
+              "type": "nominal"
+            },
+
+            "color": {
+              "condition": {
+                "test": "datum.income_billion >= 8",
+                "value": "white"
+              },
+              "value": "#111827"
+            },
+
+            "opacity": {
+              "condition": {
+                "test": "selected_heatmap_sector === '' || (datum.sector_label === selected_heatmap_sector && datum.financial_year === selected_heatmap_year)",
+                "value": 1
+              },
+              "value": 0.35
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "width": 310,
+      "height": 300,
+
+      "layer": [
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "rect",
+            "fill": "#F7F3EF",
+            "stroke": "#CAD2C5",
+            "strokeWidth": 1.2,
+            "cornerRadius": 8
+          },
+          "encoding": {
+            "x": {
+              "value": 0
+            },
+            "x2": {
+              "value": 310
+            },
+            "y": {
+              "value": 0
+            },
+            "y2": {
+              "value": 270
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "color": "#2F3E46"
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 18
+            },
+            "text": {
+              "value": "Selected cell details"
+            }
+          }
+        },
+
+        {
+          "data": {
+            "url": "data/sector_export_income.csv",
+            "format": {
+              "type": "csv"
+            }
+          },
+
+          "transform": [
+            {
+              "fold": [
+                "2019-20",
+                "2020-21",
+                "2021-22",
+                "2022-23",
+                "2023-24",
+                "2024-25"
+              ],
+              "as": ["financial_year", "income_million"]
+            },
+            {
+              "calculate": "toNumber(replace(datum.income_million + '', ',', ''))",
+              "as": "income_million_num"
+            },
+            {
+              "calculate": "datum.income_million_num / 1000",
+              "as": "income_billion"
+            },
+            {
+              "calculate": "datum.sector == 'VET' ? 'Vocational Education and Training' : datum.sector == 'ELICOS' ? 'English language courses' : datum.sector",
+              "as": "sector_label"
+            },
+            {
+              "filter": "selected_heatmap_sector !== '' && datum.sector_label === selected_heatmap_sector && datum.financial_year === selected_heatmap_year"
+            },
+            {
+              "calculate": "'Financial year: ' + datum.financial_year",
+              "as": "year_line"
+            },
+            {
+              "calculate": "'Export income: A$' + format(datum.income_billion, '.1f') + ' billion'",
+              "as": "billion_line"
+            },
+            {
+              "calculate": "'Export income: A$' + format(datum.income_million_num, ',.0f') + ' million'",
+              "as": "million_line"
+            }
+          ],
+
+          "layer": [
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "color": "#2F3E46"
+              },
+              "encoding": {
+                "x": {
+                  "value": 18
+                },
+                "y": {
+                  "value": 56
+                },
+                "text": {
+                  "value": "Sector:"
+                }
+              }
+            },
+
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "color": "#2F3E46",
+                "limit": 270
+              },
+              "encoding": {
+                "x": {
+                  "value": 18
+                },
+                "y": {
+                  "value": 78
+                },
+                "text": {
+                  "field": "sector_label",
+                  "type": "nominal"
+                }
+              }
+            },
+
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "fontSize": 12,
+                "color": "#333"
+              },
+              "encoding": {
+                "x": {
+                  "value": 18
+                },
+                "y": {
+                  "value": 122
+                },
+                "text": {
+                  "field": "year_line",
+                  "type": "nominal"
+                }
+              }
+            },
+
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "fontSize": 12,
+                "color": "#333",
+                "limit": 270
+              },
+              "encoding": {
+                "x": {
+                  "value": 18
+                },
+                "y": {
+                  "value": 154
+                },
+                "text": {
+                  "field": "billion_line",
+                  "type": "nominal"
+                }
+              }
+            },
+
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "fontSize": 12,
+                "color": "#333",
+                "limit": 270
+              },
+              "encoding": {
+                "x": {
+                  "value": 18
+                },
+                "y": {
+                  "value": 186
+                },
+                "text": {
+                  "field": "million_line",
+                  "type": "nominal"
+                }
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
+
+  "spacing": 8,
 
   "config": {
     "view": {
@@ -190,6 +454,10 @@
     "font": "Arial",
     "axis": {
       "grid": false
+    },
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12
     }
   }
 }

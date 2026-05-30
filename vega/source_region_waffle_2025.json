@@ -1,102 +1,330 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "width": 650,
-  "height": 420,
-
-  "data": {
-    "url": "data/source_region_waffle_2025.csv",
-    "format": {
-      "type": "csv",
-      "parse": {
-        "x": "number",
-        "y": "number",
-        "enrolments": "number",
-        "share": "number",
-        "tiles": "number",
-        "tile_id": "number"
-      }
+  "params": [
+    {
+      "name": "selected_waffle_region",
+      "value": ""
     }
-  },
+  ],
 
-  "mark": {
-    "type": "rect",
-    "stroke": "white",
-    "strokeWidth": 1.2
-  },
+  "hconcat": [
+    {
+      "width": 560,
+      "height": 420,
 
-  "encoding": {
-    "x": {
-      "field": "x",
-      "type": "ordinal",
-      "axis": null,
-      "sort": "ascending"
-    },
+      "data": {
+        "url": "data/source_region_waffle_2025.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "x": "number",
+            "y": "number",
+            "enrolments": "number",
+            "share": "number",
+            "tiles": "number",
+            "tile_id": "number"
+          }
+        }
+      },
 
-    "y": {
-      "field": "y",
-      "type": "ordinal",
-      "axis": null,
-      "sort": "descending"
-    },
+      "mark": {
+        "type": "rect",
+        "stroke": "white",
+        "strokeWidth": 1.2,
+        "tooltip": true,
+        "cursor": "pointer"
+      },
 
-    "color": {
-      "field": "region",
-      "type": "nominal",
-      "title": "Source region",
-      "scale": {
-        "domain": [
-          "North-East Asia",
-          "Southern and Central Asia",
-          "South-East Asia",
-          "Americas",
-          "Africa",
-          "North-West Europe",
-          "Oceania"
-        ],
-        "range": [
-          "#EDE0D4",
-          "#E6CCB2",
-          "#DDB892",
-          "#B08968",
-          "#7F5539",
-          "#9C6644",
-          "#B08569"
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "ordinal",
+          "axis": null,
+          "sort": "ascending"
+        },
+
+        "y": {
+          "field": "y",
+          "type": "ordinal",
+          "axis": null,
+          "sort": "descending"
+        },
+
+        "color": {
+          "field": "region",
+          "type": "nominal",
+          "title": "Source region",
+          "scale": {
+            "domain": [
+              "North-East Asia",
+              "Southern and Central Asia",
+              "South-East Asia",
+              "Americas",
+              "Africa",
+              "North-West Europe",
+              "Oceania"
+            ],
+            "range": [
+              "#EDE0D4",
+              "#E6CCB2",
+              "#DDB892",
+              "#B08968",
+              "#7F5539",
+              "#9C6644",
+              "#B08569"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "columns": 3,
+            "titleFontSize": 12,
+            "labelFontSize": 11,
+            "labelLimit": 170,
+            "symbolSize": 90
+          }
+        },
+
+        "opacity": {
+          "condition": {
+            "test": "selected_waffle_region === '' || datum.region === selected_waffle_region",
+            "value": 1
+          },
+          "value": 0.28
+        },
+
+        "tooltip": [
+          {
+            "field": "region",
+            "type": "nominal",
+            "title": "Source region"
+          },
+          {
+            "field": "enrolment_label",
+            "type": "nominal",
+            "title": "Top-country enrolments"
+          },
+          {
+            "field": "share_label",
+            "type": "nominal",
+            "title": "Share"
+          }
         ]
-      },
-      "legend": {
-        "orient": "bottom",
-        "direction": "horizontal",
-        "columns": 3,
-        "titleFontSize": 12,
-        "labelFontSize": 11,
-        "symbolSize": 90
       }
     },
 
-    "tooltip": [
-      {
-        "field": "region",
-        "type": "nominal",
-        "title": "Source region"
-      },
-      {
-        "field": "enrolment_label",
-        "type": "nominal",
-        "title": "Top-country enrolments"
-      },
-      {
-        "field": "share_label",
-        "type": "nominal",
-        "title": "Share"
-      }
-    ]
-  },
+    {
+      "width": 270,
+      "height": 420,
+
+      "layer": [
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "rect",
+            "fill": "#F7F3EF",
+            "stroke": "#CAD2C5",
+            "strokeWidth": 1.2,
+            "cornerRadius": 8
+          },
+          "encoding": {
+            "x": {
+              "value": 0
+            },
+            "x2": {
+              "value": 300
+            },
+            "y": {
+              "value": 0
+            },
+            "y2": {
+              "value": 285
+            }
+          }
+        },
+
+        {
+          "data": {
+            "values": [{}]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "color": "#2F3E46"
+          },
+          "encoding": {
+            "x": {
+              "value": 16
+            },
+            "y": {
+              "value": 18
+            },
+            "text": {
+              "value": "Selected region details"
+            }
+          }
+        },
+
+        {
+          "data": {
+            "url": "data/source_region_waffle_2025.csv",
+            "format": {
+              "type": "csv",
+              "parse": {
+                "enrolments": "number",
+                "share": "number",
+                "tiles": "number"
+              }
+            }
+          },
+
+          "transform": [
+            {
+              "filter": "selected_waffle_region !== '' && datum.region === selected_waffle_region"
+            },
+            {
+              "aggregate": [
+                {
+                  "op": "max",
+                  "field": "enrolments",
+                  "as": "region_enrolments"
+                },
+                {
+                  "op": "max",
+                  "field": "share",
+                  "as": "region_share"
+                },
+                {
+                  "op": "max",
+                  "field": "tiles",
+                  "as": "region_tiles"
+                }
+              ],
+              "groupby": ["region"]
+            },
+            {
+              "calculate": "'Top-country enrolments: ' + format(datum.region_enrolments, ',.0f')",
+              "as": "enrolment_line"
+            },
+            {
+              "calculate": "'Share: ' + format(datum.region_share / 100, '.1%')",
+              "as": "share_line"
+            }
+          ],
+
+          "layer": [
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "color": "#2F3E46"
+              },
+              "encoding": {
+                "x": {
+                  "value": 16
+                },
+                "y": {
+                  "value": 58
+                },
+                "text": {
+                  "value": "Source region:"
+                }
+              }
+            },
+
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "color": "#2F3E46",
+                "limit": 260
+              },
+              "encoding": {
+                "x": {
+                  "value": 16
+                },
+                "y": {
+                  "value": 80
+                },
+                "text": {
+                  "field": "region",
+                  "type": "nominal"
+                }
+              }
+            },
+
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "fontSize": 12,
+                "color": "#333",
+                "limit": 260
+              },
+              "encoding": {
+                "x": {
+                  "value": 16
+                },
+                "y": {
+                  "value": 128
+                },
+                "text": {
+                  "field": "enrolment_line",
+                  "type": "nominal"
+                }
+              }
+            },
+
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "fontSize": 12,
+                "color": "#333"
+              },
+              "encoding": {
+                "x": {
+                  "value": 16
+                },
+                "y": {
+                  "value": 160
+                },
+                "text": {
+                  "field": "share_line",
+                  "type": "nominal"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "spacing": 14,
 
   "config": {
     "view": {
       "stroke": null
     },
-    "font": "Arial"
+    "font": "Arial",
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    }
   }
 }
